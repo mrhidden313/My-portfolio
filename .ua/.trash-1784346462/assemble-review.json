@@ -1,0 +1,11 @@
+{
+  "fixedSectionOk": true,
+  "nodesRecovered": 0,
+  "edgesRestored": 0,
+  "crossBatchEdgesAdded": 0,
+  "typesRemapped": 0,
+  "complexityRemapped": 0,
+  "notes": [
+    "Assembled graph validated successfully with 47 nodes and 45 edges across all 5 batches."
+  ]
+}

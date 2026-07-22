@@ -1,0 +1,168 @@
+{
+  "nodes": [
+    {
+      "id": "file:app/layout.tsx",
+      "type": "file",
+      "name": "layout.tsx",
+      "filePath": "app/layout.tsx",
+      "summary": "Root Next.js layout component configuring metadata, font styles, and wrapping pages with ThemeProvider.",
+      "tags": [
+        "entry-point",
+        "layout",
+        "nextjs",
+        "theme"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:app/layout.tsx:RootLayout",
+      "type": "function",
+      "name": "RootLayout",
+      "filePath": "app/layout.tsx",
+      "lineRange": [
+        11,
+        31
+      ],
+      "summary": "Root layout component defining document structure and global theme providers.",
+      "tags": [
+        "entry-point",
+        "layout"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:components/Navbar.tsx",
+      "type": "file",
+      "name": "Navbar.tsx",
+      "filePath": "components/Navbar.tsx",
+      "summary": "Responsive navigation header component with glassmorphism, mobile drawer, and smooth section scrolling.",
+      "tags": [
+        "component",
+        "navigation",
+        "header",
+        "responsive"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:components/Navbar.tsx:Navbar",
+      "type": "function",
+      "name": "Navbar",
+      "filePath": "components/Navbar.tsx",
+      "lineRange": [
+        17,
+        253
+      ],
+      "summary": "Top navigation bar supporting mobile menu toggle and smooth scroll anchoring.",
+      "tags": [
+        "component",
+        "navigation",
+        "header"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:components/theme-provider.tsx",
+      "type": "file",
+      "name": "theme-provider.tsx",
+      "filePath": "components/theme-provider.tsx",
+      "summary": "Thin wrapper around next-themes providing dark/light mode toggle functionality across the app.",
+      "tags": [
+        "component",
+        "theme",
+        "provider",
+        "dark-mode"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:components/theme-provider.tsx:ThemeProvider",
+      "type": "function",
+      "name": "ThemeProvider",
+      "filePath": "components/theme-provider.tsx",
+      "lineRange": [
+        6,
+        11
+      ],
+      "summary": "Wraps children with NextThemesProvider to manage color theme preferences.",
+      "tags": [
+        "component",
+        "theme",
+        "provider"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:app/layout.tsx",
+      "target": "file:app/globals.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/layout.tsx",
+      "target": "file:components/Navbar.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/layout.tsx",
+      "target": "file:components/theme-provider.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/layout.tsx",
+      "target": "function:app/layout.tsx:RootLayout",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/layout.tsx",
+      "target": "function:app/layout.tsx:RootLayout",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:components/Navbar.tsx",
+      "target": "file:lib/utils.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:components/Navbar.tsx",
+      "target": "function:components/Navbar.tsx:Navbar",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:components/Navbar.tsx",
+      "target": "function:components/Navbar.tsx:Navbar",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:components/theme-provider.tsx",
+      "target": "function:components/theme-provider.tsx:ThemeProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:components/theme-provider.tsx",
+      "target": "function:components/theme-provider.tsx:ThemeProvider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

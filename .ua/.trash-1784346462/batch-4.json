@@ -1,0 +1,99 @@
+{
+  "nodes": [
+    {
+      "id": "document:AGENTS.md",
+      "type": "document",
+      "name": "AGENTS.md",
+      "filePath": "AGENTS.md",
+      "summary": "Global developer guidelines detailing Next.js breaking changes and mandatory CodeLens triage protocols.",
+      "tags": [
+        "documentation",
+        "guidelines",
+        "agents"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:CLAUDE.md",
+      "type": "document",
+      "name": "CLAUDE.md",
+      "filePath": "CLAUDE.md",
+      "summary": "Brief developer reference pointer file for project agent guidance.",
+      "tags": [
+        "documentation",
+        "reference"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:components.json",
+      "type": "config",
+      "name": "components.json",
+      "filePath": "components.json",
+      "summary": "Shadcn UI component configuration specifying style presets, Tailwind configuration paths, and aliases.",
+      "tags": [
+        "configuration",
+        "ui",
+        "shadcn",
+        "tailwind"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "package.json",
+      "summary": "Project manifest defining dependencies (next, react, @splinetool/react-spline, three, framer-motion) and build scripts.",
+      "tags": [
+        "configuration",
+        "manifest",
+        "dependencies"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "tsconfig.json",
+      "summary": "TypeScript compiler configuration defining strict checking, module resolution, and @/* path aliases.",
+      "tags": [
+        "configuration",
+        "typescript",
+        "compiler"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:AGENTS.md",
+      "target": "file:app/page.tsx",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:package.json",
+      "target": "file:app/page.tsx",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:tsconfig.json",
+      "target": "file:app/page.tsx",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:tsconfig.json",
+      "target": "file:app/layout.tsx",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

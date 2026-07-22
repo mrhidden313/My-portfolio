@@ -1,0 +1,236 @@
+{
+  "nodes": [
+    {
+      "id": "file:components/ui/card.tsx",
+      "type": "file",
+      "name": "card.tsx",
+      "filePath": "components/ui/card.tsx",
+      "summary": "Re-usable UI card primitive components with variants (Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter) styled with Tailwind CSS.",
+      "tags": [
+        "component",
+        "ui",
+        "card",
+        "tailwind"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:components/ui/demo.tsx",
+      "type": "file",
+      "name": "demo.tsx",
+      "filePath": "components/ui/demo.tsx",
+      "summary": "Contains SplineSceneBasic which renders the 3D Cyber-Robot Spline scene with lazy loading and synchronized multi-phase floating card typing animation.",
+      "tags": [
+        "component",
+        "3d",
+        "spline",
+        "animation",
+        "entry-point"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:components/ui/demo.tsx:SplineSceneBasic",
+      "type": "function",
+      "name": "SplineSceneBasic",
+      "filePath": "components/ui/demo.tsx",
+      "lineRange": [
+        27,
+        335
+      ],
+      "summary": "Orchestrates the 3-phase zoom, card entry, and typing animation for the Cyber-Robot 3D scene.",
+      "tags": [
+        "component",
+        "3d",
+        "animation",
+        "spline"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:components/ui/splite.tsx",
+      "type": "file",
+      "name": "splite.tsx",
+      "filePath": "components/ui/splite.tsx",
+      "summary": "Base wrapper component around @splinetool/react-spline wrapped in Suspense for loading 3D WebGL assets smoothly.",
+      "tags": [
+        "component",
+        "3d",
+        "spline",
+        "suspense"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:components/ui/splite.tsx:SplineScene",
+      "type": "function",
+      "name": "SplineScene",
+      "filePath": "components/ui/splite.tsx",
+      "lineRange": [
+        13,
+        27
+      ],
+      "summary": "Renders the Spline WebGL canvas component inside a styled wrapper.",
+      "tags": [
+        "component",
+        "3d",
+        "spline"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:components/ui/spotlight.tsx",
+      "type": "file",
+      "name": "spotlight.tsx",
+      "filePath": "components/ui/spotlight.tsx",
+      "summary": "Interactive SVG spotlight glow animation effect component used in hero sections.",
+      "tags": [
+        "component",
+        "ui",
+        "animation",
+        "hero"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:components/ui/spotlight.tsx:Spotlight",
+      "type": "function",
+      "name": "Spotlight",
+      "filePath": "components/ui/spotlight.tsx",
+      "lineRange": [
+        13,
+        83
+      ],
+      "summary": "Renders an SVG spotlight gradient beam with customizable fill and position.",
+      "tags": [
+        "component",
+        "ui",
+        "effect"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:lib/utils.ts",
+      "type": "file",
+      "name": "utils.ts",
+      "filePath": "lib/utils.ts",
+      "summary": "Core utility exporting cn function for merging Tailwind CSS classes cleanly using clsx and tailwind-merge.",
+      "tags": [
+        "utility",
+        "tailwind",
+        "helpers"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:lib/utils.ts:cn",
+      "type": "function",
+      "name": "cn",
+      "filePath": "lib/utils.ts",
+      "lineRange": [
+        4,
+        6
+      ],
+      "summary": "Utility function combining clsx and tailwind-merge to cleanly construct className strings.",
+      "tags": [
+        "utility",
+        "tailwind",
+        "helper"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:components/ui/card.tsx",
+      "target": "file:lib/utils.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:components/ui/demo.tsx",
+      "target": "file:components/ui/card.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:components/ui/demo.tsx",
+      "target": "file:components/ui/splite.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:components/ui/demo.tsx",
+      "target": "file:components/ui/spotlight.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:components/ui/demo.tsx",
+      "target": "function:components/ui/demo.tsx:SplineSceneBasic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:components/ui/demo.tsx",
+      "target": "function:components/ui/demo.tsx:SplineSceneBasic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:components/ui/splite.tsx",
+      "target": "function:components/ui/splite.tsx:SplineScene",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:components/ui/splite.tsx",
+      "target": "function:components/ui/splite.tsx:SplineScene",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:components/ui/spotlight.tsx",
+      "target": "file:lib/utils.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:components/ui/spotlight.tsx",
+      "target": "function:components/ui/spotlight.tsx:Spotlight",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:components/ui/spotlight.tsx",
+      "target": "function:components/ui/spotlight.tsx:Spotlight",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:lib/utils.ts",
+      "target": "function:lib/utils.ts:cn",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:lib/utils.ts",
+      "target": "function:lib/utils.ts:cn",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

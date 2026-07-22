@@ -1,0 +1,501 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 5,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "components/ui/card.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 79,
+      "nonEmptyLines": 71,
+      "exports": [
+        {
+          "name": "Card",
+          "line": 79,
+          "isDefault": false
+        },
+        {
+          "name": "CardHeader",
+          "line": 79,
+          "isDefault": false
+        },
+        {
+          "name": "CardFooter",
+          "line": 79,
+          "isDefault": false
+        },
+        {
+          "name": "CardTitle",
+          "line": 79,
+          "isDefault": false
+        },
+        {
+          "name": "CardDescription",
+          "line": 79,
+          "isDefault": false
+        },
+        {
+          "name": "CardContent",
+          "line": 79,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 6,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "components/ui/demo.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 335,
+      "nonEmptyLines": 300,
+      "functions": [
+        {
+          "name": "SplineSceneBasic",
+          "startLine": 27,
+          "endLine": 335,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "SplineSceneBasic",
+          "line": 27,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "SplineSceneBasic",
+          "callee": "useRef",
+          "lineNumber": 28
+        },
+        {
+          "caller": "SplineSceneBasic",
+          "callee": "useScroll",
+          "lineNumber": 29
+        },
+        {
+          "caller": "SplineSceneBasic",
+          "callee": "useTransform",
+          "lineNumber": 35
+        },
+        {
+          "caller": "SplineSceneBasic",
+          "callee": "useTransform",
+          "lineNumber": 36
+        },
+        {
+          "caller": "SplineSceneBasic",
+          "callee": "useTransform",
+          "lineNumber": 37
+        },
+        {
+          "caller": "SplineSceneBasic",
+          "callee": "useState",
+          "lineNumber": 40
+        },
+        {
+          "caller": "SplineSceneBasic",
+          "callee": "useState",
+          "lineNumber": 43
+        },
+        {
+          "caller": "SplineSceneBasic",
+          "callee": "useState",
+          "lineNumber": 46
+        },
+        {
+          "caller": "SplineSceneBasic",
+          "callee": "useState",
+          "lineNumber": 47
+        },
+        {
+          "caller": "SplineSceneBasic",
+          "callee": "useState",
+          "lineNumber": 48
+        },
+        {
+          "caller": "SplineSceneBasic",
+          "callee": "useState",
+          "lineNumber": 49
+        },
+        {
+          "caller": "SplineSceneBasic",
+          "callee": "useState",
+          "lineNumber": 50
+        },
+        {
+          "caller": "SplineSceneBasic",
+          "callee": "useEffect",
+          "lineNumber": 52
+        },
+        {
+          "caller": "SplineSceneBasic",
+          "callee": "setTimeout",
+          "lineNumber": 53
+        },
+        {
+          "caller": "SplineSceneBasic",
+          "callee": "setIsZoomedIn",
+          "lineNumber": 54
+        },
+        {
+          "caller": "SplineSceneBasic",
+          "callee": "setTimeout",
+          "lineNumber": 57
+        },
+        {
+          "caller": "SplineSceneBasic",
+          "callee": "setIsAboutOpen",
+          "lineNumber": 58
+        },
+        {
+          "caller": "SplineSceneBasic",
+          "callee": "setTimeout",
+          "lineNumber": 61
+        },
+        {
+          "caller": "SplineSceneBasic",
+          "callee": "setCanStartTyping",
+          "lineNumber": 62
+        },
+        {
+          "caller": "SplineSceneBasic",
+          "callee": "clearTimeout",
+          "lineNumber": 66
+        },
+        {
+          "caller": "SplineSceneBasic",
+          "callee": "clearTimeout",
+          "lineNumber": 67
+        },
+        {
+          "caller": "SplineSceneBasic",
+          "callee": "clearTimeout",
+          "lineNumber": 68
+        },
+        {
+          "caller": "SplineSceneBasic",
+          "callee": "useEffect",
+          "lineNumber": 73
+        },
+        {
+          "caller": "SplineSceneBasic",
+          "callee": "setIsTypingComplete",
+          "lineNumber": 76
+        },
+        {
+          "caller": "SplineSceneBasic",
+          "callee": "setTimeout",
+          "lineNumber": 84
+        },
+        {
+          "caller": "SplineSceneBasic",
+          "callee": "setTypedLines",
+          "lineNumber": 85
+        },
+        {
+          "caller": "SplineSceneBasic",
+          "callee": "setCurrentCharIdx",
+          "lineNumber": 91
+        },
+        {
+          "caller": "SplineSceneBasic",
+          "callee": "Math.random",
+          "lineNumber": 92
+        },
+        {
+          "caller": "SplineSceneBasic",
+          "callee": "clearTimeout",
+          "lineNumber": 93
+        },
+        {
+          "caller": "SplineSceneBasic",
+          "callee": "setTimeout",
+          "lineNumber": 95
+        },
+        {
+          "caller": "SplineSceneBasic",
+          "callee": "setCurrentLineIdx",
+          "lineNumber": 96
+        },
+        {
+          "caller": "SplineSceneBasic",
+          "callee": "setCurrentCharIdx",
+          "lineNumber": 97
+        },
+        {
+          "caller": "SplineSceneBasic",
+          "callee": "clearTimeout",
+          "lineNumber": 99
+        },
+        {
+          "caller": "SplineSceneBasic",
+          "callee": "[\"TypeScript\", \"Python\", \"Next.js\", \"React\", \"Node.js\", \"JavaScript\", \"Tailwind CSS\"].map",
+          "lineNumber": 181
+        },
+        {
+          "caller": "SplineSceneBasic",
+          "callee": "typedLines.map",
+          "lineNumber": 259
+        },
+        {
+          "caller": "SplineSceneBasic",
+          "callee": "safeLine.startsWith",
+          "lineNumber": 283
+        },
+        {
+          "caller": "SplineSceneBasic",
+          "callee": "safeLine.startsWith",
+          "lineNumber": 293
+        },
+        {
+          "caller": "SplineSceneBasic",
+          "callee": "setIsAboutOpen",
+          "lineNumber": 305
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "components/ui/splite.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 27,
+      "nonEmptyLines": 24,
+      "functions": [
+        {
+          "name": "SplineScene",
+          "startLine": 13,
+          "endLine": 27,
+          "params": [
+            "{ scene, className, onLoad, ...props }"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "SplineScene",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "components/ui/spotlight.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 83,
+      "nonEmptyLines": 73,
+      "functions": [
+        {
+          "name": "Spotlight",
+          "startLine": 13,
+          "endLine": 83,
+          "params": [
+            "{\n  className,\n  size = 200,\n  springOptions = { bounce: 0 },\n  fill,\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Spotlight",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Spotlight",
+          "callee": "useRef",
+          "lineNumber": 19
+        },
+        {
+          "caller": "Spotlight",
+          "callee": "useState",
+          "lineNumber": 20
+        },
+        {
+          "caller": "Spotlight",
+          "callee": "useState",
+          "lineNumber": 21
+        },
+        {
+          "caller": "Spotlight",
+          "callee": "useSpring",
+          "lineNumber": 23
+        },
+        {
+          "caller": "Spotlight",
+          "callee": "useSpring",
+          "lineNumber": 24
+        },
+        {
+          "caller": "Spotlight",
+          "callee": "useTransform",
+          "lineNumber": 26
+        },
+        {
+          "caller": "Spotlight",
+          "callee": "useTransform",
+          "lineNumber": 27
+        },
+        {
+          "caller": "Spotlight",
+          "callee": "useEffect",
+          "lineNumber": 29
+        },
+        {
+          "caller": "Spotlight",
+          "callee": "setParentElement",
+          "lineNumber": 35
+        },
+        {
+          "caller": "Spotlight",
+          "callee": "useCallback",
+          "lineNumber": 40
+        },
+        {
+          "caller": "Spotlight",
+          "callee": "parentElement.getBoundingClientRect",
+          "lineNumber": 43
+        },
+        {
+          "caller": "Spotlight",
+          "callee": "mouseX.set",
+          "lineNumber": 44
+        },
+        {
+          "caller": "Spotlight",
+          "callee": "mouseY.set",
+          "lineNumber": 45
+        },
+        {
+          "caller": "Spotlight",
+          "callee": "useEffect",
+          "lineNumber": 50
+        },
+        {
+          "caller": "Spotlight",
+          "callee": "parentElement.addEventListener",
+          "lineNumber": 53
+        },
+        {
+          "caller": "Spotlight",
+          "callee": "parentElement.addEventListener",
+          "lineNumber": 54
+        },
+        {
+          "caller": "Spotlight",
+          "callee": "setIsHovered",
+          "lineNumber": 54
+        },
+        {
+          "caller": "Spotlight",
+          "callee": "parentElement.addEventListener",
+          "lineNumber": 55
+        },
+        {
+          "caller": "Spotlight",
+          "callee": "setIsHovered",
+          "lineNumber": 55
+        },
+        {
+          "caller": "Spotlight",
+          "callee": "parentElement.removeEventListener",
+          "lineNumber": 58
+        },
+        {
+          "caller": "Spotlight",
+          "callee": "parentElement.removeEventListener",
+          "lineNumber": 59
+        },
+        {
+          "caller": "Spotlight",
+          "callee": "setIsHovered",
+          "lineNumber": 59
+        },
+        {
+          "caller": "Spotlight",
+          "callee": "parentElement.removeEventListener",
+          "lineNumber": 60
+        },
+        {
+          "caller": "Spotlight",
+          "callee": "setIsHovered",
+          "lineNumber": 61
+        },
+        {
+          "caller": "Spotlight",
+          "callee": "cn",
+          "lineNumber": 69
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/utils.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 6,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "cn",
+          "startLine": 4,
+          "endLine": 6,
+          "params": [
+            "...inputs"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "cn",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "cn",
+          "callee": "twMerge",
+          "lineNumber": 5
+        },
+        {
+          "caller": "cn",
+          "callee": "clsx",
+          "lineNumber": 5
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    }
+  ]
+}

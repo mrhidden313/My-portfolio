@@ -1,0 +1,842 @@
+{
+  "version": "1.0.0",
+  "gitCommitHash": "HEAD",
+  "generatedAt": "2026-07-17T22:47:34.254Z",
+  "files": {
+    ".agents/AGENTS.md": {
+      "filePath": ".agents/AGENTS.md",
+      "contentHash": "511ee4c429503b0630bae05c031f6267c51dcaf5b417fed5f5009bd89ce9c4a9",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 46,
+      "hasStructuralAnalysis": true
+    },
+    ".codelens/codelens-graph.db": {
+      "filePath": ".codelens/codelens-graph.db",
+      "contentHash": "a627e2270a79b3cd91bd2f8c9cad42e4a15c459f73bde224f5b16fd6352ad06a",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 5464,
+      "hasStructuralAnalysis": false
+    },
+    ".codelens/instructions.md": {
+      "filePath": ".codelens/instructions.md",
+      "contentHash": "a005ff712e3652f10f7bae98df511280c718b908380fd0ae7d0ad280c2c13201",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 82,
+      "hasStructuralAnalysis": true
+    },
+    ".codelens/mcp.json": {
+      "filePath": ".codelens/mcp.json",
+      "contentHash": "3df1b0daf41f6d88a485683e0a45e642fa727b23e10fd6cbd2824e4bf3d9911a",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 45,
+      "hasStructuralAnalysis": true
+    },
+    ".codelens/README.md": {
+      "filePath": ".codelens/README.md",
+      "contentHash": "9970a18c7957f6006b2d6d0c4b22a1b7e0af67c8c6dfbd6e309dd726604ab82b",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 9,
+      "hasStructuralAnalysis": true
+    },
+    ".ua/.understandignore": {
+      "filePath": ".ua/.understandignore",
+      "contentHash": "1ff85bc1ba20a5874b2086bdc1585055343c10324ecf05a3577505ac205943e4",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 70,
+      "hasStructuralAnalysis": false
+    },
+    "AGENTS.md": {
+      "filePath": "AGENTS.md",
+      "contentHash": "e3447d84251880fb34cfae09131cb4c57471529bbfe60976a3245793cf621627",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 6,
+      "hasStructuralAnalysis": true
+    },
+    "app/globals.css": {
+      "filePath": "app/globals.css",
+      "contentHash": "152be0af7a1547df90ab7f1972c2bcfe78cf14651f486c8f49b83c7d6a4dba46",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 157,
+      "hasStructuralAnalysis": false
+    },
+    "app/layout.tsx": {
+      "filePath": "app/layout.tsx",
+      "contentHash": "d683b3642b986e2f6996fdf1fbc3b8b18a9942ddfa3d80e339d335d878953392",
+      "functions": [
+        {
+          "name": "RootLayout",
+          "params": [
+            "{\n  children,\n}"
+          ],
+          "exported": true,
+          "lineCount": 21
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "next",
+          "specifiers": [
+            "Metadata"
+          ]
+        },
+        {
+          "source": "./globals.css",
+          "specifiers": []
+        },
+        {
+          "source": "@/components/theme-provider",
+          "specifiers": [
+            "ThemeProvider"
+          ]
+        },
+        {
+          "source": "@/components/Navbar",
+          "specifiers": [
+            "Navbar"
+          ]
+        }
+      ],
+      "exports": [
+        "metadata",
+        "RootLayout"
+      ],
+      "totalLines": 32,
+      "hasStructuralAnalysis": true
+    },
+    "app/page.tsx": {
+      "filePath": "app/page.tsx",
+      "contentHash": "32e7ca0115ebf3d15980f02354631c9377b77688ea57a179859fc9709c7b4b3f",
+      "functions": [
+        {
+          "name": "HeroSkeleton",
+          "params": [],
+          "exported": false,
+          "lineCount": 12
+        },
+        {
+          "name": "SectionSkeleton",
+          "params": [],
+          "exported": false,
+          "lineCount": 8
+        },
+        {
+          "name": "ViewportSection",
+          "params": [
+            "{\n  children,\n  skeleton,\n  minHeight = \"400px\",\n}"
+          ],
+          "exported": false,
+          "lineCount": 40
+        },
+        {
+          "name": "Home",
+          "params": [],
+          "exported": true,
+          "lineCount": 25
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "* as React"
+          ]
+        },
+        {
+          "source": "react",
+          "specifiers": [
+            "useState",
+            "useEffect",
+            "useRef"
+          ]
+        },
+        {
+          "source": "next/dynamic",
+          "specifiers": [
+            "dynamic"
+          ]
+        }
+      ],
+      "exports": [
+        "Home"
+      ],
+      "totalLines": 128,
+      "hasStructuralAnalysis": true
+    },
+    "app/test-robot/page.tsx": {
+      "filePath": "app/test-robot/page.tsx",
+      "contentHash": "b0b79ba7a651641dfd2f00263a52e827713fd3f47c5208b828049b04f8b88f36",
+      "functions": [
+        {
+          "name": "TestRobotPage",
+          "params": [],
+          "exported": true,
+          "lineCount": 189
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "* as React"
+          ]
+        },
+        {
+          "source": "react",
+          "specifiers": [
+            "useState",
+            "useEffect"
+          ]
+        },
+        {
+          "source": "framer-motion",
+          "specifiers": [
+            "motion",
+            "AnimatePresence"
+          ]
+        },
+        {
+          "source": "next/dynamic",
+          "specifiers": [
+            "dynamic"
+          ]
+        }
+      ],
+      "exports": [
+        "TestRobotPage"
+      ],
+      "totalLines": 223,
+      "hasStructuralAnalysis": true
+    },
+    "CLAUDE.md": {
+      "filePath": "CLAUDE.md",
+      "contentHash": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 2,
+      "hasStructuralAnalysis": true
+    },
+    "components.json": {
+      "filePath": "components.json",
+      "contentHash": "ee7c287bdceb207a89f8ed1998e1fe1320902baab3e3b8234b3be12804bc6833",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 22,
+      "hasStructuralAnalysis": true
+    },
+    "components/AboutSection.tsx": {
+      "filePath": "components/AboutSection.tsx",
+      "contentHash": "925111e71eca693dc736103ce313cffbe293b49cc42605cd3bd1881bbbd93762",
+      "functions": [
+        {
+          "name": "Counter",
+          "params": [
+            "{ target, suffix, label }"
+          ],
+          "exported": false,
+          "lineCount": 66
+        },
+        {
+          "name": "AboutSection",
+          "params": [],
+          "exported": true,
+          "lineCount": 97
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "* as React"
+          ]
+        },
+        {
+          "source": "react",
+          "specifiers": [
+            "useEffect",
+            "useRef",
+            "useState"
+          ]
+        },
+        {
+          "source": "framer-motion",
+          "specifiers": [
+            "motion",
+            "useInView"
+          ]
+        },
+        {
+          "source": "lucide-react",
+          "specifiers": [
+            "Code",
+            "Smartphone",
+            "Server"
+          ]
+        }
+      ],
+      "exports": [
+        "AboutSection"
+      ],
+      "totalLines": 190,
+      "hasStructuralAnalysis": true
+    },
+    "components/Navbar.tsx": {
+      "filePath": "components/Navbar.tsx",
+      "contentHash": "b74a4f52152680812fdcfd3d00035d5a195ed3c3c7ca9e350a66f42a93d74722",
+      "functions": [
+        {
+          "name": "Navbar",
+          "params": [],
+          "exported": true,
+          "lineCount": 237
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "* as React"
+          ]
+        },
+        {
+          "source": "react",
+          "specifiers": [
+            "useState",
+            "useEffect"
+          ]
+        },
+        {
+          "source": "framer-motion",
+          "specifiers": [
+            "motion",
+            "AnimatePresence"
+          ]
+        },
+        {
+          "source": "next-themes",
+          "specifiers": [
+            "useTheme"
+          ]
+        },
+        {
+          "source": "lucide-react",
+          "specifiers": [
+            "Sun",
+            "Moon",
+            "Sparkles"
+          ]
+        },
+        {
+          "source": "@/lib/utils",
+          "specifiers": [
+            "cn"
+          ]
+        }
+      ],
+      "exports": [
+        "Navbar"
+      ],
+      "totalLines": 254,
+      "hasStructuralAnalysis": true
+    },
+    "components/ProjectsSection.tsx": {
+      "filePath": "components/ProjectsSection.tsx",
+      "contentHash": "e6b2d66effcc69ba0dd10bd46312f9ae0fea39373fc7f825e31d0d78b8e996a1",
+      "functions": [
+        {
+          "name": "ProjectsSection",
+          "params": [],
+          "exported": true,
+          "lineCount": 93
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "* as React"
+          ]
+        },
+        {
+          "source": "framer-motion",
+          "specifiers": [
+            "motion"
+          ]
+        },
+        {
+          "source": "lucide-react",
+          "specifiers": [
+            "ArrowUpRight",
+            "ArrowRight",
+            "Sparkles"
+          ]
+        }
+      ],
+      "exports": [
+        "ProjectsSection"
+      ],
+      "totalLines": 127,
+      "hasStructuralAnalysis": true
+    },
+    "components/TechBanner.tsx": {
+      "filePath": "components/TechBanner.tsx",
+      "contentHash": "ce530e0d86ffc5bf1e549a8f31d36199a08d19bd9b968ddaff5bbe24184b38cf",
+      "functions": [
+        {
+          "name": "TechBanner",
+          "params": [],
+          "exported": true,
+          "lineCount": 29
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "* as React"
+          ]
+        },
+        {
+          "source": "framer-motion",
+          "specifiers": [
+            "motion"
+          ]
+        }
+      ],
+      "exports": [
+        "TechBanner"
+      ],
+      "totalLines": 47,
+      "hasStructuralAnalysis": true
+    },
+    "components/TestRobotScene.tsx": {
+      "filePath": "components/TestRobotScene.tsx",
+      "contentHash": "7aadb55d78ac8b30be4bd05aa1ce5a1b05997834393a53224ccbebb68410a7e0",
+      "functions": [
+        {
+          "name": "AnimatedSentinel",
+          "params": [
+            "{ stage }"
+          ],
+          "exported": false,
+          "lineCount": 190
+        },
+        {
+          "name": "TestRobotScene",
+          "params": [],
+          "exported": true,
+          "lineCount": 49
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "* as React"
+          ]
+        },
+        {
+          "source": "react",
+          "specifiers": [
+            "useState",
+            "useEffect",
+            "useRef"
+          ]
+        },
+        {
+          "source": "@react-three/fiber",
+          "specifiers": [
+            "Canvas",
+            "useFrame"
+          ]
+        },
+        {
+          "source": "three",
+          "specifiers": [
+            "* as THREE"
+          ]
+        }
+      ],
+      "exports": [
+        "TestRobotScene"
+      ],
+      "totalLines": 254,
+      "hasStructuralAnalysis": true
+    },
+    "components/theme-provider.tsx": {
+      "filePath": "components/theme-provider.tsx",
+      "contentHash": "03dbb33d93ab5483aa7987fc9d6a39d5cdfa60d2ea361095276235878e83f142",
+      "functions": [
+        {
+          "name": "ThemeProvider",
+          "params": [
+            "{\n  children,\n  ...props\n}"
+          ],
+          "exported": true,
+          "lineCount": 6
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "* as React"
+          ]
+        },
+        {
+          "source": "next-themes",
+          "specifiers": [
+            "NextThemesProvider"
+          ]
+        }
+      ],
+      "exports": [
+        "ThemeProvider"
+      ],
+      "totalLines": 12,
+      "hasStructuralAnalysis": true
+    },
+    "components/ui/card.tsx": {
+      "filePath": "components/ui/card.tsx",
+      "contentHash": "44bba2588d42d870c19ca7c841ea4938a5e48e85b10bc35707bec3da5d51058e",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "* as React"
+          ]
+        },
+        {
+          "source": "@/lib/utils",
+          "specifiers": [
+            "cn"
+          ]
+        }
+      ],
+      "exports": [
+        "Card",
+        "CardHeader",
+        "CardFooter",
+        "CardTitle",
+        "CardDescription",
+        "CardContent"
+      ],
+      "totalLines": 80,
+      "hasStructuralAnalysis": true
+    },
+    "components/ui/demo.tsx": {
+      "filePath": "components/ui/demo.tsx",
+      "contentHash": "3d873bab85009098da66b5e41f3d632f6b7a079d7a12fea0760d1e814be0bd8b",
+      "functions": [
+        {
+          "name": "SplineSceneBasic",
+          "params": [],
+          "exported": true,
+          "lineCount": 309
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "* as React"
+          ]
+        },
+        {
+          "source": "react",
+          "specifiers": [
+            "useState",
+            "useEffect",
+            "useRef"
+          ]
+        },
+        {
+          "source": "framer-motion",
+          "specifiers": [
+            "motion",
+            "useScroll",
+            "useTransform",
+            "AnimatePresence"
+          ]
+        },
+        {
+          "source": "@/components/ui/splite",
+          "specifiers": [
+            "SplineScene"
+          ]
+        },
+        {
+          "source": "@/components/ui/card",
+          "specifiers": [
+            "Card"
+          ]
+        },
+        {
+          "source": "@/components/ui/spotlight",
+          "specifiers": [
+            "Spotlight"
+          ]
+        },
+        {
+          "source": "lucide-react",
+          "specifiers": [
+            "ArrowRight"
+          ]
+        }
+      ],
+      "exports": [
+        "SplineSceneBasic"
+      ],
+      "totalLines": 336,
+      "hasStructuralAnalysis": true
+    },
+    "components/ui/splite.tsx": {
+      "filePath": "components/ui/splite.tsx",
+      "contentHash": "5742d9c2429a38c19ca61ebf3aa7fd3598057e2e7ab760266c79ea664271740f",
+      "functions": [
+        {
+          "name": "SplineScene",
+          "params": [
+            "{ scene, className, onLoad, ...props }"
+          ],
+          "exported": true,
+          "lineCount": 15
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "React",
+            "Suspense"
+          ]
+        },
+        {
+          "source": "@splinetool/react-spline",
+          "specifiers": [
+            "Spline"
+          ]
+        }
+      ],
+      "exports": [
+        "SplineScene"
+      ],
+      "totalLines": 28,
+      "hasStructuralAnalysis": true
+    },
+    "components/ui/spotlight.tsx": {
+      "filePath": "components/ui/spotlight.tsx",
+      "contentHash": "c9d1fb5e6013e65fa54669d93b91ca082d65d0b14ec76d6024370c2f0d85b919",
+      "functions": [
+        {
+          "name": "Spotlight",
+          "params": [
+            "{\n  className,\n  size = 200,\n  springOptions = { bounce: 0 },\n  fill,\n}"
+          ],
+          "exported": true,
+          "lineCount": 71
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "React",
+            "useRef",
+            "useState",
+            "useCallback",
+            "useEffect"
+          ]
+        },
+        {
+          "source": "framer-motion",
+          "specifiers": [
+            "motion",
+            "useSpring",
+            "useTransform",
+            "SpringOptions"
+          ]
+        },
+        {
+          "source": "@/lib/utils",
+          "specifiers": [
+            "cn"
+          ]
+        }
+      ],
+      "exports": [
+        "Spotlight"
+      ],
+      "totalLines": 84,
+      "hasStructuralAnalysis": true
+    },
+    "eslint.config.mjs": {
+      "filePath": "eslint.config.mjs",
+      "contentHash": "870f1adccecf3051cbcd9fd307cef51d7633cf510979c181a81f4b1797273493",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "eslint/config",
+          "specifiers": [
+            "defineConfig",
+            "globalIgnores"
+          ]
+        },
+        {
+          "source": "eslint-config-next/core-web-vitals",
+          "specifiers": [
+            "nextVitals"
+          ]
+        },
+        {
+          "source": "eslint-config-next/typescript",
+          "specifiers": [
+            "nextTs"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 19,
+      "hasStructuralAnalysis": true
+    },
+    "lib/utils.ts": {
+      "filePath": "lib/utils.ts",
+      "contentHash": "7c8c3dfc0cdd370d44932828eb067ef771c8fe7996693221d5d4b90af6d54f2d",
+      "functions": [
+        {
+          "name": "cn",
+          "params": [
+            "...inputs"
+          ],
+          "exported": true,
+          "lineCount": 3
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "clsx",
+          "specifiers": [
+            "clsx",
+            "ClassValue"
+          ]
+        },
+        {
+          "source": "tailwind-merge",
+          "specifiers": [
+            "twMerge"
+          ]
+        }
+      ],
+      "exports": [
+        "cn"
+      ],
+      "totalLines": 7,
+      "hasStructuralAnalysis": true
+    },
+    "next-env.d.ts": {
+      "filePath": "next-env.d.ts",
+      "contentHash": "7ad303e40d4fddf44f156129e397511953a71481c5cfd86b1862649aaaf240cc",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "./.next/dev/types/routes.d.ts",
+          "specifiers": []
+        }
+      ],
+      "exports": [],
+      "totalLines": 7,
+      "hasStructuralAnalysis": true
+    },
+    "next.config.ts": {
+      "filePath": "next.config.ts",
+      "contentHash": "614bce25b089c3f19b1e17a6346c74b858034040154c6621e7d35303004767cc",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "next",
+          "specifiers": [
+            "NextConfig"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 8,
+      "hasStructuralAnalysis": true
+    },
+    "package.json": {
+      "filePath": "package.json",
+      "contentHash": "1750aaa4141a1989869003f31e0ac935c61eb7f63419cc6b65a653d42f133b37",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 41,
+      "hasStructuralAnalysis": true
+    },
+    "postcss.config.mjs": {
+      "filePath": "postcss.config.mjs",
+      "contentHash": "dfac7ac2d86d326a0e5adb024e7943c181393ed17a5fcb8f0315b24c7da6ddde",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 8,
+      "hasStructuralAnalysis": true
+    },
+    "tsconfig.json": {
+      "filePath": "tsconfig.json",
+      "contentHash": "be18523b23b78b6e1a876ddd107d330f0168bddf09d751b57e0b5edce69c66f3",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 35,
+      "hasStructuralAnalysis": true
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "nodes": [
+    {
+      "id": "document:.codelens/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": ".codelens/README.md",
+      "summary": "Documentation for CodeLens knowledge graph tools and local repository graph structure.",
+      "tags": [
+        "documentation",
+        "codelens",
+        "overview"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.codelens/instructions.md",
+      "type": "document",
+      "name": "instructions.md",
+      "filePath": ".codelens/instructions.md",
+      "summary": "Detailed operational instructions and mandatory search protocol rules for CodeLens tools.",
+      "tags": [
+        "documentation",
+        "instructions",
+        "codelens"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:.codelens/mcp.json",
+      "type": "config",
+      "name": "mcp.json",
+      "filePath": ".codelens/mcp.json",
+      "summary": "MCP server configuration declaring local SQLite knowledge graph tools and resources.",
+      "tags": [
+        "configuration",
+        "mcp",
+        "codelens"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": []
+}

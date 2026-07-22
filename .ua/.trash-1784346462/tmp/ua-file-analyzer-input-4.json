@@ -1,0 +1,52 @@
+{
+    "projectRoot":  "c:\\Users\\salar pc\\Documents\\my portfolio",
+    "batchImportData":  {
+                            "AGENTS.md":  [
+
+                                          ],
+                            "CLAUDE.md":  [
+
+                                          ],
+                            "components.json":  [
+
+                                                ],
+                            "package.json":  [
+
+                                             ],
+                            "tsconfig.json":  [
+
+                                              ]
+                        },
+    "batchFiles":  [
+                       {
+                           "path":  "AGENTS.md",
+                           "language":  "markdown",
+                           "sizeLines":  5,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "CLAUDE.md",
+                           "language":  "markdown",
+                           "sizeLines":  1,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "components.json",
+                           "language":  "json",
+                           "sizeLines":  21,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "package.json",
+                           "language":  "json",
+                           "sizeLines":  40,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "tsconfig.json",
+                           "language":  "json",
+                           "sizeLines":  34,
+                           "fileCategory":  "config"
+                       }
+                   ]
+}

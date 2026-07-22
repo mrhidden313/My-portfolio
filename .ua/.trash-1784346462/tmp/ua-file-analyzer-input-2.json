@@ -1,0 +1,36 @@
+{
+    "projectRoot":  "c:\\Users\\salar pc\\Documents\\my portfolio",
+    "batchImportData":  {
+                            "app/layout.tsx":  [
+                                                   "app/globals.css",
+                                                   "components/Navbar.tsx",
+                                                   "components/theme-provider.tsx"
+                                               ],
+                            "components/Navbar.tsx":  [
+                                                          "lib/utils.ts"
+                                                      ],
+                            "components/theme-provider.tsx":  [
+
+                                                              ]
+                        },
+    "batchFiles":  [
+                       {
+                           "path":  "app/layout.tsx",
+                           "language":  "typescript",
+                           "sizeLines":  31,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "components/Navbar.tsx",
+                           "language":  "typescript",
+                           "sizeLines":  253,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "components/theme-provider.tsx",
+                           "language":  "typescript",
+                           "sizeLines":  11,
+                           "fileCategory":  "code"
+                       }
+                   ]
+}

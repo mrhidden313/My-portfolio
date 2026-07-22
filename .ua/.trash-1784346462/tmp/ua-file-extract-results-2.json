@@ -1,0 +1,202 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 3,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "app/layout.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 31,
+      "nonEmptyLines": 29,
+      "functions": [
+        {
+          "name": "RootLayout",
+          "startLine": 11,
+          "endLine": 31,
+          "params": [
+            "{\n  children,\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "metadata",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "RootLayout",
+          "line": 11,
+          "isDefault": true
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "components/Navbar.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 253,
+      "nonEmptyLines": 237,
+      "functions": [
+        {
+          "name": "Navbar",
+          "startLine": 17,
+          "endLine": 253,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Navbar",
+          "line": 17,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Navbar",
+          "callee": "useState",
+          "lineNumber": 18
+        },
+        {
+          "caller": "Navbar",
+          "callee": "useTheme",
+          "lineNumber": 19
+        },
+        {
+          "caller": "Navbar",
+          "callee": "useState",
+          "lineNumber": 20
+        },
+        {
+          "caller": "Navbar",
+          "callee": "useState",
+          "lineNumber": 21
+        },
+        {
+          "caller": "Navbar",
+          "callee": "useEffect",
+          "lineNumber": 23
+        },
+        {
+          "caller": "Navbar",
+          "callee": "setMounted",
+          "lineNumber": 24
+        },
+        {
+          "caller": "Navbar",
+          "callee": "window.scrollTo",
+          "lineNumber": 30
+        },
+        {
+          "caller": "handleScroll",
+          "callee": "setIsScrolled",
+          "lineNumber": 34
+        },
+        {
+          "caller": "handleScroll",
+          "callee": "setIsScrolled",
+          "lineNumber": 36
+        },
+        {
+          "caller": "Navbar",
+          "callee": "window.addEventListener",
+          "lineNumber": 39
+        },
+        {
+          "caller": "Navbar",
+          "callee": "window.removeEventListener",
+          "lineNumber": 40
+        },
+        {
+          "caller": "Navbar",
+          "callee": "navItems.map",
+          "lineNumber": 84
+        },
+        {
+          "caller": "Navbar",
+          "callee": "setActiveTab",
+          "lineNumber": 89
+        },
+        {
+          "caller": "Navbar",
+          "callee": "cn",
+          "lineNumber": 90
+        },
+        {
+          "caller": "Navbar",
+          "callee": "setTheme",
+          "lineNumber": 126
+        },
+        {
+          "caller": "Navbar",
+          "callee": "window.scrollTo",
+          "lineNumber": 178
+        },
+        {
+          "caller": "Navbar",
+          "callee": "navItems.map",
+          "lineNumber": 190
+        },
+        {
+          "caller": "Navbar",
+          "callee": "setActiveTab",
+          "lineNumber": 195
+        },
+        {
+          "caller": "Navbar",
+          "callee": "cn",
+          "lineNumber": 196
+        },
+        {
+          "caller": "Navbar",
+          "callee": "setTheme",
+          "lineNumber": 226
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "components/theme-provider.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 9,
+      "functions": [
+        {
+          "name": "ThemeProvider",
+          "startLine": 6,
+          "endLine": 11,
+          "params": [
+            "{\n  children,\n  ...props\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ThemeProvider",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    }
+  ]
+}

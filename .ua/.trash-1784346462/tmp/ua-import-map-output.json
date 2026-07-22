@@ -1,0 +1,54 @@
+{
+  "scriptCompleted": true,
+  "stats": {
+    "filesScanned": 30,
+    "filesWithImports": 5,
+    "totalEdges": 9
+  },
+  "importMap": {
+    ".agents/AGENTS.md": [],
+    ".codelens/codelens-graph.db": [],
+    ".codelens/instructions.md": [],
+    ".codelens/mcp.json": [],
+    ".codelens/README.md": [],
+    ".ua/.understandignore": [],
+    "AGENTS.md": [],
+    "app/globals.css": [],
+    "app/layout.tsx": [
+      "app/globals.css",
+      "components/Navbar.tsx",
+      "components/theme-provider.tsx"
+    ],
+    "app/page.tsx": [],
+    "app/test-robot/page.tsx": [],
+    "CLAUDE.md": [],
+    "components.json": [],
+    "components/AboutSection.tsx": [],
+    "components/Navbar.tsx": [
+      "lib/utils.ts"
+    ],
+    "components/ProjectsSection.tsx": [],
+    "components/TechBanner.tsx": [],
+    "components/TestRobotScene.tsx": [],
+    "components/theme-provider.tsx": [],
+    "components/ui/card.tsx": [
+      "lib/utils.ts"
+    ],
+    "components/ui/demo.tsx": [
+      "components/ui/card.tsx",
+      "components/ui/splite.tsx",
+      "components/ui/spotlight.tsx"
+    ],
+    "components/ui/splite.tsx": [],
+    "components/ui/spotlight.tsx": [
+      "lib/utils.ts"
+    ],
+    "eslint.config.mjs": [],
+    "lib/utils.ts": [],
+    "next-env.d.ts": [],
+    "next.config.ts": [],
+    "package.json": [],
+    "postcss.config.mjs": [],
+    "tsconfig.json": []
+  }
+}

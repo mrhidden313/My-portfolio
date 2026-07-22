@@ -1,0 +1,133 @@
+{
+    "projectRoot":  "c:\\Users\\salar pc\\Documents\\my portfolio",
+    "batchImportData":  {
+                            ".agents/AGENTS.md":  [
+
+                                                  ],
+                            ".codelens/codelens-graph.db":  [
+
+                                                            ],
+                            ".ua/.understandignore":  [
+
+                                                      ],
+                            "app/globals.css":  [
+
+                                                ],
+                            "app/page.tsx":  [
+
+                                             ],
+                            "app/test-robot/page.tsx":  [
+
+                                                        ],
+                            "components/AboutSection.tsx":  [
+
+                                                            ],
+                            "components/ProjectsSection.tsx":  [
+
+                                                               ],
+                            "components/TechBanner.tsx":  [
+
+                                                          ],
+                            "components/TestRobotScene.tsx":  [
+
+                                                              ],
+                            "eslint.config.mjs":  [
+
+                                                  ],
+                            "next-env.d.ts":  [
+
+                                              ],
+                            "next.config.ts":  [
+
+                                               ],
+                            "postcss.config.mjs":  [
+
+                                                   ]
+                        },
+    "batchFiles":  [
+                       {
+                           "path":  ".agents/AGENTS.md",
+                           "language":  "markdown",
+                           "sizeLines":  45,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".codelens/codelens-graph.db",
+                           "language":  "db",
+                           "sizeLines":  5463,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  ".ua/.understandignore",
+                           "language":  "unknown",
+                           "sizeLines":  69,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "app/globals.css",
+                           "language":  "css",
+                           "sizeLines":  156,
+                           "fileCategory":  "markup"
+                       },
+                       {
+                           "path":  "app/page.tsx",
+                           "language":  "typescript",
+                           "sizeLines":  127,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "app/test-robot/page.tsx",
+                           "language":  "typescript",
+                           "sizeLines":  222,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "components/AboutSection.tsx",
+                           "language":  "typescript",
+                           "sizeLines":  189,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "components/ProjectsSection.tsx",
+                           "language":  "typescript",
+                           "sizeLines":  126,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "components/TechBanner.tsx",
+                           "language":  "typescript",
+                           "sizeLines":  46,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "components/TestRobotScene.tsx",
+                           "language":  "typescript",
+                           "sizeLines":  253,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "eslint.config.mjs",
+                           "language":  "javascript",
+                           "sizeLines":  18,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "next-env.d.ts",
+                           "language":  "typescript",
+                           "sizeLines":  6,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "next.config.ts",
+                           "language":  "typescript",
+                           "sizeLines":  7,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "postcss.config.mjs",
+                           "language":  "javascript",
+                           "sizeLines":  7,
+                           "fileCategory":  "code"
+                       }
+                   ]
+}

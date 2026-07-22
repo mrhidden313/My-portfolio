@@ -1,0 +1,145 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 3,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".codelens/README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 8,
+      "nonEmptyLines": 6,
+      "sections": [
+        {
+          "heading": "CodeLens Graph",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Configuration & Rules",
+          "level": 2,
+          "line": 5
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": ".codelens/instructions.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 81,
+      "nonEmptyLines": 61,
+      "sections": [
+        {
+          "heading": "CodeLens Graph — AI Agent Instructions",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Manual Rule Setup Guide",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Rules Section",
+          "level": 2,
+          "line": 35
+        },
+        {
+          "heading": "CodeLens Graph — Mandatory Search Protocol",
+          "level": 2,
+          "line": 38
+        },
+        {
+          "heading": "RULE 1 — Triage first to establish the baseline",
+          "level": 3,
+          "line": 43
+        },
+        {
+          "heading": "RULE 2 — Use specific tools instead of scanning files",
+          "level": 3,
+          "line": 51
+        },
+        {
+          "heading": "RULE 3 — Read only what CodeLens points to",
+          "level": 3,
+          "line": 63
+        },
+        {
+          "heading": "RULE 4 — Check before creating",
+          "level": 3,
+          "line": 67
+        },
+        {
+          "heading": "RULE 5 — Keep the graph updated",
+          "level": 3,
+          "line": 70
+        },
+        {
+          "heading": "RULE 6 — Query dependencies and configs strategically",
+          "level": 3,
+          "line": 73
+        },
+        {
+          "heading": "Available tools (MCP server: codelens)",
+          "level": 3,
+          "line": 77
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 11
+      }
+    },
+    {
+      "path": ".codelens/mcp.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 45,
+      "nonEmptyLines": 45,
+      "sections": [
+        {
+          "heading": "_comment",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "vscode",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "cursor",
+          "level": 1,
+          "line": 14
+        },
+        {
+          "heading": "Claude",
+          "level": 1,
+          "line": 24
+        },
+        {
+          "heading": "Winsurf",
+          "level": 1,
+          "line": 35
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    }
+  ]
+}

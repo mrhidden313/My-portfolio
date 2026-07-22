@@ -1,0 +1,34 @@
+{
+    "projectRoot":  "c:\\Users\\salar pc\\Documents\\my portfolio",
+    "batchImportData":  {
+                            ".codelens/README.md":  [
+
+                                                    ],
+                            ".codelens/instructions.md":  [
+
+                                                          ],
+                            ".codelens/mcp.json":  [
+
+                                                   ]
+                        },
+    "batchFiles":  [
+                       {
+                           "path":  ".codelens/README.md",
+                           "language":  "markdown",
+                           "sizeLines":  8,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".codelens/instructions.md",
+                           "language":  "markdown",
+                           "sizeLines":  81,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".codelens/mcp.json",
+                           "language":  "json",
+                           "sizeLines":  44,
+                           "fileCategory":  "config"
+                       }
+                   ]
+}

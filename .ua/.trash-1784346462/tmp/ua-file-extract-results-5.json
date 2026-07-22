@@ -1,0 +1,765 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 14,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".agents/AGENTS.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 45,
+      "nonEmptyLines": 37,
+      "sections": [
+        {
+          "heading": "CodeLens Graph — Mandatory Search Protocol",
+          "level": 2,
+          "line": 2
+        },
+        {
+          "heading": "RULE 1 — Triage first to establish the baseline",
+          "level": 3,
+          "line": 7
+        },
+        {
+          "heading": "RULE 2 — Use specific tools instead of scanning files",
+          "level": 3,
+          "line": 15
+        },
+        {
+          "heading": "RULE 3 — Read only what CodeLens points to",
+          "level": 3,
+          "line": 27
+        },
+        {
+          "heading": "RULE 4 — Check before creating",
+          "level": 3,
+          "line": 31
+        },
+        {
+          "heading": "RULE 5 — Keep the graph updated",
+          "level": 3,
+          "line": 34
+        },
+        {
+          "heading": "RULE 6 — Query dependencies and configs strategically",
+          "level": 3,
+          "line": 37
+        },
+        {
+          "heading": "Available tools (MCP server: codelens)",
+          "level": 3,
+          "line": 41
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 8
+      }
+    },
+    {
+      "path": ".codelens/codelens-graph.db",
+      "language": "db",
+      "fileCategory": "code",
+      "totalLines": 5464,
+      "nonEmptyLines": 5383,
+      "metrics": {}
+    },
+    {
+      "path": ".ua/.understandignore",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 69,
+      "nonEmptyLines": 65,
+      "metrics": {}
+    },
+    {
+      "path": "app/globals.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 156,
+      "nonEmptyLines": 135,
+      "metrics": {}
+    },
+    {
+      "path": "app/page.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 127,
+      "nonEmptyLines": 111,
+      "functions": [
+        {
+          "name": "HeroSkeleton",
+          "startLine": 8,
+          "endLine": 19,
+          "params": []
+        },
+        {
+          "name": "SectionSkeleton",
+          "startLine": 21,
+          "endLine": 28,
+          "params": []
+        },
+        {
+          "name": "ViewportSection",
+          "startLine": 62,
+          "endLine": 101,
+          "params": [
+            "{\n  children,\n  skeleton,\n  minHeight = \"400px\",\n}"
+          ]
+        },
+        {
+          "name": "Home",
+          "startLine": 103,
+          "endLine": 127,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Home",
+          "line": 103,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ViewportSection",
+          "callee": "useState",
+          "lineNumber": 71
+        },
+        {
+          "caller": "ViewportSection",
+          "callee": "useRef",
+          "lineNumber": 72
+        },
+        {
+          "caller": "ViewportSection",
+          "callee": "useEffect",
+          "lineNumber": 74
+        },
+        {
+          "caller": "ViewportSection",
+          "callee": "setIsVisible",
+          "lineNumber": 82
+        },
+        {
+          "caller": "ViewportSection",
+          "callee": "observer.disconnect",
+          "lineNumber": 83
+        },
+        {
+          "caller": "ViewportSection",
+          "callee": "observer.observe",
+          "lineNumber": 92
+        },
+        {
+          "caller": "ViewportSection",
+          "callee": "observer.disconnect",
+          "lineNumber": 93
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 4,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/test-robot/page.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 222,
+      "nonEmptyLines": 195,
+      "functions": [
+        {
+          "name": "TestRobotPage",
+          "startLine": 34,
+          "endLine": 222,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "TestRobotPage",
+          "line": 34,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "TestRobotPage",
+          "callee": "useState",
+          "lineNumber": 36
+        },
+        {
+          "caller": "TestRobotPage",
+          "callee": "useState",
+          "lineNumber": 39
+        },
+        {
+          "caller": "TestRobotPage",
+          "callee": "useState",
+          "lineNumber": 42
+        },
+        {
+          "caller": "TestRobotPage",
+          "callee": "useState",
+          "lineNumber": 43
+        },
+        {
+          "caller": "TestRobotPage",
+          "callee": "useState",
+          "lineNumber": 44
+        },
+        {
+          "caller": "TestRobotPage",
+          "callee": "useState",
+          "lineNumber": 45
+        },
+        {
+          "caller": "TestRobotPage",
+          "callee": "useState",
+          "lineNumber": 46
+        },
+        {
+          "caller": "TestRobotPage",
+          "callee": "useEffect",
+          "lineNumber": 48
+        },
+        {
+          "caller": "TestRobotPage",
+          "callee": "setTimeout",
+          "lineNumber": 50
+        },
+        {
+          "caller": "TestRobotPage",
+          "callee": "setIsZoomedIn",
+          "lineNumber": 51
+        },
+        {
+          "caller": "TestRobotPage",
+          "callee": "setTimeout",
+          "lineNumber": 55
+        },
+        {
+          "caller": "TestRobotPage",
+          "callee": "setIsAboutOpen",
+          "lineNumber": 56
+        },
+        {
+          "caller": "TestRobotPage",
+          "callee": "setTimeout",
+          "lineNumber": 60
+        },
+        {
+          "caller": "TestRobotPage",
+          "callee": "setCanStartTyping",
+          "lineNumber": 61
+        },
+        {
+          "caller": "TestRobotPage",
+          "callee": "clearTimeout",
+          "lineNumber": 65
+        },
+        {
+          "caller": "TestRobotPage",
+          "callee": "clearTimeout",
+          "lineNumber": 66
+        },
+        {
+          "caller": "TestRobotPage",
+          "callee": "clearTimeout",
+          "lineNumber": 67
+        },
+        {
+          "caller": "TestRobotPage",
+          "callee": "useEffect",
+          "lineNumber": 72
+        },
+        {
+          "caller": "TestRobotPage",
+          "callee": "setIsTypingComplete",
+          "lineNumber": 75
+        },
+        {
+          "caller": "TestRobotPage",
+          "callee": "setTimeout",
+          "lineNumber": 83
+        },
+        {
+          "caller": "TestRobotPage",
+          "callee": "setTypedLines",
+          "lineNumber": 84
+        },
+        {
+          "caller": "TestRobotPage",
+          "callee": "setCurrentCharIdx",
+          "lineNumber": 90
+        },
+        {
+          "caller": "TestRobotPage",
+          "callee": "Math.random",
+          "lineNumber": 91
+        },
+        {
+          "caller": "TestRobotPage",
+          "callee": "clearTimeout",
+          "lineNumber": 92
+        },
+        {
+          "caller": "TestRobotPage",
+          "callee": "setTimeout",
+          "lineNumber": 95
+        },
+        {
+          "caller": "TestRobotPage",
+          "callee": "setCurrentLineIdx",
+          "lineNumber": 96
+        },
+        {
+          "caller": "TestRobotPage",
+          "callee": "setCurrentCharIdx",
+          "lineNumber": 97
+        },
+        {
+          "caller": "TestRobotPage",
+          "callee": "clearTimeout",
+          "lineNumber": 99
+        },
+        {
+          "caller": "TestRobotPage",
+          "callee": "typedLines.map",
+          "lineNumber": 149
+        },
+        {
+          "caller": "TestRobotPage",
+          "callee": "safeLine.startsWith",
+          "lineNumber": 173
+        },
+        {
+          "caller": "TestRobotPage",
+          "callee": "safeLine.startsWith",
+          "lineNumber": 183
+        },
+        {
+          "caller": "TestRobotPage",
+          "callee": "setIsAboutOpen",
+          "lineNumber": 195
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "components/AboutSection.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 189,
+      "nonEmptyLines": 170,
+      "functions": [
+        {
+          "name": "Counter",
+          "startLine": 8,
+          "endLine": 73,
+          "params": [
+            "{ target, suffix, label }"
+          ]
+        },
+        {
+          "name": "AboutSection",
+          "startLine": 93,
+          "endLine": 189,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AboutSection",
+          "line": 93,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Counter",
+          "callee": "useRef",
+          "lineNumber": 9
+        },
+        {
+          "caller": "Counter",
+          "callee": "useInView",
+          "lineNumber": 10
+        },
+        {
+          "caller": "Counter",
+          "callee": "useState",
+          "lineNumber": 11
+        },
+        {
+          "caller": "Counter",
+          "callee": "useState",
+          "lineNumber": 12
+        },
+        {
+          "caller": "Counter",
+          "callee": "useEffect",
+          "lineNumber": 14
+        },
+        {
+          "caller": "animateCount",
+          "callee": "Math.min",
+          "lineNumber": 21
+        },
+        {
+          "caller": "animateCount",
+          "callee": "Math.pow",
+          "lineNumber": 22
+        },
+        {
+          "caller": "animateCount",
+          "callee": "Math.floor",
+          "lineNumber": 23
+        },
+        {
+          "caller": "animateCount",
+          "callee": "setCount",
+          "lineNumber": 25
+        },
+        {
+          "caller": "animateCount",
+          "callee": "requestAnimationFrame",
+          "lineNumber": 28
+        },
+        {
+          "caller": "animateCount",
+          "callee": "setCount",
+          "lineNumber": 30
+        },
+        {
+          "caller": "animateCount",
+          "callee": "setIsDone",
+          "lineNumber": 31
+        },
+        {
+          "caller": "Counter",
+          "callee": "requestAnimationFrame",
+          "lineNumber": 35
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "services.map",
+          "lineNumber": 129
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "components/ProjectsSection.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 126,
+      "nonEmptyLines": 115,
+      "functions": [
+        {
+          "name": "ProjectsSection",
+          "startLine": 34,
+          "endLine": 126,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ProjectsSection",
+          "line": 34,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ProjectsSection",
+          "callee": "projects.map",
+          "lineNumber": 55
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "components/TechBanner.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 46,
+      "nonEmptyLines": 43,
+      "functions": [
+        {
+          "name": "TechBanner",
+          "startLine": 18,
+          "endLine": 46,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "TechBanner",
+          "line": 18,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "TechBanner",
+          "callee": "techList.map",
+          "lineNumber": 28
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "components/TestRobotScene.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 253,
+      "nonEmptyLines": 229,
+      "functions": [
+        {
+          "name": "AnimatedSentinel",
+          "startLine": 11,
+          "endLine": 200,
+          "params": [
+            "{ stage }"
+          ]
+        },
+        {
+          "name": "TestRobotScene",
+          "startLine": 205,
+          "endLine": 253,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "TestRobotScene",
+          "line": 205,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "AnimatedSentinel",
+          "callee": "useRef",
+          "lineNumber": 12
+        },
+        {
+          "caller": "AnimatedSentinel",
+          "callee": "useRef",
+          "lineNumber": 13
+        },
+        {
+          "caller": "AnimatedSentinel",
+          "callee": "useRef",
+          "lineNumber": 14
+        },
+        {
+          "caller": "AnimatedSentinel",
+          "callee": "useRef",
+          "lineNumber": 15
+        },
+        {
+          "caller": "AnimatedSentinel",
+          "callee": "useRef",
+          "lineNumber": 16
+        },
+        {
+          "caller": "AnimatedSentinel",
+          "callee": "useRef",
+          "lineNumber": 17
+        },
+        {
+          "caller": "AnimatedSentinel",
+          "callee": "useFrame",
+          "lineNumber": 19
+        },
+        {
+          "caller": "AnimatedSentinel",
+          "callee": "state.clock.getElapsedTime",
+          "lineNumber": 20
+        },
+        {
+          "caller": "AnimatedSentinel",
+          "callee": "masterGroupRef.current.position.lerp",
+          "lineNumber": 28
+        },
+        {
+          "caller": "AnimatedSentinel",
+          "callee": "masterGroupRef.current.scale.lerp",
+          "lineNumber": 29
+        },
+        {
+          "caller": "AnimatedSentinel",
+          "callee": "THREE.MathUtils.lerp",
+          "lineNumber": 30
+        },
+        {
+          "caller": "AnimatedSentinel",
+          "callee": "Math.sin",
+          "lineNumber": 33
+        },
+        {
+          "caller": "AnimatedSentinel",
+          "callee": "THREE.MathUtils.lerp",
+          "lineNumber": 40
+        },
+        {
+          "caller": "AnimatedSentinel",
+          "callee": "THREE.MathUtils.lerp",
+          "lineNumber": 41
+        },
+        {
+          "caller": "AnimatedSentinel",
+          "callee": "THREE.MathUtils.lerp",
+          "lineNumber": 42
+        },
+        {
+          "caller": "AnimatedSentinel",
+          "callee": "Math.sin",
+          "lineNumber": 47
+        },
+        {
+          "caller": "AnimatedSentinel",
+          "callee": "Math.cos",
+          "lineNumber": 52
+        },
+        {
+          "caller": "AnimatedSentinel",
+          "callee": "Math.sin",
+          "lineNumber": 57
+        },
+        {
+          "caller": "AnimatedSentinel",
+          "callee": "Math.sin",
+          "lineNumber": 58
+        },
+        {
+          "caller": "AnimatedSentinel",
+          "callee": "[-0.8, -0.4, 0, 0.4, 0.8].map",
+          "lineNumber": 170
+        },
+        {
+          "caller": "AnimatedSentinel",
+          "callee": "[-0.3, -0.1, 0.1, 0.3].map",
+          "lineNumber": 171
+        },
+        {
+          "caller": "TestRobotScene",
+          "callee": "useState",
+          "lineNumber": 207
+        },
+        {
+          "caller": "TestRobotScene",
+          "callee": "useEffect",
+          "lineNumber": 209
+        },
+        {
+          "caller": "TestRobotScene",
+          "callee": "setTimeout",
+          "lineNumber": 211
+        },
+        {
+          "caller": "TestRobotScene",
+          "callee": "setStage",
+          "lineNumber": 212
+        },
+        {
+          "caller": "TestRobotScene",
+          "callee": "clearTimeout",
+          "lineNumber": 214
+        },
+        {
+          "caller": "TestRobotScene",
+          "callee": "setStage",
+          "lineNumber": 231
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "eslint.config.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 18,
+      "nonEmptyLines": 16,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "next-env.d.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 6,
+      "nonEmptyLines": 5,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "next.config.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "postcss.config.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 6,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}

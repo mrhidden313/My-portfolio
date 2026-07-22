@@ -1,0 +1,1221 @@
+{
+  "version": "1.0.0",
+  "project": {
+    "name": "fktech-portfolio",
+    "languages": [
+      "typescript",
+      "javascript",
+      "json",
+      "markdown",
+      "css"
+    ],
+    "frameworks": [
+      "React",
+      "Next.js",
+      "Tailwind CSS",
+      "Three.js"
+    ],
+    "description": "Modern High-Performance Portfolio Website with Interactive 3D Cyber-Robot Spline Scene, Next.js 16, React 19, Three.js, and Framer Motion",
+    "analyzedAt": "2026-07-17T22:47:22.351Z",
+    "gitCommitHash": "HEAD"
+  },
+  "nodes": [
+    {
+      "id": "file:components/ui/card.tsx",
+      "type": "file",
+      "name": "card.tsx",
+      "filePath": "components/ui/card.tsx",
+      "summary": "Re-usable UI card primitive components with variants (Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter) styled with Tailwind CSS.",
+      "tags": [
+        "component",
+        "ui",
+        "card",
+        "tailwind"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:components/ui/demo.tsx",
+      "type": "file",
+      "name": "demo.tsx",
+      "filePath": "components/ui/demo.tsx",
+      "summary": "Contains SplineSceneBasic which renders the 3D Cyber-Robot Spline scene with lazy loading and synchronized multi-phase floating card typing animation.",
+      "tags": [
+        "component",
+        "3d",
+        "spline",
+        "animation",
+        "entry-point"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:components/ui/demo.tsx:SplineSceneBasic",
+      "type": "function",
+      "name": "SplineSceneBasic",
+      "filePath": "components/ui/demo.tsx",
+      "lineRange": [
+        27,
+        335
+      ],
+      "summary": "Orchestrates the 3-phase zoom, card entry, and typing animation for the Cyber-Robot 3D scene.",
+      "tags": [
+        "component",
+        "3d",
+        "animation",
+        "spline"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:components/ui/splite.tsx",
+      "type": "file",
+      "name": "splite.tsx",
+      "filePath": "components/ui/splite.tsx",
+      "summary": "Base wrapper component around @splinetool/react-spline wrapped in Suspense for loading 3D WebGL assets smoothly.",
+      "tags": [
+        "component",
+        "3d",
+        "spline",
+        "suspense"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:components/ui/splite.tsx:SplineScene",
+      "type": "function",
+      "name": "SplineScene",
+      "filePath": "components/ui/splite.tsx",
+      "lineRange": [
+        13,
+        27
+      ],
+      "summary": "Renders the Spline WebGL canvas component inside a styled wrapper.",
+      "tags": [
+        "component",
+        "3d",
+        "spline"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:components/ui/spotlight.tsx",
+      "type": "file",
+      "name": "spotlight.tsx",
+      "filePath": "components/ui/spotlight.tsx",
+      "summary": "Interactive SVG spotlight glow animation effect component used in hero sections.",
+      "tags": [
+        "component",
+        "ui",
+        "animation",
+        "hero"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:components/ui/spotlight.tsx:Spotlight",
+      "type": "function",
+      "name": "Spotlight",
+      "filePath": "components/ui/spotlight.tsx",
+      "lineRange": [
+        13,
+        83
+      ],
+      "summary": "Renders an SVG spotlight gradient beam with customizable fill and position.",
+      "tags": [
+        "component",
+        "ui",
+        "effect"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:lib/utils.ts",
+      "type": "file",
+      "name": "utils.ts",
+      "filePath": "lib/utils.ts",
+      "summary": "Core utility exporting cn function for merging Tailwind CSS classes cleanly using clsx and tailwind-merge.",
+      "tags": [
+        "utility",
+        "tailwind",
+        "helpers"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:lib/utils.ts:cn",
+      "type": "function",
+      "name": "cn",
+      "filePath": "lib/utils.ts",
+      "lineRange": [
+        4,
+        6
+      ],
+      "summary": "Utility function combining clsx and tailwind-merge to cleanly construct className strings.",
+      "tags": [
+        "utility",
+        "tailwind",
+        "helper"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:app/layout.tsx",
+      "type": "file",
+      "name": "layout.tsx",
+      "filePath": "app/layout.tsx",
+      "summary": "Root Next.js layout component configuring metadata, font styles, and wrapping pages with ThemeProvider.",
+      "tags": [
+        "entry-point",
+        "layout",
+        "nextjs",
+        "theme"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:app/layout.tsx:RootLayout",
+      "type": "function",
+      "name": "RootLayout",
+      "filePath": "app/layout.tsx",
+      "lineRange": [
+        11,
+        31
+      ],
+      "summary": "Root layout component defining document structure and global theme providers.",
+      "tags": [
+        "entry-point",
+        "layout"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:components/Navbar.tsx",
+      "type": "file",
+      "name": "Navbar.tsx",
+      "filePath": "components/Navbar.tsx",
+      "summary": "Responsive navigation header component with glassmorphism, mobile drawer, and smooth section scrolling.",
+      "tags": [
+        "component",
+        "navigation",
+        "header",
+        "responsive"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:components/Navbar.tsx:Navbar",
+      "type": "function",
+      "name": "Navbar",
+      "filePath": "components/Navbar.tsx",
+      "lineRange": [
+        17,
+        253
+      ],
+      "summary": "Top navigation bar supporting mobile menu toggle and smooth scroll anchoring.",
+      "tags": [
+        "component",
+        "navigation",
+        "header"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:components/theme-provider.tsx",
+      "type": "file",
+      "name": "theme-provider.tsx",
+      "filePath": "components/theme-provider.tsx",
+      "summary": "Thin wrapper around next-themes providing dark/light mode toggle functionality across the app.",
+      "tags": [
+        "component",
+        "theme",
+        "provider",
+        "dark-mode"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:components/theme-provider.tsx:ThemeProvider",
+      "type": "function",
+      "name": "ThemeProvider",
+      "filePath": "components/theme-provider.tsx",
+      "lineRange": [
+        6,
+        11
+      ],
+      "summary": "Wraps children with NextThemesProvider to manage color theme preferences.",
+      "tags": [
+        "component",
+        "theme",
+        "provider"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.codelens/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": ".codelens/README.md",
+      "summary": "Documentation for CodeLens knowledge graph tools and local repository graph structure.",
+      "tags": [
+        "documentation",
+        "codelens",
+        "overview"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.codelens/instructions.md",
+      "type": "document",
+      "name": "instructions.md",
+      "filePath": ".codelens/instructions.md",
+      "summary": "Detailed operational instructions and mandatory search protocol rules for CodeLens tools.",
+      "tags": [
+        "documentation",
+        "instructions",
+        "codelens"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:.codelens/mcp.json",
+      "type": "config",
+      "name": "mcp.json",
+      "filePath": ".codelens/mcp.json",
+      "summary": "MCP server configuration declaring local SQLite knowledge graph tools and resources.",
+      "tags": [
+        "configuration",
+        "mcp",
+        "codelens"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:AGENTS.md",
+      "type": "document",
+      "name": "AGENTS.md",
+      "filePath": "AGENTS.md",
+      "summary": "Global developer guidelines detailing Next.js breaking changes and mandatory CodeLens triage protocols.",
+      "tags": [
+        "documentation",
+        "guidelines",
+        "agents"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:CLAUDE.md",
+      "type": "document",
+      "name": "CLAUDE.md",
+      "filePath": "CLAUDE.md",
+      "summary": "Brief developer reference pointer file for project agent guidance.",
+      "tags": [
+        "documentation",
+        "reference"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:components.json",
+      "type": "config",
+      "name": "components.json",
+      "filePath": "components.json",
+      "summary": "Shadcn UI component configuration specifying style presets, Tailwind configuration paths, and aliases.",
+      "tags": [
+        "configuration",
+        "ui",
+        "shadcn",
+        "tailwind"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "package.json",
+      "summary": "Project manifest defining dependencies (next, react, @splinetool/react-spline, three, framer-motion) and build scripts.",
+      "tags": [
+        "configuration",
+        "manifest",
+        "dependencies"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "tsconfig.json",
+      "summary": "TypeScript compiler configuration defining strict checking, module resolution, and @/* path aliases.",
+      "tags": [
+        "configuration",
+        "typescript",
+        "compiler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.agents/AGENTS.md",
+      "type": "document",
+      "name": "AGENTS.md",
+      "filePath": ".agents/AGENTS.md",
+      "summary": "Workspace-level agent rules and CodeLens graph mandatory search protocols.",
+      "tags": [
+        "documentation",
+        "guidelines",
+        "agents"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:.codelens/codelens-graph.db",
+      "type": "file",
+      "name": "codelens-graph.db",
+      "filePath": ".codelens/codelens-graph.db",
+      "summary": "Local SQLite database file caching the live symbol knowledge graph.",
+      "tags": [
+        "database",
+        "cache",
+        "codelens"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:.ua/.understandignore",
+      "type": "file",
+      "name": ".understandignore",
+      "filePath": ".ua/.understandignore",
+      "summary": "Custom ignore pattern configuration excluding test files and specific directories from analysis.",
+      "tags": [
+        "configuration",
+        "ignore",
+        "analysis"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:app/globals.css",
+      "type": "file",
+      "name": "globals.css",
+      "filePath": "app/globals.css",
+      "summary": "Global styling definitions featuring custom CSS variables, dark mode color tokens, and smooth scroll behaviors.",
+      "tags": [
+        "styles",
+        "css",
+        "globals",
+        "tailwind"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:app/page.tsx",
+      "type": "file",
+      "name": "page.tsx",
+      "filePath": "app/page.tsx",
+      "summary": "Main landing page rendering interactive sections (TechBanner, AboutSection, ProjectsSection) and lazy-loading SplineSceneBasic via ViewportSection.",
+      "tags": [
+        "entry-point",
+        "page",
+        "landing",
+        "nextjs"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:app/page.tsx:HeroSkeleton",
+      "type": "function",
+      "name": "HeroSkeleton",
+      "filePath": "app/page.tsx",
+      "lineRange": [
+        8,
+        19
+      ],
+      "summary": "Placeholder loading skeleton displayed while the 3D Spline scene initializes.",
+      "tags": [
+        "component",
+        "skeleton",
+        "loading"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:app/page.tsx:ViewportSection",
+      "type": "function",
+      "name": "ViewportSection",
+      "filePath": "app/page.tsx",
+      "lineRange": [
+        62,
+        101
+      ],
+      "summary": "IntersectionObserver wrapper that defers mounting children until scrolled near viewport.",
+      "tags": [
+        "component",
+        "performance",
+        "lazy-load"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:app/page.tsx:Home",
+      "type": "function",
+      "name": "Home",
+      "filePath": "app/page.tsx",
+      "lineRange": [
+        103,
+        127
+      ],
+      "summary": "Main homepage rendering Hero 3D scene, Tech banner, About tabs, and Projects grid.",
+      "tags": [
+        "entry-point",
+        "page"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:app/test-robot/page.tsx",
+      "type": "file",
+      "name": "page.tsx",
+      "filePath": "app/test-robot/page.tsx",
+      "summary": "Dedicated test bench page rendering the standalone 3D Spline robot scene with detailed timing and typing diagnostics.",
+      "tags": [
+        "page",
+        "test",
+        "3d",
+        "spline"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:app/test-robot/page.tsx:TestRobotPage",
+      "type": "function",
+      "name": "TestRobotPage",
+      "filePath": "app/test-robot/page.tsx",
+      "lineRange": [
+        34,
+        222
+      ],
+      "summary": "Standalone test page demonstrating robot zoom, card rise, and typing effect.",
+      "tags": [
+        "page",
+        "test",
+        "3d"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:components/AboutSection.tsx",
+      "type": "file",
+      "name": "AboutSection.tsx",
+      "filePath": "components/AboutSection.tsx",
+      "summary": "Interactive about section featuring dynamic tabs, skill showcases, and personal background cards.",
+      "tags": [
+        "component",
+        "about",
+        "skills",
+        "interactive"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:components/AboutSection.tsx:Counter",
+      "type": "function",
+      "name": "Counter",
+      "filePath": "components/AboutSection.tsx",
+      "lineRange": [
+        8,
+        73
+      ],
+      "summary": "Function Counter inside components/AboutSection.tsx.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:components/AboutSection.tsx:AboutSection",
+      "type": "function",
+      "name": "AboutSection",
+      "filePath": "components/AboutSection.tsx",
+      "lineRange": [
+        93,
+        189
+      ],
+      "summary": "Renders tabbed navigation between personal story, technical skills, and background milestones.",
+      "tags": [
+        "component",
+        "about"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:components/ProjectsSection.tsx",
+      "type": "file",
+      "name": "ProjectsSection.tsx",
+      "filePath": "components/ProjectsSection.tsx",
+      "summary": "Portfolio projects grid showcasing featured applications with interactive modal details and live links.",
+      "tags": [
+        "component",
+        "projects",
+        "portfolio",
+        "grid"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:components/ProjectsSection.tsx:ProjectsSection",
+      "type": "function",
+      "name": "ProjectsSection",
+      "filePath": "components/ProjectsSection.tsx",
+      "lineRange": [
+        34,
+        126
+      ],
+      "summary": "Displays interactive cards for key portfolio projects with modal inspection.",
+      "tags": [
+        "component",
+        "projects"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:components/TechBanner.tsx",
+      "type": "file",
+      "name": "TechBanner.tsx",
+      "filePath": "components/TechBanner.tsx",
+      "summary": "Animated horizontal ticker bar highlighting technologies (Next.js, React, Three.js, Tailwind CSS).",
+      "tags": [
+        "component",
+        "banner",
+        "animation",
+        "ticker"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:components/TechBanner.tsx:TechBanner",
+      "type": "function",
+      "name": "TechBanner",
+      "filePath": "components/TechBanner.tsx",
+      "lineRange": [
+        18,
+        46
+      ],
+      "summary": "Continuous horizontal scrolling marquee displaying supported modern web technologies.",
+      "tags": [
+        "component",
+        "banner"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:components/TestRobotScene.tsx",
+      "type": "file",
+      "name": "TestRobotScene.tsx",
+      "filePath": "components/TestRobotScene.tsx",
+      "summary": "Alternate implementation of the 3D robot stage with custom event handlers and camera zoom controls.",
+      "tags": [
+        "component",
+        "3d",
+        "spline",
+        "scene"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:components/TestRobotScene.tsx:AnimatedSentinel",
+      "type": "function",
+      "name": "AnimatedSentinel",
+      "filePath": "components/TestRobotScene.tsx",
+      "lineRange": [
+        11,
+        200
+      ],
+      "summary": "Function AnimatedSentinel inside components/TestRobotScene.tsx.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:components/TestRobotScene.tsx:TestRobotScene",
+      "type": "function",
+      "name": "TestRobotScene",
+      "filePath": "components/TestRobotScene.tsx",
+      "lineRange": [
+        205,
+        253
+      ],
+      "summary": "Renders alternative 3D Spline scene stage with event listeners.",
+      "tags": [
+        "component",
+        "3d",
+        "spline"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:eslint.config.mjs",
+      "type": "file",
+      "name": "eslint.config.mjs",
+      "filePath": "eslint.config.mjs",
+      "summary": "ESLint flat config setting up Next.js linting rules.",
+      "tags": [
+        "configuration",
+        "linter",
+        "eslint"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:next-env.d.ts",
+      "type": "file",
+      "name": "next-env.d.ts",
+      "filePath": "next-env.d.ts",
+      "summary": "Next.js TypeScript environment declarations.",
+      "tags": [
+        "type-definition",
+        "nextjs",
+        "typescript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:next.config.ts",
+      "type": "file",
+      "name": "next.config.ts",
+      "filePath": "next.config.ts",
+      "summary": "Next.js framework configuration file.",
+      "tags": [
+        "configuration",
+        "nextjs",
+        "build"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:postcss.config.mjs",
+      "type": "file",
+      "name": "postcss.config.mjs",
+      "filePath": "postcss.config.mjs",
+      "summary": "PostCSS configuration enabling Tailwind CSS processing.",
+      "tags": [
+        "configuration",
+        "postcss",
+        "tailwind"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:components/ui/card.tsx",
+      "target": "file:lib/utils.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:components/ui/demo.tsx",
+      "target": "file:components/ui/card.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:components/ui/demo.tsx",
+      "target": "file:components/ui/splite.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:components/ui/demo.tsx",
+      "target": "file:components/ui/spotlight.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:components/ui/demo.tsx",
+      "target": "function:components/ui/demo.tsx:SplineSceneBasic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:components/ui/demo.tsx",
+      "target": "function:components/ui/demo.tsx:SplineSceneBasic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:components/ui/splite.tsx",
+      "target": "function:components/ui/splite.tsx:SplineScene",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:components/ui/splite.tsx",
+      "target": "function:components/ui/splite.tsx:SplineScene",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:components/ui/spotlight.tsx",
+      "target": "file:lib/utils.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:components/ui/spotlight.tsx",
+      "target": "function:components/ui/spotlight.tsx:Spotlight",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:components/ui/spotlight.tsx",
+      "target": "function:components/ui/spotlight.tsx:Spotlight",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:lib/utils.ts",
+      "target": "function:lib/utils.ts:cn",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:lib/utils.ts",
+      "target": "function:lib/utils.ts:cn",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:app/layout.tsx",
+      "target": "file:app/globals.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/layout.tsx",
+      "target": "file:components/Navbar.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/layout.tsx",
+      "target": "file:components/theme-provider.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/layout.tsx",
+      "target": "function:app/layout.tsx:RootLayout",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/layout.tsx",
+      "target": "function:app/layout.tsx:RootLayout",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:components/Navbar.tsx",
+      "target": "file:lib/utils.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:components/Navbar.tsx",
+      "target": "function:components/Navbar.tsx:Navbar",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:components/Navbar.tsx",
+      "target": "function:components/Navbar.tsx:Navbar",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:components/theme-provider.tsx",
+      "target": "function:components/theme-provider.tsx:ThemeProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:components/theme-provider.tsx",
+      "target": "function:components/theme-provider.tsx:ThemeProvider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "document:AGENTS.md",
+      "target": "file:app/page.tsx",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:package.json",
+      "target": "file:app/page.tsx",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:tsconfig.json",
+      "target": "file:app/page.tsx",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:tsconfig.json",
+      "target": "file:app/layout.tsx",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "document:.agents/AGENTS.md",
+      "target": "file:app/page.tsx",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:app/page.tsx",
+      "target": "function:app/page.tsx:HeroSkeleton",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/page.tsx",
+      "target": "function:app/page.tsx:ViewportSection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/page.tsx",
+      "target": "function:app/page.tsx:Home",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/page.tsx",
+      "target": "function:app/page.tsx:Home",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:app/test-robot/page.tsx",
+      "target": "function:app/test-robot/page.tsx:TestRobotPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/test-robot/page.tsx",
+      "target": "function:app/test-robot/page.tsx:TestRobotPage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:components/AboutSection.tsx",
+      "target": "function:components/AboutSection.tsx:Counter",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:components/AboutSection.tsx",
+      "target": "function:components/AboutSection.tsx:AboutSection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:components/AboutSection.tsx",
+      "target": "function:components/AboutSection.tsx:AboutSection",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:components/ProjectsSection.tsx",
+      "target": "function:components/ProjectsSection.tsx:ProjectsSection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:components/ProjectsSection.tsx",
+      "target": "function:components/ProjectsSection.tsx:ProjectsSection",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:components/TechBanner.tsx",
+      "target": "function:components/TechBanner.tsx:TechBanner",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:components/TechBanner.tsx",
+      "target": "function:components/TechBanner.tsx:TechBanner",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:components/TestRobotScene.tsx",
+      "target": "function:components/TestRobotScene.tsx:AnimatedSentinel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:components/TestRobotScene.tsx",
+      "target": "function:components/TestRobotScene.tsx:TestRobotScene",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:components/TestRobotScene.tsx",
+      "target": "function:components/TestRobotScene.tsx:TestRobotScene",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:postcss.config.mjs",
+      "target": "file:app/globals.css",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ],
+  "layers": [
+    {
+      "id": "layer:presentation-ui",
+      "name": "Presentation & UI Components",
+      "description": "Re-usable UI elements, navigation headers, theme wrappers, card primitives, and global stylesheet definitions.",
+      "nodeIds": [
+        "file:components/Navbar.tsx",
+        "file:components/AboutSection.tsx",
+        "file:components/ProjectsSection.tsx",
+        "file:components/TechBanner.tsx",
+        "file:components/ui/card.tsx",
+        "file:components/theme-provider.tsx",
+        "file:app/globals.css"
+      ]
+    },
+    {
+      "id": "layer:3d-interactive-engine",
+      "name": "3D Interactive Spline Engine",
+      "description": "Components orchestrating WebGL 3D Spline scene rendering, lazy-loaded viewport containers, spotlight effects, and human-like typing animations.",
+      "nodeIds": [
+        "file:components/ui/demo.tsx",
+        "file:components/ui/splite.tsx",
+        "file:components/ui/spotlight.tsx",
+        "file:components/TestRobotScene.tsx"
+      ]
+    },
+    {
+      "id": "layer:application-pages",
+      "name": "Application Pages & Routing",
+      "description": "Next.js App Router entry pages (`app/page.tsx`, `app/test-robot/page.tsx`) and root layout structure (`app/layout.tsx`).",
+      "nodeIds": [
+        "file:app/layout.tsx",
+        "file:app/page.tsx",
+        "file:app/test-robot/page.tsx"
+      ]
+    },
+    {
+      "id": "layer:core-functions-utilities",
+      "name": "Core Functions & Utilities",
+      "description": "Individual extracted function nodes (`cn`, `SplineSceneBasic`, `Home`, etc.) and utility module files.",
+      "nodeIds": [
+        "file:lib/utils.ts",
+        "function:lib/utils.ts:cn",
+        "function:components/ui/demo.tsx:SplineSceneBasic",
+        "function:components/ui/splite.tsx:SplineScene",
+        "function:components/ui/spotlight.tsx:Spotlight",
+        "function:components/Navbar.tsx:Navbar",
+        "function:components/theme-provider.tsx:ThemeProvider",
+        "function:app/layout.tsx:RootLayout",
+        "function:app/page.tsx:Home",
+        "function:app/page.tsx:ViewportSection",
+        "function:app/page.tsx:HeroSkeleton",
+        "function:app/test-robot/page.tsx:TestRobotPage",
+        "function:components/AboutSection.tsx:AboutSection",
+        "function:components/ProjectsSection.tsx:ProjectsSection",
+        "function:components/TechBanner.tsx:TechBanner",
+        "function:components/TestRobotScene.tsx:TestRobotScene",
+        "function:components/AboutSection.tsx:Counter",
+        "function:components/TestRobotScene.tsx:AnimatedSentinel"
+      ]
+    },
+    {
+      "id": "layer:build-configuration",
+      "name": "Build & Framework Configuration",
+      "description": "Next.js, Tailwind CSS, TypeScript, and ESLint configuration files controlling application compilation and styling.",
+      "nodeIds": [
+        "config:package.json",
+        "config:tsconfig.json",
+        "config:components.json",
+        "file:next.config.ts",
+        "file:postcss.config.mjs",
+        "file:eslint.config.mjs",
+        "file:next-env.d.ts"
+      ]
+    },
+    {
+      "id": "layer:project-documentation",
+      "name": "Project & AI Agent Guidelines",
+      "description": "Markdown documentation files (`AGENTS.md`, `README.md`, `CLAUDE.md`) providing developer protocols and CodeLens rules.",
+      "nodeIds": [
+        "document:AGENTS.md",
+        "document:CLAUDE.md",
+        "document:.agents/AGENTS.md",
+        "document:.codelens/README.md",
+        "document:.codelens/instructions.md"
+      ]
+    },
+    {
+      "id": "layer:knowledge-infrastructure",
+      "name": "Knowledge Graph Infrastructure & Cache",
+      "description": "MCP server configuration, SQLite graph database cache (`.codelens-graph.db`), and analysis ignore pattern files (`.understandignore`).",
+      "nodeIds": [
+        "config:.codelens/mcp.json",
+        "file:.codelens/codelens-graph.db",
+        "file:.ua/.understandignore"
+      ]
+    }
+  ],
+  "tour": [
+    {
+      "order": 1,
+      "title": "Project & Knowledge Graph Overview",
+      "description": "Start here to understand the portfolio's developer guidelines and local CodeLens knowledge graph architecture. These documents outline mandatory search protocols and explain how symbols are tracked in real-time across the codebase.",
+      "nodeIds": [
+        "document:AGENTS.md",
+        "document:.codelens/README.md",
+        "document:.codelens/instructions.md"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "Application Bootstrapping & Layout",
+      "description": "The root layout bootstraps the Next.js App Router structure, configuring metadata, font styling, and wrapping all routes with ThemeProvider for seamless dark/light mode transitions and global CSS variables.",
+      "nodeIds": [
+        "file:app/layout.tsx",
+        "function:app/layout.tsx:RootLayout",
+        "file:components/theme-provider.tsx",
+        "file:app/globals.css"
+      ],
+      "languageLesson": "Next.js App Router root layouts (`app/layout.tsx`) must wrap children and define `<html>` and `<body>` tags, allowing Server Components to inject SEO metadata and client theme providers cleanly."
+    },
+    {
+      "order": 3,
+      "title": "Homepage Architecture & Lazy Loading",
+      "description": "The main homepage orchestrates hero sections and content grids while maintaining blazing-fast initial load times. It uses a custom ViewportSection (IntersectionObserver) to defer mounting heavy 3D assets until the user scrolls close.",
+      "nodeIds": [
+        "file:app/page.tsx",
+        "function:app/page.tsx:Home",
+        "function:app/page.tsx:ViewportSection",
+        "function:app/page.tsx:HeroSkeleton"
+      ],
+      "languageLesson": "Using `IntersectionObserver` with `rootMargin` allows pre-fetching components slightly before they enter the viewport, giving users instant interaction without paying the upfront WebGL initialization penalty."
+    },
+    {
+      "order": 4,
+      "title": "Core 3D Cyber-Robot Spline Scene",
+      "description": "This is the centerpiece of the portfolio. `SplineSceneBasic` loads the WebGL Cyber-Robot stage via Suspense and synchronizes three distinct animation phases: initial zoom-out, glass card rise-up, and human-like typewriter text generation.",
+      "nodeIds": [
+        "file:components/ui/demo.tsx",
+        "function:components/ui/demo.tsx:SplineSceneBasic",
+        "file:components/ui/splite.tsx",
+        "function:components/ui/splite.tsx:SplineScene"
+      ],
+      "languageLesson": "React `Suspense` combined with `next/dynamic` (`ssr: false`) prevents server-side rendering crashes for GPU-dependent Three.js/Spline canvases while showing a smooth loading skeleton."
+    },
+    {
+      "order": 5,
+      "title": "Interactive UI & Navigation Components",
+      "description": "Explore the visual presentation layer, including the glassmorphic responsive Navbar with smooth scroll anchoring, the tabbed AboutSection for personal skills, the ProjectsSection grid with modals, and the animated TechBanner ticker.",
+      "nodeIds": [
+        "file:components/Navbar.tsx",
+        "function:components/Navbar.tsx:Navbar",
+        "file:components/AboutSection.tsx",
+        "file:components/ProjectsSection.tsx",
+        "file:components/TechBanner.tsx"
+      ]
+    },
+    {
+      "order": 6,
+      "title": "Design Primitives & Tailwind Utilities",
+      "description": "The foundational styling primitives rely on the `cn` utility function (`clsx` + `tailwind-merge`) to resolve conditional CSS classes without conflicts, powering reusable variant blocks like `Card` and `Spotlight`.",
+      "nodeIds": [
+        "file:lib/utils.ts",
+        "function:lib/utils.ts:cn",
+        "file:components/ui/card.tsx",
+        "file:components/ui/spotlight.tsx"
+      ],
+      "languageLesson": "`tailwind-merge` is crucial when building reusable UI components because it overrides conflicting utility classes (e.g., `p-4` vs `p-8`) deterministically instead of depending on CSS stylesheet cascade order."
+    },
+    {
+      "order": 7,
+      "title": "3D Animation Test Bench & Diagnostics",
+      "description": "A dedicated experimental environment (`app/test-robot/page.tsx`) that isolates the Spline canvas and Framer Motion timeline. This allows testing camera zoom controls and character typing intervals independently of the main homepage.",
+      "nodeIds": [
+        "file:app/test-robot/page.tsx",
+        "function:app/test-robot/page.tsx:TestRobotPage",
+        "file:components/TestRobotScene.tsx"
+      ]
+    },
+    {
+      "order": 8,
+      "title": "Build & Framework Configuration",
+      "description": "Conclude the tour by examining the build system: Next.js framework settings, strict TypeScript compiler paths (`@/*`), package dependencies, and PostCSS pipeline enabling modern Tailwind CSS processing.",
+      "nodeIds": [
+        "config:package.json",
+        "config:tsconfig.json",
+        "config:components.json",
+        "file:next.config.ts",
+        "file:postcss.config.mjs"
+      ]
+    }
+  ]
+}
