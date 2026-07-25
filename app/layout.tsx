@@ -5,7 +5,7 @@ import { Navbar } from "@/components/Navbar";
 import { CustomCursor } from "@/components/CustomCursor";
 
 export const metadata: Metadata = {
-  title: "FKTECH - Interactive 3D Portfolio",
+  title: "Farman Khan - Interactive 3D Portfolio",
   description: "Bring your UI to life with beautiful 3D scenes and dynamic interactions.",
 };
 

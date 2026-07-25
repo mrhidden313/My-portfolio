@@ -11,7 +11,7 @@ import { useRouter, usePathname } from "next/navigation";
 
 const navItems = [
   { name: "Home", href: "/" },
-  { name: "Projects", href: "/#projects" },
+  { name: "Projects", href: "/projects" },
   { name: "About", href: "/about" },
   { name: "Contact", href: "/contact" },
 ];
@@ -73,7 +73,7 @@ export function Navbar() {
                 className="h-7 md:h-8 w-auto object-contain transition-transform duration-300 group-hover:scale-110"
               />
               <span className="font-black text-sm md:text-base tracking-wider text-black dark:text-white group-hover:text-[#16a34a] dark:group-hover:text-[#22c55e] transition-colors">
-                FKTECH
+                FARMAN KHAN
               </span>
             </motion.div>
 
@@ -184,7 +184,7 @@ export function Navbar() {
               >
                 <img src="/logo.png" alt="FKTECH Logo" className="h-6 w-auto object-contain" />
                 <span className="font-black text-xs md:text-sm tracking-wider text-black dark:text-white">
-                  FKTECH
+                  FARMAN KHAN
                 </span>
               </motion.div>
 
