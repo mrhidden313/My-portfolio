@@ -3,6 +3,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Navbar } from "@/components/Navbar";
 import { CustomCursor } from "@/components/CustomCursor";
+import { GlobalBackground } from "@/components/GlobalBackground";
 
 export const metadata: Metadata = {
   title: "FKTECH - Interactive 3D Portfolio",
@@ -25,7 +26,9 @@ export default function RootLayout({
         >
           <CustomCursor />
           <Navbar />
-          {children}
+          <GlobalBackground>
+            {children}
+          </GlobalBackground>
         </ThemeProvider>
       </body>
     </html>
