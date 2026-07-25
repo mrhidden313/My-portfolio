@@ -138,14 +138,7 @@ export function ProjectsSection() {
                   {item.title}
                 </h3>
                 
-                {/* Tech Pills */}
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {item.tech.map((t) => (
-                    <span key={t} className="px-4 py-1.5 text-xs font-bold uppercase tracking-widest rounded-lg bg-neutral-100 dark:bg-white/5 text-neutral-600 dark:text-neutral-300 border border-neutral-200 dark:border-white/10 group-hover:border-[#22c55e]/30 transition-colors shadow-sm">
-                      {t}
-                    </span>
-                  ))}
-                </div>
+                {/* Tech Pills (Removed in favor of icons above) */}
 
                 <p className="text-base text-neutral-600 dark:text-neutral-400 leading-relaxed font-medium">
                   {item.description}

@@ -168,8 +168,8 @@ const AboutSection = dynamic(
   { loading: () => <SectionSkeleton /> }
 );
 
-const ProjectsSection = dynamic(
-  () => import("@/components/ProjectsSection").then((mod) => mod.ProjectsSection),
+const HomeProjects = dynamic(
+  () => import("@/components/HomeProjects").then((mod) => mod.HomeProjects),
   { loading: () => <SectionSkeleton /> }
 );
 
@@ -556,8 +556,9 @@ export default function FinalPortfolioPage() {
           <AboutSection />
         </ViewportSection>
 
-        <ViewportSection minHeight="700px">
-          <ProjectsSection />
+        {/* Section: PROJECTS PREVIEW */}
+        <ViewportSection minHeight="800px">
+          <HomeProjects />
         </ViewportSection>
       </section>
 
