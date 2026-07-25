@@ -212,7 +212,7 @@ export default function FinalPortfolioPage() {
   const imgScale = useTransform(scrollY, [0, 800], [1.2, 1.0]);
 
   // Make the background code scroll up slower than the page (parallax effect)
-  const codeScrollY = useTransform(scrollY, (y) => -y * 0.7);
+  const codeScrollY = useTransform(scrollY, (y) => -y * 1.0);
 
   // Flashlight Mouse Tracking
   const mouseX = useMotionValue(0);
@@ -228,7 +228,7 @@ export default function FinalPortfolioPage() {
   }
 
   // Create the dynamic radial gradient mask
-  const maskImage = useMotionTemplate`radial-gradient(350px circle at ${smoothMouseX}px ${smoothMouseY}px, black 0%, transparent 100%)`;
+  const maskImage = useMotionTemplate`radial-gradient(450px circle at ${smoothMouseX}px ${smoothMouseY}px, black 0%, transparent 100%)`;
 
   return (
     <main 
@@ -239,7 +239,7 @@ export default function FinalPortfolioPage() {
       {/* --- FLASHLIGHT REVEAL CODING BACKGROUND --- */}
       {/* Hidden by default, only visible under the mouse cursor! */}
       <motion.div 
-        className="fixed inset-0 z-0 pointer-events-none select-none overflow-hidden opacity-[0.25] text-[#22c55e] font-mono text-xs md:text-sm leading-relaxed"
+        className="fixed inset-0 z-0 pointer-events-none select-none overflow-hidden opacity-[0.35] text-[#22c55e] font-mono text-xs md:text-sm leading-relaxed"
         style={{
           WebkitMaskImage: maskImage,
           maskImage: maskImage
@@ -248,9 +248,9 @@ export default function FinalPortfolioPage() {
         <motion.div style={{ y: codeScrollY }} className="w-full flex flex-col gap-12 pt-8 pb-32">
           {[...Array(6)].map((_, i) => (
             <div key={i} className="flex justify-between px-4 md:px-12 w-full">
-              <pre className="hidden md:block w-1/3 opacity-80">{BG_CODE_1}</pre>
-              <pre className="w-full md:w-1/3 opacity-80">{BG_CODE_2}</pre>
-              <pre className="hidden lg:block w-1/3 opacity-80">{BG_CODE_3}</pre>
+              <pre className="hidden md:block w-1/3 opacity-100">{BG_CODE_1}</pre>
+              <pre className="w-full md:w-1/3 opacity-100">{BG_CODE_2}</pre>
+              <pre className="hidden lg:block w-1/3 opacity-100">{BG_CODE_3}</pre>
             </div>
           ))}
         </motion.div>
