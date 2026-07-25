@@ -18,7 +18,7 @@ export default function ContactPage() {
     
     // EmailJS credentials
     const serviceID = "service_b6pe05t";
-    const templateID = "YOUR_TEMPLATE_ID_HERE"; // <-- Yahan Template ID dalni hai
+    const templateID = "template_87t4l8c";
     const publicKey = "N9nRq4DxLG8qQmy0t";
 
     if (!formRef.current) return;
