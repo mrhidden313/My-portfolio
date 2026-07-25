@@ -6,29 +6,28 @@ import { ArrowUpRight, ArrowRight, Sparkles } from "lucide-react";
 
 const projects = [
   {
-    title: "InstantFlow SAAS",
-    category: "Workflow Automation",
+    title: "AK FLOW (Adil Manager)",
+    category: "B2B SaaS Platform",
+    description: "A secure multi-tenant SaaS platform built with SvelteKit and Node.js. It allows super admins to onboard agencies, assign managers, and handle ticketing and automated commission payouts.",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=700&auto=format&fit=crop",
   },
   {
-    title: "Copyright Testing Tool",
-    category: "AI / Video Processing",
+    title: "MJ Marketing Portal",
+    category: "Real Estate Corporate Site",
+    description: "A professional and high-trust marketing website developed for MJ Group of Companies. Features robust branding, service listings, and property valuation integration for real estate consultants.",
+    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=700&auto=format&fit=crop",
+  },
+  {
+    title: "Copyright Testing Engine",
+    category: "AI / Video Automation",
+    description: "An automated utility leveraging AI and Web Workers to analyze and test video/audio content against strict YouTube and TikTok copyright protection algorithms.",
     image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=700&auto=format&fit=crop",
   },
   {
-    title: "Sudais Digital Agency",
-    category: "Modern Web Platform",
+    title: "InstantFlow SAAS",
+    category: "DevOps & Workflow Builder",
+    description: "A robust backend architecture designed for managing automated background tasks, executing remote SSH commands, and orchestrating complex system-level workflows.",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=700&auto=format&fit=crop",
-  },
-  {
-    title: "DVM University Portal",
-    category: "EdTech Solution",
-    image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=700&auto=format&fit=crop",
-  },
-  {
-    title: "MJ Group Corporate CRM",
-    category: "Enterprise Software",
-    image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=700&auto=format&fit=crop",
   },
 ];
 
@@ -84,10 +83,13 @@ export function ProjectsSection() {
             {/* Content & Action Button (`+30% stronger text and button dynamics`) */}
             <div className="mt-7 flex items-end justify-between gap-4 pt-2">
               <div className="flex-1">
-                <h3 className="font-black text-xl md:text-2xl text-black dark:text-white group-hover:text-[#16a34a] dark:group-hover:text-[#22c55e] group-hover:translate-x-2 group-hover:scale-105 transition-all duration-300 inline-block drop-shadow-sm dark:group-hover:drop-shadow-[0_0_15px_rgba(34,197,94,0.8)]">
+                <h3 className="font-black text-xl md:text-2xl text-black dark:text-white group-hover:text-[#16a34a] dark:group-hover:text-[#22c55e] group-hover:translate-x-2 transition-all duration-300 inline-block drop-shadow-sm dark:group-hover:drop-shadow-[0_0_15px_rgba(34,197,94,0.8)]">
                   {item.title}
                 </h3>
-                <p className="text-xs md:text-sm text-neutral-500 dark:text-neutral-400 font-bold mt-1.5 group-hover:translate-x-2 group-hover:text-black dark:group-hover:text-neutral-200 transition-all duration-300">
+                <p className="text-xs text-neutral-600 dark:text-neutral-400 mt-2 mb-3 line-clamp-3 leading-relaxed group-hover:text-neutral-900 dark:group-hover:text-neutral-300 transition-colors duration-300">
+                  {item.description}
+                </p>
+                <p className="text-xs md:text-sm text-neutral-500 dark:text-neutral-400 font-bold group-hover:translate-x-2 group-hover:text-[#16a34a] dark:group-hover:text-[#22c55e] transition-all duration-300">
                   Explore Full Case Study →
                 </p>
               </div>
