@@ -267,9 +267,8 @@ export default function FinalPortfolioPage() {
 
         {/* The Image — 10% larger */}
         <motion.div
-          style={{ scale: imgScale }}
+          style={{ scale: imgScale, translateY: "calc(15vh + 55px)" }}
           className="absolute bottom-0 right-0 w-full max-w-[1320px] h-[104vh] md:h-[110vh] z-10 origin-bottom translate-x-[15%] md:translate-x-[5%] lg:translate-x-[0%]"
-          style={{ translateY: "calc(15vh + 55px)" }}
         >
           <motion.div
             initial={{ opacity: 0, x: 200 }}
