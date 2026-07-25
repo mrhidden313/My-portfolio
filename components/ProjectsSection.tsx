@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { motion } from "framer-motion";
-import { ArrowUpRight, Github, ExternalLink } from "lucide-react";
+import { ArrowUpRight, Code2, ExternalLink } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const projects = [
@@ -105,7 +105,7 @@ export function ProjectsSection() {
               {/* Action Buttons (Hover Reveal) */}
               <div className="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-500">
                 <a href={item.github} className="p-2.5 rounded-full bg-black/60 backdrop-blur-md text-white hover:bg-[#22c55e] hover:text-black transition-colors">
-                  <Github className="w-4 h-4" />
+                  <Code2 className="w-4 h-4" />
                 </a>
                 <a href={item.live} className="p-2.5 rounded-full bg-black/60 backdrop-blur-md text-white hover:bg-[#22c55e] hover:text-black transition-colors">
                   <ExternalLink className="w-4 h-4" />
