@@ -6,28 +6,29 @@ import { ArrowUpRight, ArrowRight, Sparkles } from "lucide-react";
 
 const projects = [
   {
-    title: "E-Commerce Platform",
-    category: "Full-stack solution",
-    image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=700&auto=format&fit=crop",
+    title: "InstantFlow SAAS",
+    category: "Workflow Automation",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=700&auto=format&fit=crop",
   },
   {
-    title: "Task Management App",
-    category: "Productivity tool",
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=700&auto=format&fit=crop",
+    title: "Copyright Testing Tool",
+    category: "AI / Video Processing",
+    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=700&auto=format&fit=crop",
   },
   {
-    title: "Portfolio Website",
-    category: "Personal branding",
-    image:
-      "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=700&auto=format&fit=crop",
+    title: "Sudais Digital Agency",
+    category: "Modern Web Platform",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=700&auto=format&fit=crop",
   },
   {
-    title: "Chat Application",
-    category: "Real-time messaging",
-    image:
-      "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=700&auto=format&fit=crop",
+    title: "DVM University Portal",
+    category: "EdTech Solution",
+    image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=700&auto=format&fit=crop",
+  },
+  {
+    title: "MJ Group Corporate CRM",
+    category: "Enterprise Software",
+    image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=700&auto=format&fit=crop",
   },
 ];
 
