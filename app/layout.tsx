@@ -24,9 +24,9 @@ export default function RootLayout({
           enableSystem={false}
           disableTransitionOnChange={false}
         >
-          <CustomCursor />
-          <Navbar />
           <GlobalBackground>
+            <CustomCursor />
+            <Navbar />
             {children}
           </GlobalBackground>
         </ThemeProvider>

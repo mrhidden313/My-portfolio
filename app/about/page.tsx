@@ -52,7 +52,7 @@ export default function AboutPage() {
   const y = useTransform(scrollY, [0, 400], [-20, 90]);
 
   return (
-    <main className="min-h-screen bg-[#050505] text-white relative selection:bg-[#22c55e]/30 pb-32 font-sans">
+    <main className="min-h-screen bg-transparent text-white relative selection:bg-[#22c55e]/30 pb-32 font-sans">
 
       {/* ── HERO BG IMAGE ── */}
       <div className="absolute top-0 left-0 w-full h-[160vh] z-0 overflow-hidden flex justify-center">

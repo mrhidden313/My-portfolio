@@ -37,7 +37,7 @@ export default function ContactPage() {
   };
 
   return (
-    <main className="min-h-screen bg-[#050505] text-white relative selection:bg-[#22c55e]/30 pt-24 md:pt-32 pb-24 font-sans overflow-hidden">
+    <main className="min-h-screen bg-transparent text-white relative selection:bg-[#22c55e]/30 pt-24 md:pt-32 pb-24 font-sans overflow-hidden">
       
       {/* ── BACKGROUND GLOWS ── */}
       <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-[radial-gradient(circle_at_center,rgba(34,197,94,0.08)_0%,transparent_70%)] pointer-events-none mix-blend-screen" />

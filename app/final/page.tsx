@@ -89,7 +89,7 @@ export default function FinalPortfolioPage() {
   const imgScale = useTransform(scrollY, [0, 800], [1.2, 1.0]);
 
   return (
-    <main className="min-h-screen bg-[#050505] text-white relative font-sans selection:bg-[#22c55e]/30">
+    <main className="min-h-screen bg-transparent text-white relative font-sans selection:bg-[#22c55e]/30">
 
 
 
