@@ -2,128 +2,146 @@
 
 import * as React from "react";
 import { motion } from "framer-motion";
-import { ArrowUpRight, ArrowRight, Sparkles } from "lucide-react";
+import { ArrowUpRight, Github, ExternalLink } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 const projects = [
   {
-    title: "AK FLOW (Adil Manager)",
+    title: "AK FLOW",
     category: "B2B SaaS Platform",
-    description: "A secure multi-tenant SaaS platform built with SvelteKit and Node.js. It allows super admins to onboard agencies, assign managers, and handle ticketing and automated commission payouts.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=700&auto=format&fit=crop",
+    description: "A secure multi-tenant SaaS platform engineered with a strict SvelteKit SPA frontend and an Express backend. Leverages Socket.IO for real-time company-scoped chat and robust multi-tenancy via Prisma.",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+    tech: ["SvelteKit", "Node.js", "Socket.IO", "Prisma"],
+    featured: true,
+    github: "#",
+    live: "#"
   },
   {
-    title: "MJ Marketing Portal",
-    category: "Real Estate Corporate Site",
-    description: "A professional and high-trust marketing website developed for MJ Group of Companies. Features robust branding, service listings, and property valuation integration for real estate consultants.",
-    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=700&auto=format&fit=crop",
+    title: "InstantFlow SAAS",
+    category: "DevOps & Workflow Automation",
+    description: "A robust backend architecture designed for managing automated background tasks, executing remote SSH commands, and orchestrating complex system-level workflows.",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
+    tech: ["Next.js", "Python", "Workers"],
+    featured: true,
+    github: "#",
+    live: "#"
+  },
+  {
+    title: "MJ Marketing",
+    category: "Real Estate Corporate",
+    description: "A professional, high-trust marketing portal developed for MJ Group of Companies. Features robust branding, service listings, and property valuation.",
+    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=800&auto=format&fit=crop",
+    tech: ["React", "TailwindCSS"],
+    featured: false,
+    github: "#",
+    live: "#"
   },
   {
     title: "Copyright Testing Engine",
     category: "AI / Video Automation",
-    description: "An automated utility leveraging AI and Web Workers to analyze and test video/audio content against strict YouTube and TikTok copyright protection algorithms.",
-    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=700&auto=format&fit=crop",
-  },
-  {
-    title: "InstantFlow SAAS",
-    category: "DevOps & Workflow Builder",
-    description: "A robust backend architecture designed for managing automated background tasks, executing remote SSH commands, and orchestrating complex system-level workflows.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=700&auto=format&fit=crop",
+    description: "An automated utility leveraging AI and Web Workers to analyze and test video/audio content against strict YouTube and TikTok copyright algorithms.",
+    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=800&auto=format&fit=crop",
+    tech: ["AI", "FFmpeg", "Node.js"],
+    featured: false,
+    github: "#",
+    live: "#"
   },
 ];
 
 export function ProjectsSection() {
   return (
-    <section id="projects" className="w-full py-32 px-4 md:px-10 max-w-[1450px] mx-auto border-t border-neutral-200 dark:border-white/10 overflow-hidden transition-colors duration-500">
+    <section id="projects" className="w-full py-24 px-4 md:px-10 max-w-[1450px] mx-auto overflow-hidden">
       
-      {/* Section Header with +20% Stronger Entrance & +30% Hover State (`Clean without badge`) */}
+      {/* Header */}
       <motion.div 
-        initial={{ opacity: 0, y: 75, scale: 0.82 }}
-        whileInView={{ opacity: 1, y: 0, scale: 1 }}
-        viewport={{ once: true, margin: "-40px" }}
-        transition={{ duration: 0.85, ease: [0.16, 1, 0.3, 1] }}
-        className="text-center group/header cursor-pointer"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="mb-16 md:mb-24 text-center md:text-left flex flex-col md:flex-row md:items-end justify-between gap-6"
       >
-        <h2 className="text-5xl md:text-7xl font-black tracking-tight text-black dark:text-white group-hover/header:text-[#16a34a] dark:group-hover/header:text-[#22c55e] transition-colors duration-300">
-          Projects
-        </h2>
-        
-        <div className="w-24 h-2 bg-[#16a34a] dark:bg-[#22c55e] mx-auto mt-5 rounded-full dark:shadow-[0_0_20px_#22c55e] group-hover/header:w-48 transition-all duration-500" />
+        <div>
+          <h2 className="text-4xl md:text-6xl font-black tracking-tighter text-black dark:text-white uppercase leading-none">
+            Selected <br className="hidden md:block"/>
+            <span className="text-[#22c55e]">Works</span>
+          </h2>
+          <p className="mt-4 text-neutral-500 dark:text-neutral-400 text-sm md:text-base max-w-md font-medium tracking-wide">
+            A curated collection of enterprise tools, digital platforms, and system architectures I've engineered.
+          </p>
+        </div>
       </motion.div>
 
-      {/* Projects 4-Card Grid with +20% Stronger Scroll Entrance (`y: 95, scale: 0.82`) & +30% Stronger Hover Zoom (`scale: 1.10, y: -20`) */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-20">
+      {/* Bento Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
         {projects.map((item, idx) => (
           <motion.div
             key={item.title}
-            initial={{ opacity: 0, y: 95, scale: 0.82, rotateX: 10 }}
-            whileInView={{ opacity: 1, y: 0, scale: 1, rotateX: 0 }}
-            viewport={{ once: true, margin: "-40px" }}
-            transition={{ delay: idx * 0.16, duration: 0.85, ease: [0.16, 1, 0.3, 1] }}
-            whileHover={{ y: -20, scale: 1.10, rotateZ: idx % 2 === 0 ? 0.6 : -0.6 }}
-            className="group relative bg-white/95 dark:bg-zinc-950/85 backdrop-blur-3xl border border-neutral-200 dark:border-white/15 hover:border-[#16a34a] dark:hover:border-[#22c55e] rounded-3xl p-6 flex flex-col justify-between transition-all duration-500 shadow-sm hover:shadow-2xl dark:shadow-none dark:hover:shadow-[0_35px_80px_rgba(34,197,94,0.45)] cursor-pointer overflow-hidden"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ delay: idx * 0.1, duration: 0.8, ease: "easeOut" }}
+            className={cn(
+              "group relative flex flex-col bg-white dark:bg-zinc-900 border border-neutral-200 dark:border-white/10 rounded-3xl overflow-hidden transition-all duration-500 hover:border-[#22c55e]/50 dark:hover:border-[#22c55e]/50 hover:shadow-[0_20px_40px_rgba(34,197,94,0.1)]",
+              item.featured ? "md:col-span-2 lg:col-span-2" : "col-span-1"
+            )}
           >
-            {/* Top Green Laser Line (`Expands on hover +30% effect`) */}
-            <div className="absolute inset-x-0 top-0 h-[3px] bg-gradient-to-r from-transparent via-[#22c55e] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 scale-x-0 group-hover:scale-x-100" />
-
-            {/* Image Preview Container with +30% MORE Zoom (`scale-130`) */}
-            <div className="w-full h-52 rounded-2xl overflow-hidden bg-muted/40 relative shadow-inner">
+            {/* Image Section */}
+            <div className={cn(
+              "relative w-full overflow-hidden bg-neutral-100 dark:bg-zinc-950",
+              item.featured ? "h-64 md:h-80" : "h-56"
+            )}>
               <img
                 src={item.image}
                 alt={item.title}
-                className="w-full h-full object-cover group-hover:scale-130 group-hover:-rotate-2 transition-all duration-700 ease-out"
+                className="w-full h-full object-cover group-hover:scale-105 group-hover:-rotate-1 transition-transform duration-700 ease-out"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300" />
               
-              {/* Floating Category Badge over image (`State changing on hover`) */}
-              <div className="absolute top-3 left-3 px-3.5 py-1 rounded-full bg-zinc-950/85 border border-[#22c55e]/60 text-white group-hover:text-[#22c55e] group-hover:border-[#22c55e] text-xs font-extrabold backdrop-blur-md shadow-md group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(34,197,94,0.8)] transition-all duration-300">
+              {/* Category Badge */}
+              <div className="absolute top-4 left-4 px-4 py-1.5 rounded-full bg-black/50 backdrop-blur-md border border-white/20 text-white text-xs font-bold tracking-wide uppercase">
                 {item.category}
+              </div>
+
+              {/* Action Buttons (Hover Reveal) */}
+              <div className="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-500">
+                <a href={item.github} className="p-2.5 rounded-full bg-black/60 backdrop-blur-md text-white hover:bg-[#22c55e] hover:text-black transition-colors">
+                  <Github className="w-4 h-4" />
+                </a>
+                <a href={item.live} className="p-2.5 rounded-full bg-black/60 backdrop-blur-md text-white hover:bg-[#22c55e] hover:text-black transition-colors">
+                  <ExternalLink className="w-4 h-4" />
+                </a>
               </div>
             </div>
 
-            {/* Content & Action Button (`+30% stronger text and button dynamics`) */}
-            <div className="mt-7 flex items-end justify-between gap-4 pt-2">
-              <div className="flex-1">
-                <h3 className="font-black text-xl md:text-2xl text-black dark:text-white group-hover:text-[#16a34a] dark:group-hover:text-[#22c55e] group-hover:translate-x-2 transition-all duration-300 inline-block drop-shadow-sm dark:group-hover:drop-shadow-[0_0_15px_rgba(34,197,94,0.8)]">
+            {/* Content Section */}
+            <div className="p-6 md:p-8 flex flex-col flex-grow justify-between">
+              <div>
+                <h3 className="text-2xl font-black text-black dark:text-white group-hover:text-[#22c55e] transition-colors duration-300 mb-3">
                   {item.title}
                 </h3>
-                <p className="text-xs text-neutral-600 dark:text-neutral-400 mt-2 mb-3 line-clamp-3 leading-relaxed group-hover:text-neutral-900 dark:group-hover:text-neutral-300 transition-colors duration-300">
+                
+                {/* Tech Pills */}
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {item.tech.map((t) => (
+                    <span key={t} className="px-3 py-1 text-[10px] md:text-xs font-bold uppercase tracking-wider rounded-md bg-neutral-100 dark:bg-white/5 text-neutral-600 dark:text-neutral-300 border border-neutral-200 dark:border-white/10 group-hover:border-[#22c55e]/30 transition-colors">
+                      {t}
+                    </span>
+                  ))}
+                </div>
+
+                <p className="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed font-medium">
                   {item.description}
-                </p>
-                <p className="text-xs md:text-sm text-neutral-500 dark:text-neutral-400 font-bold group-hover:translate-x-2 group-hover:text-[#16a34a] dark:group-hover:text-[#22c55e] transition-all duration-300">
-                  Explore Full Case Study →
                 </p>
               </div>
 
-              {/* Circular Green Action Button (`+30% scale to 1.40x on hover`) */}
-              <div
-                className="w-12 h-12 shrink-0 rounded-full bg-[#16a34a] dark:bg-[#22c55e] group-hover:bg-[#15803d] dark:group-hover:bg-[#22c55e] text-white dark:text-black flex items-center justify-center shadow-sm dark:shadow-[0_0_20px_rgba(34,197,94,0.6)] group-hover:scale-140 group-hover:rotate-45 dark:group-hover:shadow-[0_0_45px_rgba(34,197,94,1)] transition-all duration-300 cursor-pointer"
-                title={`View ${item.title}`}
-              >
-                <ArrowUpRight className="w-6 h-6 font-black" />
+              <div className="mt-8 flex items-center gap-2 text-[#22c55e] text-sm font-bold uppercase tracking-widest cursor-pointer group/link">
+                View Case Study
+                <ArrowUpRight className="w-4 h-4 group-hover/link:translate-x-1 group-hover/link:-translate-y-1 transition-transform" />
               </div>
             </div>
           </motion.div>
         ))}
       </div>
-
-      {/* Bottom Action Button with +20% scroll entrance & +30% stronger hover levitation (`scale: 1.18, y: -10`) */}
-      <motion.div 
-        initial={{ opacity: 0, y: 60, scale: 0.85 }}
-        whileInView={{ opacity: 1, y: 0, scale: 1 }}
-        viewport={{ once: true }}
-        transition={{ delay: 0.5, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-        className="mt-24 text-center"
-      >
-        <motion.a
-          whileHover={{ scale: 1.18, y: -10 }}
-          whileTap={{ scale: 0.94 }}
-          href="#projects"
-          className="group/btn inline-flex items-center gap-4 px-12 py-5 rounded-full border-2 border-[#16a34a] dark:border-[#22c55e] bg-white dark:bg-[#22c55e]/10 text-[#16a34a] dark:text-[#22c55e] hover:bg-[#16a34a] dark:hover:bg-[#22c55e] hover:text-white dark:hover:text-black font-black text-lg transition-all duration-300 cursor-pointer shadow-sm hover:shadow-2xl dark:shadow-[0_0_30px_rgba(34,197,94,0.35)] dark:hover:shadow-[0_0_60px_rgba(34,197,94,0.9)]"
-        >
-          <span>View all projects</span>
-          <ArrowRight className="w-6 h-6 font-black group-hover/btn:translate-x-3 transition-transform duration-300" />
-        </motion.a>
-      </motion.div>
     </section>
   );
 }
