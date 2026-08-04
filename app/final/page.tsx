@@ -89,7 +89,7 @@ export default function FinalPortfolioPage() {
   const imgScale = useTransform(scrollY, [0, 800], [1.2, 1.0]);
 
   return (
-    <main className="min-h-screen bg-transparent text-white relative font-sans selection:bg-[#22c55e]/30">
+    <main className="min-h-screen bg-transparent text-black dark:text-white relative font-sans selection:bg-[#22c55e]/30">
 
 
 
@@ -142,7 +142,7 @@ export default function FinalPortfolioPage() {
             transition={{ duration: 0.8, type: "spring", bounce: 0.4 }}
             className="flex items-center gap-4 mb-2"
           >
-            <span className="text-white tracking-[0.3em] text-sm md:text-base font-semibold">FULL STACK</span>
+            <span className="text-black dark:text-white tracking-[0.3em] text-sm md:text-base font-semibold">FULL STACK</span>
             <div className="h-[2px] w-12 md:w-20 bg-[#22c55e]" />
           </motion.div>
 
@@ -154,7 +154,7 @@ export default function FinalPortfolioPage() {
           >
             <h1 className="text-[4.5rem] md:text-[7.2rem] lg:text-[9rem] font-black tracking-tighter leading-[0.8] mb-8 font-sans" style={{ transform: "scaleY(1.15)", transformOrigin: "left" }}>
               <span className="text-[#22c55e] drop-shadow-[0_0_20px_rgba(34,197,94,0.4)]">DEV</span>
-              <span className="text-white">ELOPER</span>
+              <span className="text-black dark:text-white">ELOPER</span>
             </h1>
           </motion.div>
 
@@ -166,7 +166,7 @@ export default function FinalPortfolioPage() {
             className="flex items-start gap-4 mb-8"
           >
             <span className="text-[#22c55e] font-mono text-2xl md:text-3xl font-bold mt-1">{'</>'}</span>
-            <h2 className="text-xl md:text-2xl lg:text-3xl text-white font-medium leading-[1.3] tracking-wide">
+            <h2 className="text-xl md:text-2xl lg:text-3xl text-black dark:text-white font-medium leading-[1.3] tracking-wide">
               I <span className="text-[#22c55e] font-bold">BUILD</span> SOLUTIONS,<br />
               NOT JUST WEBSITES.
             </h2>
@@ -356,7 +356,7 @@ export default function FinalPortfolioPage() {
           Farman
         </span>
         <div className="flex items-center gap-3 mt-1">
-          <span className="text-white tracking-[0.3em] text-sm md:text-base font-semibold">DEVELOPER</span>
+          <span className="text-black dark:text-white tracking-[0.3em] text-sm md:text-base font-semibold">DEVELOPER</span>
           <span className="text-[#22c55e] font-mono font-bold text-xl">{'</>'}</span>
         </div>
       </motion.div>
@@ -371,7 +371,7 @@ export default function FinalPortfolioPage() {
         <ViewportSection skeleton={<HeroSkeleton />} minHeight="600px">
           <div className="w-full px-3 md:px-8 max-w-[1550px] mx-auto flex flex-col items-center">
             <div className="w-full text-center mb-16">
-              <h2 className="text-3xl md:text-5xl font-black tracking-tight text-white mb-4">
+              <h2 className="text-3xl md:text-5xl font-black tracking-tight text-black dark:text-white mb-4">
                 SAAS <span className="text-[#22c55e]">ARCHITECTURE</span>
               </h2>
               <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto font-light">

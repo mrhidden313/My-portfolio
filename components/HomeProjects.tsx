@@ -80,7 +80,7 @@ export function HomeProjects() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               
               {/* Category Badge */}
-              <div className="absolute top-3 left-3 px-3.5 py-1 rounded-full bg-zinc-950/85 border border-[#22c55e]/60 text-white group-hover:text-[#22c55e] group-hover:border-[#22c55e] text-xs font-extrabold backdrop-blur-md shadow-md group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(34,197,94,0.8)] transition-all duration-300">
+              <div className="absolute top-3 left-3 px-3.5 py-1 rounded-full bg-zinc-950/85 border border-[#22c55e]/60 text-black dark:text-white group-hover:text-[#22c55e] group-hover:border-[#22c55e] text-xs font-extrabold backdrop-blur-md shadow-md group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(34,197,94,0.8)] transition-all duration-300">
                 {item.category}
               </div>
             </div>
@@ -101,7 +101,7 @@ export function HomeProjects() {
 
               {/* Circular Green Action Button */}
               <div
-                className="w-12 h-12 shrink-0 rounded-full bg-[#16a34a] dark:bg-[#22c55e] group-hover:bg-[#15803d] dark:group-hover:bg-[#22c55e] text-white dark:text-black flex items-center justify-center shadow-sm dark:shadow-[0_0_20px_rgba(34,197,94,0.6)] group-hover:scale-125 group-hover:rotate-45 transition-all duration-300 cursor-pointer"
+                className="w-12 h-12 shrink-0 rounded-full bg-[#16a34a] dark:bg-[#22c55e] group-hover:bg-[#15803d] dark:group-hover:bg-[#22c55e] text-black dark:text-white dark:text-black flex items-center justify-center shadow-sm dark:shadow-[0_0_20px_rgba(34,197,94,0.6)] group-hover:scale-125 group-hover:rotate-45 transition-all duration-300 cursor-pointer"
               >
                 <ArrowUpRight className="w-6 h-6 font-black" />
               </div>

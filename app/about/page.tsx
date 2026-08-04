@@ -52,7 +52,7 @@ export default function AboutPage() {
   const y = useTransform(scrollY, [0, 400], [-20, 90]);
 
   return (
-    <main className="min-h-screen bg-transparent text-white relative selection:bg-[#22c55e]/30 pb-32 font-sans">
+    <main className="min-h-screen bg-transparent text-black dark:text-white relative selection:bg-[#22c55e]/30 pb-32 font-sans">
 
       {/* ── HERO BG IMAGE ── */}
       <div className="absolute top-0 left-0 w-full h-[160vh] z-0 overflow-hidden flex justify-center">
@@ -94,7 +94,7 @@ export default function AboutPage() {
             </div>
 
             {/* It's Me */}
-            <p className="text-white/70 text-lg md:text-xl font-normal tracking-wide mb-1">
+            <p className="text-black/ dark:text-white/ text-lg md:text-xl font-normal tracking-wide mb-1">
               It&apos;s Me
             </p>
 
@@ -104,7 +104,7 @@ export default function AboutPage() {
             </p>
 
             {/* Farman Khan. */}
-            <h1 className="text-6xl md:text-8xl lg:text-[7rem] font-black tracking-tight text-white leading-[0.9] mb-6">
+            <h1 className="text-6xl md:text-8xl lg:text-[7rem] font-black tracking-tight text-black dark:text-white leading-[0.9] mb-6">
               Farman<br />
               <span className="text-[#22c55e] drop-shadow-[0_0_35px_rgba(34,197,94,0.55)]">Khan.</span>
             </h1>
@@ -129,7 +129,7 @@ export default function AboutPage() {
             <motion.div
               key={i}
               whileHover={{ scale: 1.04, y: -4 }}
-              className="p-6 rounded-2xl bg-white/[0.03] border border-white/8 backdrop-blur-md text-center"
+              className="p-6 rounded-2xl bg-white/[0.03] border border-black/ dark:border-white/ backdrop-blur-md text-center"
             >
               <div className="text-3xl md:text-4xl font-black text-[#22c55e] drop-shadow-[0_0_15px_rgba(34,197,94,0.4)]">{s.value}</div>
               <div className="text-neutral-500 text-sm font-semibold mt-1">{s.label}</div>
@@ -148,7 +148,7 @@ export default function AboutPage() {
           <span className="text-[#22c55e] font-bold tracking-[0.25em] text-xs uppercase mb-4 block">The Story</span>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
             <div>
-              <h2 className="text-3xl md:text-4xl font-black text-white mb-6 leading-tight">
+              <h2 className="text-3xl md:text-4xl font-black text-black dark:text-white mb-6 leading-tight">
                 Built from curiosity,<br />
                 <span className="text-[#22c55e]">refined by execution.</span>
               </h2>
@@ -156,7 +156,7 @@ export default function AboutPage() {
                 Started coding out of pure curiosity — breaking things apart to understand how they worked. Over 3+ years, that curiosity became a discipline: building production-grade full-stack applications that handle real users, real data, and real business logic.
               </p>
               <p className="text-neutral-400 text-base md:text-lg font-light leading-relaxed">
-                The stack doesn&apos;t matter as much as the outcome. Whether it&apos;s a React frontend that feels instant or a Node.js API that handles thousands of requests — the goal is always the same: <span className="text-white font-medium">software that actually works.</span>
+                The stack doesn&apos;t matter as much as the outcome. Whether it&apos;s a React frontend that feels instant or a Node.js API that handles thousands of requests — the goal is always the same: <span className="text-black dark:text-white font-medium">software that actually works.</span>
               </p>
             </div>
             <div className="flex flex-col gap-4">
@@ -168,11 +168,11 @@ export default function AboutPage() {
                 <motion.div
                   key={i}
                   whileHover={{ x: 6, borderColor: "rgba(34,197,94,0.4)" }}
-                  className="flex items-start gap-4 p-5 rounded-2xl bg-white/[0.03] border border-white/8 transition-all duration-300"
+                  className="flex items-start gap-4 p-5 rounded-2xl bg-white/[0.03] border border-black/ dark:border-white/ transition-all duration-300"
                 >
                   <div className="p-2 rounded-xl bg-[#22c55e]/10 text-[#22c55e] shrink-0">{item.icon}</div>
                   <div>
-                    <div className="font-bold text-white mb-1">{item.title}</div>
+                    <div className="font-bold text-black dark:text-white mb-1">{item.title}</div>
                     <div className="text-neutral-500 text-sm leading-relaxed">{item.desc}</div>
                   </div>
                 </motion.div>
@@ -190,7 +190,7 @@ export default function AboutPage() {
           className="mb-24"
         >
           <span className="text-[#22c55e] font-bold tracking-[0.25em] text-xs uppercase mb-4 block">The Arsenal</span>
-          <h2 className="text-3xl md:text-4xl font-black text-white mb-10">Tools of the trade</h2>
+          <h2 className="text-3xl md:text-4xl font-black text-black dark:text-white mb-10">Tools of the trade</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {skills.map((group, i) => (
               <motion.div
@@ -200,12 +200,12 @@ export default function AboutPage() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: i * 0.1 }}
                 whileHover={{ y: -8, scale: 1.03 }}
-                className="group p-6 rounded-2xl bg-white/[0.03] border border-white/10 hover:border-[#22c55e]/50 transition-all duration-500 hover:bg-gradient-to-br hover:from-white/[0.05] hover:to-[#22c55e]/[0.05] hover:shadow-[0_0_30px_rgba(34,197,94,0.15)]"
+                className="group p-6 rounded-2xl bg-white/[0.03] border border-black/ dark:border-white/ hover:border-[#22c55e]/50 transition-all duration-500 hover:bg-gradient-to-br hover:from-white/[0.05] hover:to-[#22c55e]/[0.05] hover:shadow-[0_0_30px_rgba(34,197,94,0.15)]"
               >
                 <div className="font-black text-sm tracking-widest uppercase mb-4 transition-colors duration-300 group-hover:drop-shadow-[0_0_10px_currentColor]" style={{ color: group.color }}>{group.category}</div>
                 <div className="flex flex-wrap gap-2">
                   {group.items.map((item, j) => (
-                    <span key={j} className="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-neutral-300 text-xs font-semibold group-hover:border-[#22c55e]/30 group-hover:text-white transition-all duration-300">
+                    <span key={j} className="px-3 py-1 rounded-full bg-white/5 border border-black/ dark:border-white/ text-neutral-300 text-xs font-semibold group-hover:border-[#22c55e]/30 group-hover:text-white transition-all duration-300">
                       {item}
                     </span>
                   ))}
@@ -224,7 +224,7 @@ export default function AboutPage() {
           className="mb-24"
         >
           <span className="text-[#22c55e] font-bold tracking-[0.25em] text-xs uppercase mb-4 block">What I Build</span>
-          <h2 className="text-3xl md:text-4xl font-black text-white mb-10">Services</h2>
+          <h2 className="text-3xl md:text-4xl font-black text-black dark:text-white mb-10">Services</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {services.map((s, i) => (
               <motion.div
@@ -234,12 +234,12 @@ export default function AboutPage() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: i * 0.1 }}
                 whileHover={{ y: -8, scale: 1.03 }}
-                className="p-7 rounded-2xl bg-white/[0.03] border border-white/10 hover:border-[#22c55e]/50 transition-all duration-500 group hover:bg-gradient-to-br hover:from-[#22c55e]/10 hover:to-transparent hover:shadow-[0_0_30px_rgba(34,197,94,0.1)]"
+                className="p-7 rounded-2xl bg-white/[0.03] border border-black/ dark:border-white/ hover:border-[#22c55e]/50 transition-all duration-500 group hover:bg-gradient-to-br hover:from-[#22c55e]/10 hover:to-transparent hover:shadow-[0_0_30px_rgba(34,197,94,0.1)]"
               >
                 <div className="p-3 rounded-xl w-fit mb-4 transition-all duration-500 group-hover:scale-110 group-hover:rotate-6 group-hover:shadow-[0_0_20px_currentColor]" style={{ backgroundColor: `${s.color}15`, color: s.color }}>
                   {s.icon}
                 </div>
-                <h3 className="text-white font-bold text-lg mb-2 group-hover:text-[#22c55e] transition-colors duration-300">{s.title}</h3>
+                <h3 className="text-black dark:text-white font-bold text-lg mb-2 group-hover:text-[#22c55e] transition-colors duration-300">{s.title}</h3>
                 <p className="text-neutral-500 text-sm leading-relaxed group-hover:text-neutral-300 transition-colors duration-300">{s.desc}</p>
               </motion.div>
             ))}
@@ -252,9 +252,9 @@ export default function AboutPage() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="text-center py-20 border-t border-white/8"
+          className="text-center py-20 border-t border-black/ dark:border-white/"
         >
-          <h2 className="text-4xl md:text-6xl font-black text-white mb-4">
+          <h2 className="text-4xl md:text-6xl font-black text-black dark:text-white mb-4">
             Have a project?
           </h2>
           <p className="text-neutral-500 text-lg mb-10 max-w-md mx-auto">
@@ -272,7 +272,7 @@ export default function AboutPage() {
             <motion.div whileHover={{ scale: 1.04, y: -3 }}>
               <Link
                 href="/"
-                className="inline-flex items-center gap-2 px-10 py-5 rounded-2xl border border-white/15 text-neutral-300 hover:text-white hover:border-white/30 font-bold uppercase tracking-widest text-sm transition-all duration-300"
+                className="inline-flex items-center gap-2 px-10 py-5 rounded-2xl border border-black/ dark:border-white/ text-neutral-300 hover:text-white hover:border-white/30 font-bold uppercase tracking-widest text-sm transition-all duration-300"
               >
                 View Work
               </Link>

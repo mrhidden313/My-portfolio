@@ -220,7 +220,7 @@ export default function TestRobotScene() {
       {/* Top Status Notification (`Cyber Vibe`) */}
       <div className="absolute top-5 left-6 z-30 pointer-events-none flex items-center gap-3">
         <span className="w-3 h-3 rounded-full bg-[#22c55e] animate-ping" />
-        <div className="font-mono text-xs uppercase tracking-widest text-white/90 bg-zinc-900/80 border border-[#22c55e]/40 px-3 py-1.5 rounded-full backdrop-blur-md">
+        <div className="font-mono text-xs uppercase tracking-widest text-black/ dark:text-white/ bg-zinc-900/80 border border-[#22c55e]/40 px-3 py-1.5 rounded-full backdrop-blur-md">
           {stage === "center" ? "⚡ Showcase: Big Sentinel AI (Gliding to Corner in 3s...)" : "🛡️ Corner Mode: AI Guardian Peeking (`Look-At Cursor` Active)"}
         </div>
       </div>
@@ -229,7 +229,7 @@ export default function TestRobotScene() {
       <div className="absolute bottom-6 right-6 z-30 flex items-center gap-2">
         <button
           onClick={() => setStage(stage === "center" ? "corner" : "center")}
-          className="px-5 py-2.5 rounded-2xl bg-zinc-900/90 hover:bg-[#22c55e] text-white hover:text-black font-mono font-black text-xs uppercase tracking-wider transition-all duration-300 border border-[#22c55e]/50 shadow-[0_0_25px_rgba(34,197,94,0.25)] backdrop-blur-md cursor-pointer flex items-center gap-2"
+          className="px-5 py-2.5 rounded-2xl bg-zinc-900/90 hover:bg-[#22c55e] text-black dark:text-white hover:text-black font-mono font-black text-xs uppercase tracking-wider transition-all duration-300 border border-[#22c55e]/50 shadow-[0_0_25px_rgba(34,197,94,0.25)] backdrop-blur-md cursor-pointer flex items-center gap-2"
         >
           <span>{stage === "center" ? "👉 Glide to Corner (`Chup Jao`)" : "🤖 Call Center Stage (`Big Mode`)"}</span>
         </button>

@@ -37,7 +37,7 @@ export default function ContactPage() {
   };
 
   return (
-    <main className="min-h-screen bg-transparent text-white relative selection:bg-[#22c55e]/30 pt-24 md:pt-32 pb-24 font-sans overflow-hidden">
+    <main className="min-h-screen bg-transparent text-black dark:text-white relative selection:bg-[#22c55e]/30 pt-24 md:pt-32 pb-24 font-sans overflow-hidden">
       
       {/* ── BACKGROUND GLOWS ── */}
       <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-[radial-gradient(circle_at_center,rgba(34,197,94,0.08)_0%,transparent_70%)] pointer-events-none mix-blend-screen" />
@@ -59,7 +59,7 @@ export default function ContactPage() {
               </span>
             </div>
             
-            <h1 className="text-5xl md:text-7xl font-black tracking-tight text-white leading-tight mb-6">
+            <h1 className="text-5xl md:text-7xl font-black tracking-tight text-black dark:text-white leading-tight mb-6">
               Get in <span className="text-[#22c55e] drop-shadow-[0_0_25px_rgba(34,197,94,0.4)]">Touch.</span>
             </h1>
             
@@ -86,14 +86,14 @@ export default function ContactPage() {
               <a 
                 key={i} 
                 href={item.link}
-                className="group flex items-center gap-6 p-6 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-[#22c55e]/30 hover:bg-[#22c55e]/5 transition-all duration-300"
+                className="group flex items-center gap-6 p-6 rounded-2xl bg-white/[0.02] border border-black/ dark:border-white/ hover:border-[#22c55e]/30 hover:bg-[#22c55e]/5 transition-all duration-300"
               >
                 <div className="w-14 h-14 rounded-full bg-[#22c55e]/10 flex items-center justify-center text-[#22c55e] group-hover:scale-110 group-hover:bg-[#22c55e] group-hover:text-black transition-all duration-300 shadow-[0_0_15px_rgba(34,197,94,0.1)]">
                   {item.icon}
                 </div>
                 <div>
                   <h3 className="text-sm font-bold text-neutral-500 uppercase tracking-wider mb-1">{item.title}</h3>
-                  <p className="text-lg font-medium text-white group-hover:text-[#22c55e] transition-colors">{item.info}</p>
+                  <p className="text-lg font-medium text-black dark:text-white group-hover:text-[#22c55e] transition-colors">{item.info}</p>
                 </div>
               </a>
             ))}
@@ -106,7 +106,7 @@ export default function ContactPage() {
               >
                 <Send className="w-24 h-24 rotate-12" />
               </motion.div>
-              <h3 className="text-xl font-bold text-white mb-2 relative z-10 group-hover:text-[#22c55e] transition-colors">Freelance Status</h3>
+              <h3 className="text-xl font-bold text-black dark:text-white mb-2 relative z-10 group-hover:text-[#22c55e] transition-colors">Freelance Status</h3>
               <p className="text-neutral-400 font-light relative z-10 mb-6">Currently accepting new projects and remote opportunities.</p>
               <Link href="/#projects" className="inline-flex items-center gap-2 text-[#22c55e] font-bold text-sm uppercase tracking-wider hover:gap-4 transition-all relative z-10">
                 View My Projects <ArrowRight className="w-4 h-4" />
@@ -121,8 +121,8 @@ export default function ContactPage() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="lg:col-span-7 lg:pl-10"
           >
-            <div className="p-8 md:p-10 rounded-3xl bg-white/[0.02] border border-white/10 backdrop-blur-xl shadow-2xl hover:border-white/20 transition-all duration-500 hover:bg-white/[0.03]">
-              <h2 className="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+            <div className="p-8 md:p-10 rounded-3xl bg-white/[0.02] border border-black/ dark:border-white/ backdrop-blur-xl shadow-2xl hover:border-white/20 transition-all duration-500 hover:bg-white/[0.03]">
+              <h2 className="text-2xl font-bold text-black dark:text-white mb-8 flex items-center gap-3">
                 Send a Message <motion.span animate={{ rotate: [0, 10, -10, 0] }} transition={{ repeat: Infinity, duration: 2, delay: 1 }} className="inline-block">👋</motion.span>
               </h2>
               
@@ -136,7 +136,7 @@ export default function ContactPage() {
                       name="user_name"
                       required
                       placeholder="John Doe"
-                      className="w-full bg-black/40 border border-white/10 rounded-xl px-5 py-4 text-white placeholder:text-neutral-600 focus:outline-none focus:border-[#22c55e]/50 focus:ring-1 focus:ring-[#22c55e]/50 transition-all hover:bg-black/60 hover:border-white/20"
+                      className="w-full bg-black/40 border border-black/ dark:border-white/ rounded-xl px-5 py-4 text-black dark:text-white placeholder:text-neutral-600 focus:outline-none focus:border-[#22c55e]/50 focus:ring-1 focus:ring-[#22c55e]/50 transition-all hover:bg-black/60 hover:border-white/20"
                     />
                   </div>
                   <div className="flex flex-col gap-2 group">
@@ -146,7 +146,7 @@ export default function ContactPage() {
                       name="user_email"
                       required
                       placeholder="john@example.com"
-                      className="w-full bg-black/40 border border-white/10 rounded-xl px-5 py-4 text-white placeholder:text-neutral-600 focus:outline-none focus:border-[#22c55e]/50 focus:ring-1 focus:ring-[#22c55e]/50 transition-all hover:bg-black/60 hover:border-white/20"
+                      className="w-full bg-black/40 border border-black/ dark:border-white/ rounded-xl px-5 py-4 text-black dark:text-white placeholder:text-neutral-600 focus:outline-none focus:border-[#22c55e]/50 focus:ring-1 focus:ring-[#22c55e]/50 transition-all hover:bg-black/60 hover:border-white/20"
                     />
                   </div>
                 </div>
@@ -158,7 +158,7 @@ export default function ContactPage() {
                     name="subject"
                     required
                     placeholder="Project Inquiry / Job Offer"
-                    className="w-full bg-black/40 border border-white/10 rounded-xl px-5 py-4 text-white placeholder:text-neutral-600 focus:outline-none focus:border-[#22c55e]/50 focus:ring-1 focus:ring-[#22c55e]/50 transition-all hover:bg-black/60 hover:border-white/20"
+                    className="w-full bg-black/40 border border-black/ dark:border-white/ rounded-xl px-5 py-4 text-black dark:text-white placeholder:text-neutral-600 focus:outline-none focus:border-[#22c55e]/50 focus:ring-1 focus:ring-[#22c55e]/50 transition-all hover:bg-black/60 hover:border-white/20"
                   />
                 </div>
 
@@ -169,7 +169,7 @@ export default function ContactPage() {
                     required
                     rows={6}
                     placeholder="Tell me about your project..."
-                    className="w-full bg-black/40 border border-white/10 rounded-xl px-5 py-4 text-white placeholder:text-neutral-600 focus:outline-none focus:border-[#22c55e]/50 focus:ring-1 focus:ring-[#22c55e]/50 transition-all resize-none hover:bg-black/60 hover:border-white/20"
+                    className="w-full bg-black/40 border border-black/ dark:border-white/ rounded-xl px-5 py-4 text-black dark:text-white placeholder:text-neutral-600 focus:outline-none focus:border-[#22c55e]/50 focus:ring-1 focus:ring-[#22c55e]/50 transition-all resize-none hover:bg-black/60 hover:border-white/20"
                   ></textarea>
                 </div>
 

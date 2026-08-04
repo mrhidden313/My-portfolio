@@ -107,7 +107,7 @@ export function ProjectsSection() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-70 group-hover:opacity-90 transition-opacity duration-700" />
               
               {/* Category Badge */}
-              <div className="absolute top-5 left-5 px-4 py-2 rounded-full bg-black/60 backdrop-blur-md border border-[#22c55e]/40 text-white text-xs font-bold tracking-widest uppercase shadow-xl group-hover:border-[#22c55e] transition-colors duration-500">
+              <div className="absolute top-5 left-5 px-4 py-2 rounded-full bg-black/60 backdrop-blur-md border border-[#22c55e]/40 text-black dark:text-white text-xs font-bold tracking-widest uppercase shadow-xl group-hover:border-[#22c55e] transition-colors duration-500">
                 {item.category}
               </div>
             </div>

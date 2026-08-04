@@ -150,7 +150,7 @@ export function SplineSceneBasic() {
                 whileHover={{ scale: 1.15, y: -8 }}
                 whileTap={{ scale: 0.94 }}
                 href="#contact"
-                className="relative overflow-hidden px-8 py-4 rounded-2xl bg-[#16a34a] dark:bg-[#22c55e] text-white dark:text-black font-black text-sm flex items-center gap-3 shadow-md hover:shadow-2xl dark:shadow-[0_0_30px_rgba(34,197,94,0.5)] dark:hover:shadow-[0_20px_65px_rgba(34,197,94,1)] transition-all duration-300 cursor-pointer group/btn"
+                className="relative overflow-hidden px-8 py-4 rounded-2xl bg-[#16a34a] dark:bg-[#22c55e] text-black dark:text-white dark:text-black font-black text-sm flex items-center gap-3 shadow-md hover:shadow-2xl dark:shadow-[0_0_30px_rgba(34,197,94,0.5)] dark:hover:shadow-[0_20px_65px_rgba(34,197,94,1)] transition-all duration-300 cursor-pointer group/btn"
               >
                 <span className="absolute inset-0 animate-water opacity-30 pointer-events-none" />
                 <span className="relative z-10">Initiate Collaboration</span>
