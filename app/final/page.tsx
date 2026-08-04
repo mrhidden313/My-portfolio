@@ -3,6 +3,7 @@
 import * as React from "react";
 import { useState, useEffect, useRef } from "react";
 import dynamic from "next/dynamic";
+import Image from "next/image";
 import { motion, useScroll, useTransform, useMotionValue, useSpring, useMotionTemplate } from "framer-motion";
 
 
@@ -113,9 +114,12 @@ export default function FinalPortfolioPage() {
             transition={{ duration: 1.2, ease: "easeOut", delay: 0.3 }}
             className="w-full h-full relative"
           >
-            <img
+            <Image
               src="/final.png"
               alt="Farman Khan"
+              width={1320}
+              height={1000}
+              priority
               className="w-full h-full object-contain object-bottom pt-4 md:pt-12 mix-blend-lighten"
               style={{
                 WebkitMaskImage: "linear-gradient(to top, transparent 0%, black 20%)",

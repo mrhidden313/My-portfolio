@@ -86,6 +86,10 @@
     background-color: var(--color-background);
     color: var(--color-foreground);
   }
+  /* Light mode specific text boldness */
+  :root:not(.dark) body {
+    -webkit-text-stroke: 0.3px currentColor;
+  }
 }
 
 .loader {

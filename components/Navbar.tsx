@@ -7,6 +7,7 @@ import { useTheme } from "next-themes";
 import { Sun, Moon, Sparkles } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import Image from "next/image";
 import { useRouter, usePathname } from "next/navigation";
 
 const navItems = [
@@ -67,9 +68,12 @@ export function Navbar() {
               whileHover={{ scale: 1.08, y: -2 }}
               className="pointer-events-auto flex items-center gap-2.5 px-4 md:px-5 py-2 rounded-full bg-white/90 dark:bg-zinc-900/85 backdrop-blur-3xl border border-neutral-200 dark:border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.1)] dark:shadow-[0_10px_30px_rgba(0,0,0,0.6),inset_0_1px_1px_rgba(255,255,255,0.12)] cursor-pointer group"
             >
-              <img
+              <Image
                 src="/logo.png"
                 alt="FKTECH Logo"
+                width={120}
+                height={40}
+                priority
                 className="h-7 md:h-8 w-auto object-contain transition-transform duration-300 group-hover:scale-110"
               />
               <span className="font-black text-sm md:text-base tracking-wider text-black dark:text-white group-hover:text-[#16a34a] dark:group-hover:text-[#22c55e] transition-colors">
@@ -182,7 +186,7 @@ export function Navbar() {
                 }}
                 className="flex items-center gap-2 px-3 py-1.5 rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors cursor-pointer"
               >
-                <img src="/logo.png" alt="FKTECH Logo" className="h-6 w-auto object-contain" />
+                <Image src="/logo.png" alt="FKTECH Logo" width={100} height={30} className="h-6 w-auto object-contain" />
                 <span className="font-black text-xs md:text-sm tracking-wider text-black dark:text-white">
                   FKTECH
                 </span>
