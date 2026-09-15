@@ -6,36 +6,24 @@ import { ArrowUpRight, Code2, ExternalLink } from "lucide-react";
 
 const projects = [
   {
-    title: "AK FLOW",
-    category: "B2B SaaS Platform",
-    description: "A secure multi-tenant SaaS platform engineered with a strict SvelteKit SPA frontend and an Express backend. Leverages Socket.IO for real-time company-scoped chat and robust multi-tenancy via Prisma.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
-    link: null,
+    title: "Instant Growth Agency",
+    category: "Digital Agency & Engineering Portal",
+    description: "High-velocity creative engineering & digital agency portal. Features sub-second Core Web Vitals performance, interactive dynamic liquid grid canvas, smooth motion transitions, and comprehensive service capabilities.",
+    image: "/project-instantgrowth.png",
+    link: "https://instantgrowthdigitalagency.com",
     langIcons: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/svelte/svelte-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/threejs/threejs-original.svg"
     ]
   },
   {
-    title: "InstantFlow SAAS",
-    category: "DevOps & Workflow Automation",
-    description: "A highly complex, custom CRM engine built on a hybrid architecture. The core runs a Ruby on Rails backend and Vue.js frontend inside Docker, integrated tightly with FFMPEG and ImageMagick for advanced media processing. The real power lies in its Node.js 'Gatekeeper' and automation scripts running via PM2, which intercept webhooks to handle native WhatsApp API features seamlessly.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
-    link: "https://instantflow.online",
-    langIcons: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rails/rails-original-wordmark.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
-    ]
-  },
-  {
-    title: "MJ Marketing",
-    category: "Real Estate Corporate",
-    description: "A premium, high-trust corporate portal for MJ Group of Companies. Engineered with React and TailwindCSS, it boasts pixel-perfect responsive layouts, smooth scroll-triggered micro-animations, and an ultra-modern glassmorphism aesthetic. Integrates sophisticated property valuation forms to maximize client conversion.",
-    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1200&auto=format&fit=crop",
-    link: "https://www.mjmarketingofficial.com/",
+    title: "MJ Group of Companies",
+    category: "Real Estate Corporate Portal",
+    description: "A premium, high-trust corporate portal for MJ Group of Companies. Built with modern dynamic UI, interactive property listing showcases, lead generation integration, and responsive glassmorphism UI.",
+    image: "/project-mjmarketing.png",
+    link: "https://mjmarketingofficial.com",
     langIcons: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
@@ -43,18 +31,31 @@ const projects = [
     ]
   },
   {
-    title: "Copyright Testing Engine",
-    category: "AI / Video Automation",
-    description: "An automated utility leveraging AI and Web Workers to analyze and test video/audio content against strict YouTube and TikTok copyright algorithms. Utilizes advanced FFmpeg processing pipelines.",
-    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1200&auto=format&fit=crop",
-    link: null,
+    title: "InstantFlow SAAS",
+    category: "DevOps & WhatsApp Automation",
+    description: "Automated WhatsApp API & CRM Workflow Engine. Features a hybrid architecture with Node.js gatekeeper, Ruby on Rails backend, Baileys integration, multimedia handling (FFmpeg), and instant webhook triggers.",
+    image: "/project-instantflow.png",
+    link: "https://instantflow.online",
     langIcons: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rails/rails-original-wordmark.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
     ]
   },
+  {
+    title: "Markhor Energy Drink",
+    category: "3D Branding & Landing Page",
+    description: "High-performance 3D branding showcase & landing page for Markhor Energy Drink. Built with Next.js, Tailwind CSS, Framer Motion dynamic animations, and interactive product presentation.",
+    image: "/project-markhor-energy.png",
+    link: "https://markhurenergydrink.vercel.app/",
+    langIcons: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/threejs/threejs-original.svg"
+    ]
+  }
 ];
 
 export function ProjectsSection() {
@@ -98,7 +99,7 @@ export function ProjectsSection() {
             <div className="absolute inset-0 bg-gradient-to-br from-[#22c55e]/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
 
             {/* Image Section */}
-            <div className="relative w-full h-72 md:h-96 overflow-hidden bg-neutral-100 dark:bg-zinc-950">
+            <div className="relative w-full h-56 sm:h-72 md:h-96 overflow-hidden bg-neutral-100 dark:bg-zinc-950">
               <img
                 src={item.image}
                 alt={item.title}
@@ -107,28 +108,28 @@ export function ProjectsSection() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-70 group-hover:opacity-90 transition-opacity duration-700" />
               
               {/* Category Badge */}
-              <div className="absolute top-5 left-5 px-4 py-2 rounded-full bg-black/60 backdrop-blur-md border border-[#22c55e]/40 text-black dark:text-white text-xs font-bold tracking-widest uppercase shadow-xl group-hover:border-[#22c55e] transition-colors duration-500">
+              <div className="absolute top-4 left-4 sm:top-5 sm:left-5 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-black/60 backdrop-blur-md border border-[#22c55e]/40 text-black dark:text-white text-[10px] sm:text-xs font-bold tracking-widest uppercase shadow-xl group-hover:border-[#22c55e] transition-colors duration-500">
                 {item.category}
               </div>
             </div>
 
             {/* Content Section */}
-            <div className="p-8 md:p-10 flex flex-col flex-grow justify-between relative z-10">
+            <div className="p-5 sm:p-8 md:p-10 flex flex-col flex-grow justify-between relative z-10">
               <div>
-                <h3 className="text-3xl font-black text-black dark:text-white group-hover:text-[#22c55e] transition-colors duration-500 mb-5">
+                <h3 className="text-2xl sm:text-3xl font-black text-black dark:text-white group-hover:text-[#22c55e] transition-colors duration-500 mb-4 sm:mb-5">
                   {item.title}
                 </h3>
                 
                 {/* Always-visible Tech Icons under title */}
-                <div className="flex items-center gap-3 mb-6">
+                <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6 flex-wrap">
                   {item.langIcons.map((iconSrc, i) => (
-                    <div key={i} className="w-10 h-10 rounded-xl bg-neutral-100 dark:bg-white/5 backdrop-blur-md border border-neutral-200 dark:border-white/10 flex items-center justify-center p-2 shadow-sm group-hover:border-[#22c55e]/40 group-hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] transition-all duration-500 hover:-translate-y-1">
+                    <div key={i} className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-neutral-100 dark:bg-white/5 backdrop-blur-md border border-neutral-200 dark:border-white/10 flex items-center justify-center p-1.5 sm:p-2 shadow-sm group-hover:border-[#22c55e]/40 group-hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] transition-all duration-500 hover:-translate-y-1">
                       <img src={iconSrc} alt="Tech Icon" className="w-full h-full object-contain filter drop-shadow-md" />
                     </div>
                   ))}
                 </div>
 
-                <p className="text-base text-neutral-600 dark:text-neutral-400 leading-relaxed font-medium group-hover:text-neutral-300 transition-colors duration-500">
+                <p className="text-sm sm:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed font-medium group-hover:text-black dark:group-hover:text-neutral-200 transition-colors duration-500">
                   {item.description}
                 </p>
               </div>

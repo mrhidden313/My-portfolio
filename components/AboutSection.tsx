@@ -3,7 +3,7 @@
 import * as React from "react";
 import { useEffect, useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
-import { Code, Smartphone, Server } from "lucide-react";
+import { Code, Smartphone, Server, Video, TrendingUp } from "lucide-react";
 
 function Counter({ target, suffix, label }: { target: number; suffix: string; label: string }) {
   const ref = useRef<HTMLDivElement>(null);
@@ -38,14 +38,11 @@ function Counter({ target, suffix, label }: { target: number; suffix: string; la
   return (
     <motion.div
       ref={ref}
-      whileHover={{ scale: 1.10, y: -16, rotateZ: 0.5 }}
-      whileTap={{ scale: 0.96 }}
-      className="relative overflow-hidden bg-white/95 dark:bg-zinc-900/85 border border-neutral-200 dark:border-white/15 hover:border-[#16a34a] dark:hover:border-[#22c55e] p-8 rounded-3xl transition-all duration-500 shadow-sm hover:shadow-2xl dark:shadow-none dark:hover:shadow-[0_25px_70px_rgba(34,197,94,0.45)] group flex flex-col justify-center items-start cursor-pointer backdrop-blur-2xl"
+      whileHover={{ y: -8, scale: 1.05 }}
+      transition={{ duration: 0.3 }}
+      className="group flex flex-col p-7 md:p-8 bg-white/80 dark:bg-zinc-900/60 border border-neutral-200 dark:border-white/10 rounded-3xl hover:border-[#16a34a] dark:hover:border-[#22c55e] hover:bg-white dark:hover:bg-zinc-900 shadow-sm hover:shadow-xl dark:shadow-none dark:hover:shadow-[0_0_40px_rgba(34,197,94,0.35)] transition-all duration-300 backdrop-blur-xl"
     >
-      {/* Top Green Laser Glow Line (`Expands on hover +30% effect`) */}
-      <div className="absolute inset-x-0 top-0 h-[3px] bg-gradient-to-r from-transparent via-[#22c55e] to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 scale-x-0 group-hover:scale-x-100" />
-
-      <div className="flex items-baseline gap-1.5 mb-2">
+      <div className="flex items-baseline gap-1 mb-2">
         <motion.span
           animate={{
             scale: isDone ? [1, 1.2, 1] : 1,
@@ -74,18 +71,23 @@ function Counter({ target, suffix, label }: { target: number; suffix: string; la
 
 const services = [
   {
-    title: "Website Development",
-    desc: "Next.js 16, React 19 & High-Concurrency Web Apps",
+    title: "Website & App Development",
+    desc: "Next.js 16, React Native & High-Concurrency Systems with sub-second load times",
     icon: Code,
   },
   {
-    title: "App Development",
-    desc: "Scalable Mobile & Interactive WebGL UI Systems",
-    icon: Smartphone,
+    title: "Digital Marketing & SEO",
+    desc: "Core Web Vitals optimization, organic growth & conversion funnels",
+    icon: TrendingUp,
   },
   {
-    title: "Cloud Infrastructure & Hosting",
-    desc: "Autonomous AI Workflows & Distributed Real-Time APIs",
+    title: "Graphic Design & Video Editing",
+    desc: "4K Motion Graphics, brand identity & high-converting visual storytelling",
+    icon: Video,
+  },
+  {
+    title: "Growth & Automation Systems",
+    desc: "Custom WhatsApp CRM bots, automated background tasks & SSH pipelines",
     icon: Server,
   },
 ];

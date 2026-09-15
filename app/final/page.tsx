@@ -4,7 +4,9 @@ import * as React from "react";
 import { useState, useEffect, useRef } from "react";
 import dynamic from "next/dynamic";
 import Image from "next/image";
-import { motion, useScroll, useTransform, useMotionValue, useSpring, useMotionTemplate } from "framer-motion";
+import Link from "next/link";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { Rocket, Award, ArrowRight } from "lucide-react";
 
 
 
@@ -94,284 +96,263 @@ export default function FinalPortfolioPage() {
 
 
 
-      {/* --- HERO SECTION (LOCKED CONTAINER) --- */}
-      <section className="relative w-full min-h-screen overflow-hidden">
+      {/* --- HERO SECTION --- */}
+      <section className="relative w-full min-h-screen pt-28 md:pt-36 pb-20 overflow-hidden flex items-center">
 
-      {/* --- RIGHT SIDE IMAGE & LIGHTING --- */}
-      <div className="absolute top-0 right-0 w-full md:w-[65%] h-screen z-10 pointer-events-none flex justify-center lg:justify-end">
+        {/* Ambient Radial Glow */}
+        <div className="absolute top-1/4 right-0 w-[600px] h-[600px] bg-[radial-gradient(circle_at_center,rgba(34,197,94,0.12)_0%,transparent_70%)] pointer-events-none z-0" />
 
-        {/* Optimized Green Lighting */}
-        <div className="absolute top-0 right-0 w-full lg:w-[60%] h-full bg-[radial-gradient(circle_at_right_center,rgba(34,197,94,0.15)_0%,rgba(34,197,94,0.05)_40%,transparent_70%)] z-20 pointer-events-none transform-gpu" />
+        <div className="relative z-30 max-w-[1600px] mx-auto px-6 md:px-16 w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
 
-        {/* The Image — 10% larger */}
-        <motion.div
-          style={{ scale: imgScale, translateY: "calc(15vh + 55px)" }}
-          className="absolute bottom-0 right-0 w-full max-w-[1320px] h-[104vh] md:h-[110vh] z-10 origin-bottom translate-x-[15%] md:translate-x-[5%] lg:translate-x-[0%]"
-        >
-          <motion.div
-            initial={{ opacity: 0, x: 200 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1.2, ease: "easeOut", delay: 0.3 }}
-            className="w-full h-full relative"
-          >
-            <Image
-              src="/final.png"
-              alt="Farman Khan"
-              width={1320}
-              height={1000}
-              priority
-              className="w-full h-full object-contain object-bottom pt-4 md:pt-12 mix-blend-lighten"
-              style={{
-                WebkitMaskImage: "linear-gradient(to top, transparent 0%, black 20%)",
-                maskImage: "linear-gradient(to top, transparent 0%, black 20%)"
-              }}
-            />
-            {/* Left vignette — soft fade so no hard left edge */}
-            <div className="absolute inset-y-0 left-0 w-[18%] bg-gradient-to-r from-[#050505]/90 via-[#050505]/40 to-transparent pointer-events-none z-10" />
-            {/* Right vignette — soft fade so no hard right edge */}
-            <div className="absolute inset-y-0 right-0 w-[12%] bg-gradient-to-l from-[#050505]/70 via-[#050505]/20 to-transparent pointer-events-none z-10" />
-          </motion.div>
-        </motion.div>
-      </div>
+            {/* --- LEFT COLUMN: TYPOGRAPHY & DETAILS --- */}
+            <div className="lg:col-span-7 flex flex-col justify-center">
 
-      {/* --- FOREGROUND CONTENT (Left Column) --- */}
-      <div className="relative z-30 max-w-[1600px] mx-auto px-6 md:px-20 pt-20 md:pt-32 pb-24 h-full min-h-screen flex flex-col justify-center">
+              {/* Section: FULL STACK */}
+              <motion.div
+                initial={{ opacity: 0, x: -30 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, type: "spring", bounce: 0.4 }}
+                className="flex items-center gap-4 mb-2"
+              >
+                <span className="text-black dark:text-white tracking-[0.3em] text-sm md:text-base font-semibold">FULL STACK</span>
+                <div className="h-[2px] w-12 md:w-20 bg-[#22c55e]" />
+              </motion.div>
 
-        <div className="w-full md:w-[55%] mt-[5vh]">
+              {/* Section: DEVELOPER */}
+              <motion.div
+                initial={{ opacity: 0, x: -30 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, delay: 0.1, type: "spring", bounce: 0.4 }}
+              >
+                <h1 className="text-[2.5rem] sm:text-[4.5rem] md:text-[7rem] lg:text-[7.8rem] font-black tracking-tighter leading-[0.85] mb-6 font-sans">
+                  <span className="text-[#22c55e] drop-shadow-[0_0_20px_rgba(34,197,94,0.4)]">DEV</span>
+                  <span className="text-black dark:text-white">ELOPER</span>
+                </h1>
+              </motion.div>
 
-          {/* Section: FULL STACK */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, type: "spring", bounce: 0.4 }}
-            className="flex items-center gap-4 mb-2"
-          >
-            <span className="text-black dark:text-white tracking-[0.3em] text-sm md:text-base font-semibold">FULL STACK</span>
-            <div className="h-[2px] w-12 md:w-20 bg-[#22c55e]" />
-          </motion.div>
+              {/* Section: Subheadline */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2, type: "spring", bounce: 0.4 }}
+                className="flex items-start gap-4 mb-6"
+              >
+                <span className="text-[#22c55e] font-mono text-2xl md:text-3xl font-bold mt-1">{'</>'}</span>
+                <h2 className="text-xl md:text-2xl lg:text-3xl text-black dark:text-white font-medium leading-[1.3] tracking-wide">
+                  I <span className="text-[#22c55e] font-bold">BUILD</span> SOLUTIONS,<br />
+                  NOT JUST WEBSITES.
+                </h2>
+              </motion.div>
 
-          {/* Section: DEVELOPER */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.1, type: "spring", bounce: 0.4 }}
-          >
-            <h1 className="text-[4.5rem] md:text-[7.2rem] lg:text-[9rem] font-black tracking-tighter leading-[0.8] mb-8 font-sans" style={{ transform: "scaleY(1.15)", transformOrigin: "left" }}>
-              <span className="text-[#22c55e] drop-shadow-[0_0_20px_rgba(34,197,94,0.4)]">DEV</span>
-              <span className="text-black dark:text-white">ELOPER</span>
-            </h1>
-          </motion.div>
+              {/* Section: Paragraph */}
+              <motion.p
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3, type: "spring", bounce: 0.4 }}
+                className="text-neutral-600 dark:text-neutral-400 text-base md:text-xl font-light leading-relaxed mb-8 tracking-wide max-w-xl"
+              >
+                Clean Code. Smart Logic. Scalable Systems.<br />
+                That's my <span className="text-[#22c55e] font-medium">Standard</span>.
+              </motion.p>
 
-          {/* Section: Subheadline */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2, type: "spring", bounce: 0.4 }}
-            className="flex items-start gap-4 mb-8"
-          >
-            <span className="text-[#22c55e] font-mono text-2xl md:text-3xl font-bold mt-1">{'</>'}</span>
-            <h2 className="text-xl md:text-2xl lg:text-3xl text-black dark:text-white font-medium leading-[1.3] tracking-wide">
-              I <span className="text-[#22c55e] font-bold">BUILD</span> SOLUTIONS,<br />
-              NOT JUST WEBSITES.
-            </h2>
-          </motion.div>
+              {/* Section: TECH STACK */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4, type: "spring", bounce: 0.4 }}
+                className="mb-8"
+              >
+                <h3 className="text-[#22c55e] font-bold tracking-[0.2em] text-xs md:text-sm mb-4 uppercase">Tech Stack</h3>
 
-          {/* Section: Paragraph */}
-          <motion.p
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.3, type: "spring", bounce: 0.4 }}
-            className="text-neutral-400 text-lg md:text-2xl font-light leading-relaxed mb-12 tracking-wide"
-          >
-            Clean Code. Smart Logic.<br />
-            Scalable Systems.<br />
-            That's my <span className="text-[#22c55e] font-medium">Standard</span>.
-          </motion.p>
-
-          {/* Section: TECH STACK */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4, type: "spring", bounce: 0.4 }}
-            className="mb-12"
-          >
-            <h3 className="text-[#22c55e] font-bold tracking-[0.2em] text-sm md:text-base mb-6">TECH STACK</h3>
-
-            <div className="grid grid-cols-5 gap-y-6 gap-x-4 max-w-md opacity-90">
-              {/* Row 1 */}
-              {[
-                { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg", alt: "HTML5", glow: "rgba(227,79,38,0.5)" },
-                { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg", alt: "CSS3", glow: "rgba(21,114,182,0.5)" },
-                { custom: true, bg: "#F7DF1E", text: "JS", color: "#1a1a1a", alt: "JavaScript", glow: "rgba(247,223,30,0.6)" },
-                { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg", alt: "Tailwind", glow: "rgba(56,189,248,0.5)" },
-                { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg", alt: "React", glow: "rgba(97,218,251,0.5)" }
-              ].map((icon, i) => (
-                <motion.div
-                  key={i}
-                  whileHover={{ 
-                    scale: 1.3, 
-                    y: -12,
-                    rotateY: 15,
-                    rotateX: -10,
-                  }}
-                  transition={{ type: "spring", stiffness: 300, damping: 15 }}
-                  className="flex flex-col items-center gap-2 cursor-pointer"
-                  style={{ perspective: "600px", transformStyle: "preserve-3d" }}
-                >
-                  {icon.custom ? (
-                    <div 
-                      style={{ 
-                        backgroundColor: icon.bg,
-                        boxShadow: `0 8px 24px ${icon.glow}, 0 2px 4px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.3)`,
-                        transform: "translateZ(0)"
-                      }}
-                      className="w-10 h-10 md:w-12 md:h-12 rounded-md flex items-center justify-center"
+                <div className="grid grid-cols-5 gap-y-5 gap-x-3 max-w-md opacity-90">
+                  {/* Row 1 */}
+                  {[
+                    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg", alt: "HTML5", glow: "rgba(227,79,38,0.5)" },
+                    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg", alt: "CSS3", glow: "rgba(21,114,182,0.5)" },
+                    { custom: true, bg: "#F7DF1E", text: "JS", color: "#1a1a1a", alt: "JavaScript", glow: "rgba(247,223,30,0.6)" },
+                    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg", alt: "Tailwind", glow: "rgba(56,189,248,0.5)" },
+                    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg", alt: "React", glow: "rgba(97,218,251,0.5)" }
+                  ].map((icon, i) => (
+                    <motion.div
+                      key={i}
+                      whileHover={{ scale: 1.25, y: -8 }}
+                      transition={{ type: "spring", stiffness: 300, damping: 15 }}
+                      className="flex flex-col items-center gap-1.5 cursor-pointer"
                     >
-                      <span style={{ color: icon.color }} className="font-black text-xl leading-none pt-0.5 tracking-tight">JS</span>
-                    </div>
-                  ) : (
-                    <div style={{ filter: `drop-shadow(0 6px 16px ${icon.glow}) drop-shadow(0 2px 4px rgba(0,0,0,0.5))` }}>
-                      <img src={icon.src} className="w-10 h-10 md:w-12 md:h-12" alt={icon.alt} />
-                    </div>
-                  )}
-                  <span className="text-[10px] text-neutral-400 font-semibold">{icon.alt}</span>
-                </motion.div>
-              ))}
+                      {icon.custom ? (
+                        <div 
+                          style={{ 
+                            backgroundColor: icon.bg,
+                            boxShadow: `0 8px 24px ${icon.glow}, 0 2px 4px rgba(0,0,0,0.4)`
+                          }}
+                          className="w-9 h-9 md:w-11 md:h-11 rounded-md flex items-center justify-center"
+                        >
+                          <span style={{ color: icon.color }} className="font-black text-lg leading-none pt-0.5 tracking-tight">JS</span>
+                        </div>
+                      ) : (
+                        <div style={{ filter: `drop-shadow(0 6px 14px ${icon.glow})` }}>
+                          <img src={icon.src} className="w-9 h-9 md:w-11 md:h-11" alt={icon.alt} />
+                        </div>
+                      )}
+                      <span className="text-[9px] text-neutral-600 dark:text-neutral-400 font-semibold">{icon.alt}</span>
+                    </motion.div>
+                  ))}
 
-              {/* Row 2 */}
-              {[
-                { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg", alt: "Node.js", glow: "rgba(104,160,99,0.5)" },
-                { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg", alt: "Express", invert: true, glow: "rgba(255,255,255,0.3)" },
-                { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg", alt: "MongoDB", glow: "rgba(77,179,61,0.5)" },
-                { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg", alt: "GitHub", invert: true, glow: "rgba(255,255,255,0.3)" },
-                { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg", alt: "Docker", glow: "rgba(13,183,237,0.5)" }
-              ].map((icon, i) => (
-                <motion.div
-                  key={i + 5}
-                  whileHover={{ 
-                    scale: 1.3, 
-                    y: -12,
-                    rotateY: 15,
-                    rotateX: -10,
-                  }}
-                  transition={{ type: "spring", stiffness: 300, damping: 15 }}
-                  className="flex flex-col items-center gap-2 cursor-pointer"
-                  style={{ perspective: "600px", transformStyle: "preserve-3d" }}
-                >
-                  <div style={{ filter: `drop-shadow(0 6px 16px ${icon.glow}) drop-shadow(0 2px 4px rgba(0,0,0,0.5))` }}>
-                    <img src={icon.src} className={`w-10 h-10 md:w-12 md:h-12 ${icon.invert ? 'invert opacity-90' : ''}`} alt={icon.alt} />
-                  </div>
-                  <span className="text-[10px] text-neutral-400 font-semibold">{icon.alt}</span>
-                </motion.div>
-              ))}
+                  {/* Row 2 */}
+                  {[
+                    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg", alt: "Node.js", glow: "rgba(104,160,99,0.5)" },
+                    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg", alt: "Express", invert: true, glow: "rgba(255,255,255,0.3)" },
+                    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg", alt: "MongoDB", glow: "rgba(77,179,61,0.5)" },
+                    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg", alt: "GitHub", invert: true, glow: "rgba(255,255,255,0.3)" },
+                    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg", alt: "Docker", glow: "rgba(13,183,237,0.5)" }
+                  ].map((icon, i) => (
+                    <motion.div
+                      key={i + 5}
+                      whileHover={{ scale: 1.25, y: -8 }}
+                      transition={{ type: "spring", stiffness: 300, damping: 15 }}
+                      className="flex flex-col items-center gap-1.5 cursor-pointer"
+                    >
+                      <div style={{ filter: `drop-shadow(0 6px 14px ${icon.glow})` }}>
+                        <img src={icon.src} className={`w-9 h-9 md:w-11 md:h-11 ${icon.invert ? 'dark:invert opacity-90' : ''}`} alt={icon.alt} />
+                      </div>
+                      <span className="text-[9px] text-neutral-600 dark:text-neutral-400 font-semibold">{icon.alt}</span>
+                    </motion.div>
+                  ))}
 
-              {/* Row 3 — Languages & DB */}
-              {[
-                { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg", alt: "TypeScript", glow: "rgba(49,120,198,0.6)" },
-                { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg", alt: "Python", glow: "rgba(55,118,171,0.5)" },
-                { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg", alt: "PostgreSQL", glow: "rgba(51,103,145,0.5)" },
-                { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg", alt: "Next.js", invert: true, glow: "rgba(255,255,255,0.3)" },
-                { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg", alt: "Redis", glow: "rgba(220,50,40,0.5)" }
-              ].map((icon, i) => (
-                <motion.div
-                  key={i + 10}
-                  whileHover={{ 
-                    scale: 1.3, 
-                    y: -12,
-                    rotateY: 15,
-                    rotateX: -10,
-                  }}
-                  transition={{ type: "spring", stiffness: 300, damping: 15 }}
-                  className="flex flex-col items-center gap-2 cursor-pointer"
-                  style={{ perspective: "600px", transformStyle: "preserve-3d" }}
-                >
-                  <div style={{ filter: `drop-shadow(0 6px 16px ${icon.glow}) drop-shadow(0 2px 4px rgba(0,0,0,0.5))` }}>
-                    <img src={icon.src} className={`w-10 h-10 md:w-12 md:h-12 ${icon.invert ? 'invert opacity-90' : ''}`} alt={icon.alt} />
-                  </div>
-                  <span className="text-[10px] text-neutral-400 font-semibold">{icon.alt}</span>
-                </motion.div>
-              ))}
+                  {/* Row 3 */}
+                  {[
+                    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg", alt: "TypeScript", glow: "rgba(49,120,198,0.6)" },
+                    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg", alt: "Python", glow: "rgba(55,118,171,0.5)" },
+                    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg", alt: "PostgreSQL", glow: "rgba(51,103,145,0.5)" },
+                    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg", alt: "Next.js", invert: true, glow: "rgba(255,255,255,0.3)" },
+                    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg", alt: "Redis", glow: "rgba(220,50,40,0.5)" }
+                  ].map((icon, i) => (
+                    <motion.div
+                      key={i + 10}
+                      whileHover={{ scale: 1.25, y: -8 }}
+                      transition={{ type: "spring", stiffness: 300, damping: 15 }}
+                      className="flex flex-col items-center gap-1.5 cursor-pointer"
+                    >
+                      <div style={{ filter: `drop-shadow(0 6px 14px ${icon.glow})` }}>
+                        <img src={icon.src} className={`w-9 h-9 md:w-11 md:h-11 ${icon.invert ? 'dark:invert opacity-90' : ''}`} alt={icon.alt} />
+                      </div>
+                      <span className="text-[9px] text-neutral-600 dark:text-neutral-400 font-semibold">{icon.alt}</span>
+                    </motion.div>
+                  ))}
+                </div>
+              </motion.div>
+
+
+              {/* Section: Terminal CTA */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.8, delay: 0.5, type: "spring", bounce: 0.5 }}
+              >
+                <Link href="/contact">
+                  <motion.div
+                    whileHover={{ scale: 1.06, boxShadow: "0 0 35px rgba(34,197,94,0.5)" }}
+                    whileTap={{ scale: 0.95 }}
+                    className="inline-flex items-center gap-3 px-6 py-3.5 rounded-xl border border-[#22c55e]/40 bg-[#22c55e]/10 backdrop-blur-md cursor-pointer transition-colors"
+                  >
+                    <span className="text-[#22c55e] font-mono text-base md:text-lg">{'>_'}</span>
+                    <span className="text-[#22c55e] font-mono tracking-wide text-xs md:text-sm font-bold">let's_build_together</span>
+                  </motion.div>
+                </Link>
+              </motion.div>
+
             </div>
-          </motion.div>
 
-          {/* Section: WHAT I DO */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.5, type: "spring", bounce: 0.4 }}
-            className="mb-16"
-          >
-            <h3 className="text-[#22c55e] font-bold tracking-[0.2em] text-sm md:text-base mb-6">WHAT I DO</h3>
-            <ul className="space-y-4">
-              {['Web Development', 'API Development', 'Database Design', 'Problem Solving'].map((item, i) => (
-                <motion.li
-                  key={i}
-                  whileHover={{ x: 45, color: "#ffffff", textShadow: "0px 0px 15px rgba(34,197,94,0.8)" }}
-                  className="flex items-center gap-3 text-neutral-300 md:text-lg font-light tracking-wide cursor-pointer transition-colors"
+            {/* --- RIGHT COLUMN: FRAMED PORTRAIT WITH FLOATING BADGES --- */}
+            <div className="lg:col-span-5 flex justify-center items-center relative mt-10 lg:mt-0">
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
+                className="relative w-full max-w-[380px] sm:max-w-[420px] aspect-[4/5] rounded-t-[200px] sm:rounded-t-[240px] rounded-b-[40px] bg-gradient-to-b from-[#22c55e]/30 via-[#16a34a]/15 to-zinc-950/80 border-2 border-[#22c55e]/40 shadow-[0_0_90px_rgba(34,197,94,0.25)] flex flex-col items-center justify-end overflow-visible group"
+              >
+                {/* Radial Glow Inside Arch Frame */}
+                <div className="absolute inset-0 rounded-t-[200px] sm:rounded-t-[240px] rounded-b-[40px] bg-[radial-gradient(circle_at_center,rgba(34,197,94,0.25)_0%,transparent_75%)] pointer-events-none" />
+
+                {/* 60% Scaled WebP Hero Portrait */}
+                <Image
+                  src="/final.webp"
+                  alt="Farman Khan — Full Stack Developer"
+                  width={500}
+                  height={620}
+                  priority
+                  className="w-[88%] h-auto object-contain object-bottom drop-shadow-[0_20px_40px_rgba(0,0,0,0.6)] group-hover:scale-105 transition-transform duration-700 z-20"
+                />
+
+                {/* --- FLOATING BADGE 1: TOP LEFT --- */}
+                <motion.div
+                  animate={{ y: [0, -8, 0] }}
+                  transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
+                  className="absolute -top-3 -left-2 sm:-left-6 z-30 flex items-center gap-2.5 sm:gap-3 px-3 py-2.5 sm:px-4 sm:py-3 rounded-2xl bg-white/90 dark:bg-zinc-900/90 backdrop-blur-2xl border border-neutral-200 dark:border-white/15 shadow-[0_20px_40px_rgba(0,0,0,0.3)] pointer-events-auto"
                 >
-                  <span className="text-[#22c55e] text-xl font-medium">{'>'}</span> {item}
-                </motion.li>
-              ))}
-            </ul>
-          </motion.div>
+                  <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-br from-[#22c55e] to-[#16a34a] flex items-center justify-center text-black shadow-lg shrink-0">
+                    <Rocket className="w-4 h-4 sm:w-5 sm:h-5" />
+                  </div>
+                  <div>
+                    <span className="block text-[9px] sm:text-[10px] font-bold text-neutral-500 dark:text-neutral-400 uppercase tracking-widest">Total Projects</span>
+                    <span className="block text-[11px] sm:text-sm font-black text-black dark:text-white">20+ Completed</span>
+                  </div>
+                </motion.div>
 
-          {/* Section: Terminal CTA */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.6, type: "spring", bounce: 0.5 }}
-          >
-            <motion.div
-              whileHover={{ scale: 1.15, boxShadow: "0 0 50px rgba(34,197,94,0.6)", backgroundColor: "rgba(34,197,94,0.25)" }}
-              whileTap={{ scale: 0.90 }}
-              className="inline-flex items-center gap-3 px-6 py-4 rounded-xl border border-[#22c55e]/30 bg-[#22c55e]/5 backdrop-blur-md cursor-pointer transition-colors duration-300"
-            >
-              <span className="text-[#22c55e] font-mono text-lg">{'>_'}</span>
-              <span className="text-[#22c55e] font-mono tracking-wide">let's_build_together</span>
-            </motion.div>
-          </motion.div>
+                {/* --- FLOATING BADGE 2: BOTTOM RIGHT --- */}
+                <motion.div
+                  animate={{ y: [0, 8, 0] }}
+                  transition={{ repeat: Infinity, duration: 4.5, ease: "easeInOut" }}
+                  className="absolute bottom-12 -right-2 sm:-right-6 z-30 flex items-center gap-2.5 sm:gap-3 px-3 py-2.5 sm:px-4 sm:py-3 rounded-2xl bg-white/90 dark:bg-zinc-900/90 backdrop-blur-2xl border border-neutral-200 dark:border-white/15 shadow-[0_20px_40px_rgba(0,0,0,0.3)] pointer-events-auto"
+                >
+                  <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-black dark:bg-white/10 border border-[#22c55e]/30 flex items-center justify-center text-[#22c55e] shadow-lg shrink-0">
+                    <Award className="w-4 h-4 sm:w-5 sm:h-5" />
+                  </div>
+                  <div>
+                    <span className="block text-[9px] sm:text-[10px] font-bold text-neutral-500 dark:text-neutral-400 uppercase tracking-widest">Certified</span>
+                    <span className="block text-[11px] sm:text-sm font-black text-black dark:text-white">Full-Stack Dev</span>
+                  </div>
+                </motion.div>
 
-          {/* Section: ABOUT */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.7, type: "spring", bounce: 0.4 }}
-            className="mt-20"
-          >
-            <p className="text-neutral-400 text-xl md:text-2xl lg:text-3xl font-light leading-relaxed mb-6 tracking-wide">
-              Crafting seamless web applications by bridging pixel-perfect React and Next.js frontends with scalable Node.js, Express, and PostgreSQL backends. From UI animations to database architecture — every layer of the product lifecycle is handled with precision.
-            </p>
-            <p className="text-neutral-400 text-xl md:text-2xl lg:text-3xl font-light leading-relaxed tracking-wide">
-              Design and engineering aren&apos;t separate jobs — they&apos;re one process. <span className="text-[#22c55e] font-medium drop-shadow-[0_0_8px_rgba(34,197,94,0.3)]">Complete products. Looks sharp, runs fast, scales without compromise.</span>
-            </p>
-          </motion.div>
+                {/* --- FLOATING ACTION PILLS: BOTTOM CENTER --- */}
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.6 }}
+                  className="absolute -bottom-6 left-1/2 -translate-x-1/2 z-40 flex items-center p-1 sm:p-1.5 rounded-full bg-white/95 dark:bg-zinc-900/95 backdrop-blur-3xl border border-neutral-200 dark:border-white/20 shadow-[0_15px_40px_rgba(0,0,0,0.4)] gap-1 sm:gap-1.5 whitespace-nowrap pointer-events-auto"
+                >
+                  <Link
+                    href="#projects"
+                    className="flex items-center gap-1.5 sm:gap-2 px-4 py-2 sm:px-5 sm:py-2.5 rounded-full bg-black dark:bg-white text-white dark:text-black font-bold text-[11px] sm:text-xs uppercase tracking-wider hover:bg-[#22c55e] dark:hover:bg-[#22c55e] dark:hover:text-black transition-all group"
+                  >
+                    Portfolio
+                    <span className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-[#22c55e] group-hover:bg-black group-hover:text-white dark:group-hover:bg-white text-black flex items-center justify-center transition-colors">
+                      <ArrowRight className="w-3 h-3" />
+                    </span>
+                  </Link>
+                  <Link
+                    href="/contact"
+                    className="px-4 py-2 sm:px-5 sm:py-2.5 rounded-full bg-transparent hover:bg-neutral-100 dark:hover:bg-white/10 text-black dark:text-white font-bold text-[11px] sm:text-xs uppercase tracking-wider transition-all"
+                  >
+                    Hire Me
+                  </Link>
+                </motion.div>
 
+              </motion.div>
+            </div>
+
+          </div>
         </div>
-      </div>
-
-      {/* --- BOTTOM RIGHT SIGNATURE --- */}
-      <motion.div
-        initial={{ opacity: 0, x: 50 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1, delay: 0.8, ease: "easeOut" }}
-        className="absolute bottom-10 right-10 md:bottom-16 md:right-16 flex flex-col items-end z-40 pointer-events-none"
-      >
-        <span className="text-[#22c55e] text-5xl md:text-7xl opacity-90 drop-shadow-[0_0_15px_rgba(34,197,94,0.5)]" style={{ fontFamily: "'Brush Script MT', 'Dancing Script', cursive" }}>
-          Farman
-        </span>
-        <div className="flex items-center gap-3 mt-1">
-          <span className="text-black dark:text-white tracking-[0.3em] text-sm md:text-base font-semibold">DEVELOPER</span>
-          <span className="text-[#22c55e] font-mono font-bold text-xl">{'</>'}</span>
-        </div>
-      </motion.div>
 
       </section>
 
+
       {/* ========================================= */}
-      {/* SECTION 2: THE ROBOT & SAAS                 */}
+      {/* SECTION 2: THE ROBOT & SAAS (DESKTOP ONLY)  */}
       {/* ========================================= */}
       
-      <section className="relative w-full z-40 bg-transparent pt-32 pb-24 border-t border-[#22c55e]/10">
+      <section className="hidden md:block relative w-full z-40 bg-transparent pt-32 pb-24 border-t border-[#22c55e]/10">
         <ViewportSection skeleton={<HeroSkeleton />} minHeight="600px">
           <div className="w-full px-3 md:px-8 max-w-[1550px] mx-auto flex flex-col items-center">
             <div className="w-full text-center mb-16">

@@ -27,8 +27,13 @@ export function CustomCursor() {
   useEffect(() => {
     setIsMounted(true);
 
-    // Detect touch / coarse pointer devices where custom cursor isn't appropriate
-    if (window.matchMedia("(pointer: coarse)").matches) {
+    // Detect mobile screen width / touch / coarse pointer devices where custom cursor isn't appropriate
+    const isMobileDevice =
+      window.innerWidth < 768 ||
+      window.matchMedia("(pointer: coarse)").matches ||
+      "ontouchstart" in window;
+
+    if (isMobileDevice) {
       setIsTouchDevice(true);
       return;
     }
