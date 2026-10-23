@@ -312,12 +312,14 @@ export default function FinalPortfolioPage() {
                       <ArrowRight className="w-3 h-3" />
                     </span>
                   </Link>
-                  <Link
-                    href="/contact"
-                    className="px-4 py-2 sm:px-5 sm:py-2.5 rounded-full bg-transparent hover:bg-neutral-100 dark:hover:bg-white/10 text-black dark:text-white font-bold text-[11px] sm:text-xs uppercase tracking-wider transition-all"
+                  <a
+                    href="/Farman_Khan_Resume.pdf"
+                    download="Farman_Khan_Resume.pdf"
+                    className="px-4 py-2 sm:px-5 sm:py-2.5 rounded-full bg-transparent hover:bg-neutral-100 dark:hover:bg-white/10 text-black dark:text-white font-bold text-[11px] sm:text-xs uppercase tracking-wider transition-all flex items-center gap-1.5 cursor-pointer"
+                    title="Download Farman Khan Resume PDF"
                   >
-                    Hire Me
-                  </Link>
+                    Hire Me (CV)
+                  </a>
                 </motion.div>
 
               </motion.div>

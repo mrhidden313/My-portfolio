@@ -3,7 +3,7 @@
 import * as React from "react";
 import { useState, useRef } from "react";
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Send, ArrowRight, CheckCircle2 } from "lucide-react";
+import { Mail, Phone, MapPin, Send, ArrowRight, CheckCircle2, PhoneCall, FileDown } from "lucide-react";
 import Link from "next/link";
 import emailjs from '@emailjs/browser';
 
@@ -64,7 +64,7 @@ export default function ContactPage() {
             </h1>
             
             <p className="text-neutral-400 text-base sm:text-lg font-light leading-relaxed">
-              Have a project in mind, need a full-stack developer, or just want to chat about tech? Drop a message below and I&apos;ll get back to you within 24 hours.
+              Have a project in mind, need a full-stack developer, or just want to chat about tech? Drop a message below or connect directly for a 1:1 architecture call.
             </p>
           </motion.div>
         </div>
@@ -76,7 +76,7 @@ export default function ContactPage() {
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="lg:col-span-5 flex flex-col gap-5 sm:gap-8"
+            className="lg:col-span-5 flex flex-col gap-5 sm:gap-6"
           >
             {[
               { icon: <Mail className="w-5 h-5 sm:w-6 sm:h-6" />, title: "Email", info: "farmanwrites10@gmail.com", link: "mailto:farmanwrites10@gmail.com" },
@@ -98,7 +98,28 @@ export default function ContactPage() {
               </a>
             ))}
 
-            <div className="mt-2 p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-[#22c55e]/10 via-zinc-900/40 to-transparent border border-[#22c55e]/20 relative overflow-hidden group hover:border-[#22c55e]/50 transition-all duration-500 hover:shadow-[0_0_30px_rgba(34,197,94,0.15)]">
+            {/* ── CV / RESUME DOWNLOAD CARD ── */}
+            <a 
+              href="/Farman_Khan_Resume.pdf"
+              download="Farman_Khan_Resume.pdf"
+              className="group flex items-center gap-4 sm:gap-6 p-5 sm:p-6 rounded-2xl bg-gradient-to-br from-[#22c55e]/15 via-white/[0.03] to-[#16a34a]/10 border border-[#22c55e]/40 hover:border-[#22c55e] hover:shadow-[0_0_30px_rgba(34,197,94,0.35)] transition-all duration-300 cursor-pointer"
+              title="Download Farman Khan Executive CV"
+            >
+              <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#22c55e] flex items-center justify-center text-black group-hover:scale-110 shadow-lg shrink-0 transition-transform">
+                <FileDown className="w-6 h-6 font-black" />
+              </div>
+              <div className="min-w-0 flex-1">
+                <div className="flex items-center gap-2 mb-0.5">
+                  <span className="text-[10px] sm:text-xs font-bold text-[#16a34a] dark:text-[#22c55e] uppercase tracking-wider">Official Document</span>
+                  <span className="text-[9px] px-1.5 py-0.5 rounded bg-[#22c55e]/20 text-[#22c55e] font-mono font-bold">PDF</span>
+                </div>
+                <h4 className="text-sm sm:text-base font-black text-black dark:text-white group-hover:text-[#22c55e] transition-colors">Download Resume / CV</h4>
+                <p className="text-xs text-neutral-500 dark:text-neutral-400 mt-0.5">Verified technical capabilities & client metrics</p>
+              </div>
+              <ArrowRight className="w-5 h-5 text-[#22c55e] group-hover:translate-x-1.5 transition-transform" />
+            </a>
+
+            <div className="p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-[#22c55e]/10 via-zinc-900/40 to-transparent border border-[#22c55e]/20 relative overflow-hidden group hover:border-[#22c55e]/50 transition-all duration-500 hover:shadow-[0_0_30px_rgba(34,197,94,0.15)]">
               <motion.div 
                 animate={{ y: [0, -10, 0] }} 
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
@@ -107,20 +128,59 @@ export default function ContactPage() {
                 <Send className="w-20 h-20 sm:w-24 sm:h-24 rotate-12" />
               </motion.div>
               <h3 className="text-lg sm:text-xl font-bold text-black dark:text-white mb-2 relative z-10 group-hover:text-[#22c55e] transition-colors">Freelance Status</h3>
-              <p className="text-neutral-400 font-light relative z-10 mb-5 text-sm sm:text-base">Currently accepting new projects and remote opportunities.</p>
+              <p className="text-neutral-400 font-light relative z-10 mb-5 text-sm sm:text-base">Currently accepting new projects, architecture retainers, and remote opportunities.</p>
               <Link href="/#projects" className="inline-flex items-center gap-2 text-[#22c55e] font-bold text-xs sm:text-sm uppercase tracking-wider hover:gap-4 transition-all relative z-10">
                 View My Projects <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
           </motion.div>
 
-          {/* ── CONTACT FORM (Right Side) ── */}
+          {/* ── CONTACT FORM & 1:1 CALL (Right Side) ── */}
           <motion.div 
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="lg:col-span-7 lg:pl-10"
+            className="lg:col-span-7 lg:pl-10 flex flex-col gap-8"
           >
+            {/* ── 1:1 CALL OPTION BANNER (DIRECT WHATSAPP DISCOVERY) ── */}
+            <div className="p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-zinc-950 via-zinc-900 to-black border-2 border-[#22c55e]/50 shadow-[0_15px_45px_rgba(34,197,94,0.25)] relative overflow-hidden group">
+              {/* Ambient Glow */}
+              <div className="absolute top-0 right-0 w-64 h-64 bg-[radial-gradient(circle_at_center,rgba(34,197,94,0.2)_0%,transparent_70%)] pointer-events-none" />
+
+              <div className="relative z-10 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+                <div className="flex-1">
+                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#22c55e]/15 border border-[#22c55e]/30 text-[#22c55e] text-xs font-bold uppercase tracking-widest mb-3">
+                    <span className="w-2 h-2 rounded-full bg-[#22c55e] animate-ping" />
+                    Instant 1:1 Discovery Call
+                  </div>
+                  <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight">
+                    Direct Call With Farman Khan
+                  </h3>
+                  <p className="text-neutral-400 text-xs sm:text-sm mt-1.5 leading-relaxed max-w-md">
+                    Prefer to talk directly instead of waiting for email? Connect on WhatsApp for a quick 15-minute system architecture & project scope call.
+                  </p>
+                  <div className="mt-4 flex items-center gap-2.5 text-white font-mono text-sm sm:text-base font-bold">
+                    <div className="w-8 h-8 rounded-lg bg-[#22c55e]/20 flex items-center justify-center text-[#22c55e]">
+                      <PhoneCall className="w-4 h-4" />
+                    </div>
+                    <span className="tracking-wider">+92 329 9736086</span>
+                  </div>
+                </div>
+
+                <a
+                  href="https://wa.me/923299736086?text=Hi%20Farman,%20I%20would%20like%20to%20schedule%20a%201:1%20Discovery%20Call%20for%20a%20project."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-3 px-6 py-4 rounded-2xl bg-[#22c55e] hover:bg-[#16a34a] text-black font-black text-sm uppercase tracking-wider transition-all duration-300 shadow-[0_0_30px_rgba(34,197,94,0.5)] hover:scale-105 shrink-0"
+                >
+                  <PhoneCall className="w-5 h-5 fill-black" />
+                  <span>Book 1:1 Call</span>
+                  <ArrowRight className="w-4 h-4" />
+                </a>
+              </div>
+            </div>
+
+            {/* ── EMAIL FORM CONTAINER ── */}
             <div className="p-5 sm:p-8 md:p-10 rounded-3xl bg-white/70 dark:bg-white/[0.02] border border-neutral-200 dark:border-white/10 backdrop-blur-xl shadow-2xl hover:border-neutral-300 dark:hover:border-white/20 transition-all duration-500 hover:bg-white/80 dark:hover:bg-white/[0.03]">
               <h2 className="text-2xl font-bold text-black dark:text-white mb-8 flex items-center gap-3">
                 Send a Message <motion.span animate={{ rotate: [0, 10, -10, 0] }} transition={{ repeat: Infinity, duration: 2, delay: 1 }} className="inline-block">👋</motion.span>

@@ -4,7 +4,7 @@ import * as React from "react";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTheme } from "next-themes";
-import { Sun, Moon, Menu, X, ArrowRight, Sparkles } from "lucide-react";
+import { Sun, Moon, Menu, X, ArrowRight, Sparkles, FileDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import Image from "next/image";
@@ -434,15 +434,27 @@ export function Navbar() {
                   </button>
                 </div>
 
-                {/* Direct Action Button */}
-                <Link
-                  href="/contact"
-                  onClick={() => setMobileMenuOpen(false)}
-                  className="w-full py-3.5 rounded-xl bg-gradient-to-r from-[#16a34a] to-[#22c55e] text-black font-black text-center text-sm shadow-[0_4px_25px_rgba(34,197,94,0.4)] flex items-center justify-center gap-2 hover:opacity-95 transition-opacity"
-                >
-                  <span>Let&apos;s Build Together</span>
-                  <ArrowRight className="w-4 h-4 font-black" />
-                </Link>
+                {/* Direct Action Buttons */}
+                <div className="flex flex-col gap-2.5">
+                  <a
+                    href="/Farman_Khan_Resume.pdf"
+                    download="Farman_Khan_Resume.pdf"
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="w-full py-3 rounded-xl border border-[#22c55e]/40 hover:border-[#22c55e] bg-[#22c55e]/10 text-[#16a34a] dark:text-[#22c55e] font-black text-center text-xs flex items-center justify-center gap-2 transition-all active:scale-95"
+                  >
+                    <FileDown className="w-4 h-4 font-black" />
+                    <span>Download CV (PDF)</span>
+                  </a>
+
+                  <Link
+                    href="/contact"
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="w-full py-3.5 rounded-xl bg-gradient-to-r from-[#16a34a] to-[#22c55e] text-black font-black text-center text-sm shadow-[0_4px_25px_rgba(34,197,94,0.4)] flex items-center justify-center gap-2 hover:opacity-95 transition-opacity active:scale-95"
+                  >
+                    <span>Let&apos;s Build Together</span>
+                    <ArrowRight className="w-4 h-4 font-black" />
+                  </Link>
+                </div>
               </div>
             </motion.div>
           </div>
