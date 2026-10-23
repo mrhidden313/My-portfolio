@@ -242,20 +242,29 @@ export default function FinalPortfolioPage() {
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
-                className="relative w-full max-w-[380px] sm:max-w-[420px] aspect-[4/5] rounded-t-[200px] sm:rounded-t-[240px] rounded-b-[40px] bg-gradient-to-b from-[#22c55e]/30 via-[#16a34a]/15 to-zinc-950/80 border-2 border-[#22c55e]/40 shadow-[0_0_90px_rgba(34,197,94,0.25)] flex flex-col items-center justify-end overflow-visible group"
+                className="relative w-full max-w-[380px] sm:max-w-[420px] aspect-[4/5] rounded-t-[200px] sm:rounded-t-[240px] rounded-b-[40px] shadow-[0_0_90px_rgba(34,197,94,0.3)] flex flex-col items-center justify-end overflow-visible group"
               >
-                {/* Radial Glow Inside Arch Frame */}
-                <div className="absolute inset-0 rounded-t-[200px] sm:rounded-t-[240px] rounded-b-[40px] bg-[radial-gradient(circle_at_center,rgba(34,197,94,0.25)_0%,transparent_75%)] pointer-events-none" />
+                {/* --- MASKED ARCH FRAME CONTAINER (Clips image inside curved frame with no spillover) --- */}
+                <div className="absolute inset-0 rounded-t-[200px] sm:rounded-t-[240px] rounded-b-[40px] overflow-hidden bg-gradient-to-b from-[#22c55e]/30 via-[#16a34a]/15 to-zinc-950/80">
+                  {/* Radial Glow */}
+                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(34,197,94,0.25)_0%,transparent_75%)] pointer-events-none z-10" />
 
-                {/* 60% Scaled WebP Hero Portrait */}
-                <Image
-                  src="/final.webp"
-                  alt="Farman Khan — Full Stack Developer"
-                  width={500}
-                  height={620}
-                  priority
-                  className="w-[88%] h-auto object-contain object-bottom drop-shadow-[0_20px_40px_rgba(0,0,0,0.6)] group-hover:scale-105 transition-transform duration-700 z-20"
-                />
+                  {/* Zoomed Full-Cover WebP Hero Portrait - Grabs the entire frame without empty gaps */}
+                  <Image
+                    src="/final.webp"
+                    alt="Farman Khan — Full Stack Developer"
+                    fill
+                    priority
+                    sizes="(max-width: 768px) 100vw, 450px"
+                    className="object-cover object-center scale-105 group-hover:scale-110 transition-transform duration-700 ease-out z-0"
+                  />
+
+                  {/* Bottom Vignette Gradient */}
+                  <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-zinc-950 via-zinc-950/50 to-transparent pointer-events-none z-10" />
+
+                  {/* Frame Border On Top of Image */}
+                  <div className="absolute inset-0 rounded-t-[200px] sm:rounded-t-[240px] rounded-b-[40px] border-2 border-[#22c55e]/60 shadow-[inset_0_0_25px_rgba(34,197,94,0.25)] pointer-events-none z-20" />
+                </div>
 
                 {/* --- FLOATING BADGE 1: TOP LEFT --- */}
                 <motion.div
