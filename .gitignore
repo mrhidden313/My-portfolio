@@ -40,6 +40,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# scratch/temp files
+scratch/
+
 # CodeLens Graph local index
 .codelens/
 
