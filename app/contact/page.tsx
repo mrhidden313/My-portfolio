@@ -79,14 +79,14 @@ export default function ContactPage() {
             className="lg:col-span-5 flex flex-col gap-5 sm:gap-8"
           >
             {[
-              { icon: <Mail className="w-5 h-5 sm:w-6 sm:h-6" />, title: "Email", info: "mrfkdeveloper@gmail.com", link: "mailto:mrfkdeveloper@gmail.com" },
+              { icon: <Mail className="w-5 h-5 sm:w-6 sm:h-6" />, title: "Email", info: "farmanwrites10@gmail.com", link: "mailto:farmanwrites10@gmail.com" },
               { icon: <Phone className="w-5 h-5 sm:w-6 sm:h-6" />, title: "WhatsApp", info: "+92 329 9736086", link: "https://wa.me/923299736086" },
               { icon: <MapPin className="w-5 h-5 sm:w-6 sm:h-6" />, title: "Location", info: "Remote / Global", link: "#" },
             ].map((item, i) => (
               <a 
                 key={i} 
                 href={item.link}
-                className="group flex items-center gap-4 sm:gap-6 p-4 sm:p-6 rounded-2xl bg-white/[0.02] border border-black/ dark:border-white/ hover:border-[#22c55e]/30 hover:bg-[#22c55e]/5 transition-all duration-300"
+                className="group flex items-center gap-4 sm:gap-6 p-4 sm:p-6 rounded-2xl bg-white/[0.02] border border-neutral-200 dark:border-white/10 hover:border-[#22c55e]/30 hover:bg-[#22c55e]/5 transition-all duration-300"
               >
                 <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#22c55e]/10 flex items-center justify-center text-[#22c55e] group-hover:scale-110 group-hover:bg-[#22c55e] group-hover:text-black transition-all duration-300 shadow-[0_0_15px_rgba(34,197,94,0.1)] shrink-0">
                   {item.icon}

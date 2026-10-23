@@ -6,10 +6,23 @@ import { ArrowUpRight, Code2, ExternalLink } from "lucide-react";
 
 const projects = [
   {
+    title: "Qazi Cola",
+    category: "E-Commerce & Purpose Brand Portal",
+    description: "Official global brand presence and e-commerce portal for Qazi Cola — a Palestinian legacy beverage with 100% of profits dedicated to humanitarian relief. Built with Next.js, sub-second load times, dynamic motion graphics, and mobile-first responsive architecture.",
+    image: "/project-qazicola.webp",
+    link: "https://qazicola.com",
+    langIcons: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+    ]
+  },
+  {
     title: "Instant Growth Agency",
     category: "Digital Agency & Engineering Portal",
     description: "High-velocity creative engineering & digital agency portal. Features sub-second Core Web Vitals performance, interactive dynamic liquid grid canvas, smooth motion transitions, and comprehensive service capabilities.",
-    image: "/project-instantgrowth.png",
+    image: "/project-instantgrowth.webp",
     link: "https://instantgrowthdigitalagency.com",
     langIcons: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
@@ -22,7 +35,7 @@ const projects = [
     title: "MJ Group of Companies",
     category: "Real Estate Corporate Portal",
     description: "A premium, high-trust corporate portal for MJ Group of Companies. Built with modern dynamic UI, interactive property listing showcases, lead generation integration, and responsive glassmorphism UI.",
-    image: "/project-mjmarketing.png",
+    image: "/project-mjmarketing.webp",
     link: "https://mjmarketingofficial.com",
     langIcons: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
@@ -34,7 +47,7 @@ const projects = [
     title: "InstantFlow SAAS",
     category: "DevOps & WhatsApp Automation",
     description: "Automated WhatsApp API & CRM Workflow Engine. Features a hybrid architecture with Node.js gatekeeper, Ruby on Rails backend, Baileys integration, multimedia handling (FFmpeg), and instant webhook triggers.",
-    image: "/project-instantflow.png",
+    image: "/project-instantflow.webp",
     link: "https://instantflow.online",
     langIcons: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
@@ -47,7 +60,7 @@ const projects = [
     title: "Markhor Energy Drink",
     category: "3D Branding & Landing Page",
     description: "High-performance 3D branding showcase & landing page for Markhor Energy Drink. Built with Next.js, Tailwind CSS, Framer Motion dynamic animations, and interactive product presentation.",
-    image: "/project-markhor-energy.png",
+    image: "/project-markhor-energy.webp",
     link: "https://markhurenergydrink.vercel.app/",
     langIcons: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",

@@ -8,13 +8,13 @@ import { Card } from "@/components/ui/card"
 import { Spotlight } from "@/components/ui/spotlight"
 import { ArrowRight } from "lucide-react"
 
-// Ultra-condensed, diamond precision copywriting (`150+ active businesses across 12 countries`)
+// Ultra-condensed, diamond precision copywriting (`50+ active businesses across 12 countries`)
 const ABOUT_CONTENT_LINES = [
   "ABOUT FARMAN KHAN",
   "Full-Stack & AI Systems Architect (3+ Yrs)",
   "",
   "Architecting high-concurrency SaaS & autonomous AI workflows,",
-  "trusted by 150+ active businesses across 12 countries.",
+  "trusted by 50+ active businesses across 12 countries.",
   "",
   "CORE CAPABILITIES:",
   "• Next.js 16, React 19 & High-Concurrency SaaS",

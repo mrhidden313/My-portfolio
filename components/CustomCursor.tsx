@@ -86,7 +86,7 @@ export function CustomCursor() {
     <div className="pointer-events-none fixed inset-0 z-[9999] overflow-hidden">
       {/* Outer Glowing Ring */}
       <motion.div
-        className="absolute top-0 left-0 rounded-full border border-cyan-500/60 dark:border-cyan-400/70"
+        className="absolute top-0 left-0 rounded-full border border-[#22c55e]/60 dark:border-[#22c55e]/70"
         style={{
           x: ringX,
           y: ringY,
@@ -95,9 +95,9 @@ export function CustomCursor() {
           width: 36,
           height: 36,
           boxShadow: isHovering
-            ? "0 0 20px rgba(6, 182, 212, 0.6), inset 0 0 10px rgba(6, 182, 212, 0.3)"
-            : "0 0 14px rgba(6, 182, 212, 0.35)",
-          backgroundColor: isHovering ? "rgba(6, 182, 212, 0.15)" : "transparent",
+            ? "0 0 20px rgba(34, 197, 94, 0.6), inset 0 0 10px rgba(34, 197, 94, 0.3)"
+            : "0 0 14px rgba(34, 197, 94, 0.35)",
+          backgroundColor: isHovering ? "rgba(34, 197, 94, 0.15)" : "transparent",
         }}
         animate={{
           opacity: isVisible ? 1 : 0,
@@ -111,7 +111,7 @@ export function CustomCursor() {
 
       {/* Inner Precise Dot */}
       <motion.div
-        className="absolute top-0 left-0 rounded-full bg-cyan-400 dark:bg-cyan-300"
+        className="absolute top-0 left-0 rounded-full bg-[#22c55e] dark:bg-[#4ade80]"
         style={{
           x: dotX,
           y: dotY,
@@ -119,7 +119,7 @@ export function CustomCursor() {
           translateY: "-50%",
           width: isHovering ? 6 : 8,
           height: isHovering ? 6 : 8,
-          boxShadow: "0 0 8px rgba(34, 211, 238, 0.9)",
+          boxShadow: "0 0 8px rgba(34, 197, 94, 0.9)",
         }}
         animate={{
           opacity: isVisible ? (isHovering ? 0.6 : 1) : 0,

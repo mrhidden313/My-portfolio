@@ -7,28 +7,34 @@ import { useRouter } from "next/navigation";
 
 const projects = [
   {
+    title: "Qazi Cola",
+    category: "Brand & E-Commerce Platform",
+    description: "Official global portal for Qazi Cola, a purpose-driven Palestinian legacy beverage. Engineered with Next.js, sub-second Core Web Vitals, dynamic branding showcases, and 100% relief mission support.",
+    image: "/project-qazicola.webp",
+  },
+  {
     title: "Instant Growth Agency",
     category: "Digital Agency Portal",
     description: "High-velocity creative engineering & digital agency portal featuring sub-second Core Web Vitals, dynamic liquid grid canvas, and motion graphics.",
-    image: "/project-instantgrowth.png",
-  },
-  {
-    title: "MJ Group of Companies",
-    category: "Real Estate Corporate Site",
-    description: "A professional corporate portal developed for MJ Group of Companies featuring responsive design, lead generation, and interactive listing displays.",
-    image: "/project-mjmarketing.png",
+    image: "/project-instantgrowth.webp",
   },
   {
     title: "InstantFlow SAAS",
     category: "DevOps & WhatsApp Engine",
     description: "Automated WhatsApp API & CRM Workflow Engine with Node.js gatekeeper, Ruby on Rails backend, Baileys integration, and multimedia processing.",
-    image: "/project-instantflow.png",
+    image: "/project-instantflow.webp",
+  },
+  {
+    title: "MJ Group of Companies",
+    category: "Real Estate Corporate Site",
+    description: "A professional corporate portal developed for MJ Group of Companies featuring responsive design, lead generation, and interactive listing displays.",
+    image: "/project-mjmarketing.webp",
   },
   {
     title: "Markhor Energy Drink",
     category: "3D Branding Showcase",
     description: "High-performance 3D branding showcase & landing page for Markhor Energy Drink with Next.js, Framer Motion, and WebGL elements.",
-    image: "/project-markhor-energy.png",
+    image: "/project-markhor-energy.webp",
   },
 ];
 
@@ -54,8 +60,8 @@ export function HomeProjects() {
         <div className="w-24 h-2 bg-[#16a34a] dark:bg-[#22c55e] mx-auto mt-5 rounded-full dark:shadow-[0_0_20px_#22c55e] group-hover/header:w-48 transition-all duration-500" />
       </motion.div>
 
-      {/* Projects 4-Card Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-20">
+      {/* Projects Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-20">
         {projects.map((item, idx) => (
           <motion.div
             key={item.title}

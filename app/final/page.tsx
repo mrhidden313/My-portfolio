@@ -166,19 +166,33 @@ export default function FinalPortfolioPage() {
                 <h3 className="text-[#22c55e] font-bold tracking-[0.2em] text-xs md:text-sm mb-4 uppercase">Tech Stack</h3>
 
                 <div className="grid grid-cols-5 gap-y-5 gap-x-3 max-w-md opacity-90">
-                  {/* Row 1 */}
                   {[
+                    // Row 1 (Desktop)
                     { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg", alt: "HTML5", glow: "rgba(227,79,38,0.5)" },
                     { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg", alt: "CSS3", glow: "rgba(21,114,182,0.5)" },
                     { custom: true, bg: "#F7DF1E", text: "JS", color: "#1a1a1a", alt: "JavaScript", glow: "rgba(247,223,30,0.6)" },
-                    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg", alt: "Tailwind", glow: "rgba(56,189,248,0.5)" },
-                    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg", alt: "React", glow: "rgba(97,218,251,0.5)" }
+                    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg", alt: "Tailwind", glow: "rgba(56,189,248,0.5)", hideMobile: true },
+                    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg", alt: "React", glow: "rgba(97,218,251,0.5)", hideMobile: true },
+                    
+                    // Row 2 (Desktop)
+                    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg", alt: "Node.js", glow: "rgba(104,160,99,0.5)" },
+                    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg", alt: "Express", invert: true, glow: "rgba(255,255,255,0.3)", hideMobile: true },
+                    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg", alt: "MongoDB", glow: "rgba(77,179,61,0.5)" },
+                    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg", alt: "GitHub", invert: true, glow: "rgba(255,255,255,0.3)", hideMobile: true },
+                    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg", alt: "Docker", glow: "rgba(13,183,237,0.5)" },
+                    
+                    // Row 3 (Desktop)
+                    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg", alt: "TypeScript", glow: "rgba(49,120,198,0.6)", hideMobile: true },
+                    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg", alt: "Python", glow: "rgba(55,118,171,0.5)" },
+                    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg", alt: "PostgreSQL", glow: "rgba(51,103,145,0.5)" },
+                    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg", alt: "Next.js", invert: true, glow: "rgba(255,255,255,0.3)" },
+                    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg", alt: "Redis", glow: "rgba(220,50,40,0.5)" }
                   ].map((icon, i) => (
                     <motion.div
-                      key={i}
+                      key={icon.alt}
                       whileHover={{ scale: 1.25, y: -8 }}
                       transition={{ type: "spring", stiffness: 300, damping: 15 }}
-                      className="flex flex-col items-center gap-1.5 cursor-pointer"
+                      className={`${icon.hideMobile ? "hidden md:flex" : "flex"} flex-col items-center gap-1.5 cursor-pointer`}
                     >
                       {icon.custom ? (
                         <div 
@@ -192,51 +206,9 @@ export default function FinalPortfolioPage() {
                         </div>
                       ) : (
                         <div style={{ filter: `drop-shadow(0 6px 14px ${icon.glow})` }}>
-                          <img src={icon.src} className="w-9 h-9 md:w-11 md:h-11" alt={icon.alt} />
+                          <img src={icon.src} className={`w-9 h-9 md:w-11 md:h-11 ${icon.invert ? 'dark:invert opacity-90' : ''}`} alt={icon.alt} />
                         </div>
                       )}
-                      <span className="text-[9px] text-neutral-600 dark:text-neutral-400 font-semibold">{icon.alt}</span>
-                    </motion.div>
-                  ))}
-
-                  {/* Row 2 */}
-                  {[
-                    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg", alt: "Node.js", glow: "rgba(104,160,99,0.5)" },
-                    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg", alt: "Express", invert: true, glow: "rgba(255,255,255,0.3)" },
-                    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg", alt: "MongoDB", glow: "rgba(77,179,61,0.5)" },
-                    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg", alt: "GitHub", invert: true, glow: "rgba(255,255,255,0.3)" },
-                    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg", alt: "Docker", glow: "rgba(13,183,237,0.5)" }
-                  ].map((icon, i) => (
-                    <motion.div
-                      key={i + 5}
-                      whileHover={{ scale: 1.25, y: -8 }}
-                      transition={{ type: "spring", stiffness: 300, damping: 15 }}
-                      className="flex flex-col items-center gap-1.5 cursor-pointer"
-                    >
-                      <div style={{ filter: `drop-shadow(0 6px 14px ${icon.glow})` }}>
-                        <img src={icon.src} className={`w-9 h-9 md:w-11 md:h-11 ${icon.invert ? 'dark:invert opacity-90' : ''}`} alt={icon.alt} />
-                      </div>
-                      <span className="text-[9px] text-neutral-600 dark:text-neutral-400 font-semibold">{icon.alt}</span>
-                    </motion.div>
-                  ))}
-
-                  {/* Row 3 */}
-                  {[
-                    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg", alt: "TypeScript", glow: "rgba(49,120,198,0.6)" },
-                    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg", alt: "Python", glow: "rgba(55,118,171,0.5)" },
-                    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg", alt: "PostgreSQL", glow: "rgba(51,103,145,0.5)" },
-                    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg", alt: "Next.js", invert: true, glow: "rgba(255,255,255,0.3)" },
-                    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg", alt: "Redis", glow: "rgba(220,50,40,0.5)" }
-                  ].map((icon, i) => (
-                    <motion.div
-                      key={i + 10}
-                      whileHover={{ scale: 1.25, y: -8 }}
-                      transition={{ type: "spring", stiffness: 300, damping: 15 }}
-                      className="flex flex-col items-center gap-1.5 cursor-pointer"
-                    >
-                      <div style={{ filter: `drop-shadow(0 6px 14px ${icon.glow})` }}>
-                        <img src={icon.src} className={`w-9 h-9 md:w-11 md:h-11 ${icon.invert ? 'dark:invert opacity-90' : ''}`} alt={icon.alt} />
-                      </div>
                       <span className="text-[9px] text-neutral-600 dark:text-neutral-400 font-semibold">{icon.alt}</span>
                     </motion.div>
                   ))}

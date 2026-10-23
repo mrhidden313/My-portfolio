@@ -42,3 +42,7 @@ next-env.d.ts
 
 # CodeLens Graph local index
 .codelens/
+
+# python cache
+__pycache__/
+*.py[cod]

@@ -171,7 +171,7 @@ export function AboutSection() {
         >
           {/* Card 1: Active Global Businesses (`Span across or full box`) */}
           <div className="sm:col-span-2">
-            <Counter target={150} suffix="+" label="Active Global Businesses" />
+            <Counter target={50} suffix="+" label="Active Global Businesses" />
           </div>
 
           {/* Card 2: Countries Reached */}
